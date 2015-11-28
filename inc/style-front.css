@@ -1,0 +1,11 @@
+/*
+ * My Syntax Highlighter
+ * Style sheet for front pages
+ * @since 0.1
+ * @agareginyan
+ */
+
+
+.CodeMirror {
+    height: 100% !important;
+}
