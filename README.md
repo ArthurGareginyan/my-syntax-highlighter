@@ -54,7 +54,7 @@ Arthur Garegnyan aka Berserkr
 
 * [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/my-syntax-highlighter/) - STILL NOT CREATED
 
-* [Donation Page](http://mycyberuniverse.com/donate.html)
+* [Donation Page](http://www.arthurgareginyan.com/donate.html)
 
 
 ---
