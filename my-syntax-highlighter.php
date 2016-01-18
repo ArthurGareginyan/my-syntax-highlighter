@@ -4,7 +4,7 @@
  * Plugin URI: http://mycyberuniverse.com/my_programs/wp-plugin-my-syntax-highlighter.html
  * Description: EASILY and SAFELY add your own functions, snippets or any custom codes directly out of your WordPress Dashboard without need of an external editor.
  * Author: Arthur "Berserkr" Gareginyan
- * Author URI: http://mycyberuniverse.com/author.html
+ * Author URI: http://www.arthurgareginyan.com
  * Version: 0.2
  * License: GPL3
  * Text Domain: mshighlighter

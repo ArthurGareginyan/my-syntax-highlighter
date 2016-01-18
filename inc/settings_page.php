@@ -53,7 +53,7 @@ function mshighlighter_render_submenu_page() {
             <?php _e( 'My Syntax Highlighter', 'mshighlighter' ); ?>
             <br/>
             <span>
-                <?php _e( 'by <a href="http://mycyberuniverse.com/author.html" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'mshighlighter' ); ?>
+                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'mshighlighter' ); ?>
             <span/>
 		</h2>
 
