@@ -76,6 +76,9 @@ Please visit [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-p
 
 
 == Other Notes ==
+
+"My Syntax Highlighter" is one of the personal software projects of [Arthur Gareginyan](http://www.arthurgareginyan.com).
+
 **License**
 
 This plugin is licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html)
