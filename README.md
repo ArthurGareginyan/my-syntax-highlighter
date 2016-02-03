@@ -2,7 +2,7 @@
 
 **Free Premium WorPress Plugin**
 
-**NOTE: I haven't finished this plugin. Join me and help finish the plugin!**
+`** NOTE: I haven't finished this plugin. Join me and help finish the plugin! **`
 
 ...
 
