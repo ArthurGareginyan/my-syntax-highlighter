@@ -1,4 +1,6 @@
-# WP Plugin "My Syntax Highlighter"
+# My Syntax Highlighter
+
+**Free Premium WorPress Plugin**
 
 **NOTE: I haven't finished this plugin. Join me and help finish the plugin!**
 
