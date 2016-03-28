@@ -14,12 +14,13 @@
 
 **Coming soon:**
 
-* Syntax highlighting (by CodeMirror).
-* Line numbering (by CodeMirror).
-* Input areas allow for tab indentation.
-* CodeMirror scripts are combined and minified.
-* Ready for translation (.pot file included).
-* (Got more ideas? Tell me!)
+* Syntax highlighting (by CodeMirror)
+* Line numbering (by CodeMirror)
+* Input areas allow for tab indentation
+* CodeMirror scripts are combined and minified
+* Ready for translation (.pot file included)
+
+**Got more ideas? Tell me!**
 
 
 ## Contributing
@@ -51,8 +52,6 @@ Arthur Garegnyan aka Berserkr
 
 
 ## Links
-
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-my-syntax-highlighter.html) - STILL NOT CREATED
 
 * [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/my-syntax-highlighter/) - STILL NOT CREATED
 
