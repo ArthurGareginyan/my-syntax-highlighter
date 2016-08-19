@@ -24,6 +24,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * 14 Languages
 * 16 Shortcodes
 * Ready for translation (POT file included)
+* Published on [WordPess.org](http://wordpess.org/)
 
 **A list of supported languages:**
 
@@ -143,7 +144,7 @@ Arthur Garegnyan
 
 ## Links
 
-* [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/my-syntax-highlighter/) - STILL NOT CREATED
+* [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/my-syntax-highlighter/)
 
 
 ---
