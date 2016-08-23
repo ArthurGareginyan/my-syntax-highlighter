@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 1.0
+ * @since 1.0.1
  */
 function mshighlighter_render_submenu_page() {
 
@@ -72,12 +72,18 @@ function mshighlighter_render_submenu_page() {
                     <div id="donate" class="postbox">
                         <h3 class="title"><?php _e( 'Donate', 'my-syntax-highlighter' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('../img/thanks.png', __FILE__); ?>">
-                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'my-syntax-highlighter' ); ?></p>
+                            <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'my-syntax-highlighter' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
                                 <img src="<?php echo plugins_url('../img/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
                             <p><?php _e( 'Thanks for your support!', 'my-syntax-highlighter' ); ?></p>
+                        </div>
+                    </div>
+
+                    <div id="advertisement" class="postbox">
+                        <h3 class="title"><?php _e( 'Advertisement', 'my-syntax-highlighter' ); ?></h3>
+                        <div class="inside">
+                            <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=36439_5_1_21" target="_blank" rel="nofollow"><img style="border:0px" src="http://www.elegantthemes.com/affiliates/media/banners/divi_250x250.jpg" width="250" height="250" alt="Divi WordPress Theme"></a>
                         </div>
                     </div>
 

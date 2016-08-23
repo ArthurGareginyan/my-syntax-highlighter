@@ -1,7 +1,7 @@
 /*
  * My Syntax Highlighter
  * Style sheet for plugin's page
- * @since 1.0
+ * @since 1.0.1
  * @agareginyan
  */
 
@@ -82,7 +82,8 @@ td.help-text {
 
 #about,
 #help,
-#donate {
+#donate,
+#advertisement {
     text-align: center;
 }
 

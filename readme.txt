@@ -215,6 +215,12 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 1.0.1 =
+* POT file updated.
+* Russian translation updated.
+* Image "thanks.png" removed.
+* Advertisement replaced by new.
+* Added the subject with plugin name to email address on settings page.
 = 1.0 =
 * The directory structure is changed. All files are moved to directories with names of file extensions.
 * Some changes in design of settings page.

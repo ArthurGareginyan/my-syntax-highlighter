@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2016-08-18 18:15+0300\n"
+"POT-Creation-Date: 2016-08-23 07:13+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -55,102 +55,106 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
-#: inc/php/settings_page.php:76
+#: inc/php/settings_page.php:75
 msgid ""
-"If you like this plugin and find it useful, help me to make this plugin "
-"even better and keep it up-to-date."
+"If you like this plugin and find it useful, please help me to make this "
+"plugin even better and keep it up-to-date."
 msgstr ""
 
-#: inc/php/settings_page.php:80
+#: inc/php/settings_page.php:79
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/php/settings_page.php:97
+#: inc/php/settings_page.php:84
+msgid "Advertisement"
+msgstr ""
+
+#: inc/php/settings_page.php:103
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings_page.php:104
+#: inc/php/settings_page.php:110
 msgid "Enable Plugin:"
 msgstr ""
 
-#: inc/php/settings_page.php:116
+#: inc/php/settings_page.php:122
 msgid "Enable or disable this plugin."
 msgstr ""
 
-#: inc/php/settings_page.php:122
+#: inc/php/settings_page.php:128
 msgid "Default language:"
 msgstr ""
 
-#: inc/php/settings_page.php:155
+#: inc/php/settings_page.php:161
 msgid ""
 "Default language mode for the shortcode [code]. You can select -NONE- to "
 "leave without highlighting."
 msgstr ""
 
-#: inc/php/settings_page.php:161
+#: inc/php/settings_page.php:167
 msgid "Color theme:"
 msgstr ""
 
-#: inc/php/settings_page.php:215
+#: inc/php/settings_page.php:221
 msgid "Theme which you like to view."
 msgstr ""
 
-#: inc/php/settings_page.php:221
+#: inc/php/settings_page.php:227
 msgid "Display line numbers:"
 msgstr ""
 
-#: inc/php/settings_page.php:233
+#: inc/php/settings_page.php:239
 msgid "First line number:"
 msgstr ""
 
-#: inc/php/settings_page.php:242
+#: inc/php/settings_page.php:248
 msgid "The width of Tab:"
 msgstr ""
 
-#: inc/php/settings_page.php:251
+#: inc/php/settings_page.php:257
 msgid "Automatic height of code block:"
 msgstr ""
 
-#: inc/php/settings_page.php:264
+#: inc/php/settings_page.php:270
 msgid "ON - Automatic height. OFF - Fixed height, with scrollbar."
 msgstr ""
 
-#: inc/php/settings_page.php:270
+#: inc/php/settings_page.php:276
 msgid "The height of code block:"
 msgstr ""
 
-#: inc/php/settings_page.php:279
+#: inc/php/settings_page.php:285
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr ""
 
-#: inc/php/settings_page.php:285
+#: inc/php/settings_page.php:291
 msgid "Save Changes"
 msgstr ""
 
-#: inc/php/settings_page.php:290
+#: inc/php/settings_page.php:296
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings_page.php:292
+#: inc/php/settings_page.php:298
 msgid "Click \"Save Changes\" to update this preview."
 msgstr ""
 
-#: inc/php/settings_page.php:294
+#: inc/php/settings_page.php:300
 msgid "This is an example of HTML language."
 msgstr ""
 
-#: inc/php/settings_page.php:299
+#: inc/php/settings_page.php:305
 msgid "Using"
 msgstr ""
 
-#: inc/php/settings_page.php:301
+#: inc/php/settings_page.php:307
 msgid ""
 "Just switch to the Text/HTML editor and wrap your source code in one of the "
 "supported shortcodes (like `[code]...[/code]` that is universal shortcode) "
 "and this plugin takes care of the rest. Example:"
 msgstr ""
 
-#: inc/php/settings_page.php:309
+#: inc/php/settings_page.php:315
 msgid ""
 "In this case, the shortcode will prevent WordPress from inserting paragraph "
 "breaks between `This`, `is` and `an \"example\"`, as well as ensure that "
@@ -158,17 +162,17 @@ msgid ""
 "quotes."
 msgstr ""
 
-#: inc/php/settings_page.php:310
+#: inc/php/settings_page.php:316
 msgid "You can use shortcodes such as:"
 msgstr ""
 
-#: inc/php/settings_page.php:311
+#: inc/php/settings_page.php:317
 msgid ""
 "[code] [php] [javascript] [js] [xml] [html] [css] [scss] [less] [sass] "
 "[markdown] [perl] [sql] [mysql] [shell] [bash]"
 msgstr ""
 
-#: inc/php/settings_page.php:312
+#: inc/php/settings_page.php:318
 msgid ""
 "NOTE: To avoid problems, edit posts that contain your source code only in "
 "Text/HTML mode."
