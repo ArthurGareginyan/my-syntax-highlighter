@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 1.0.1
+ * @since 1.1
  */
 function mshighlighter_render_submenu_page() {
 
@@ -110,10 +110,7 @@ function mshighlighter_render_submenu_page() {
                                                 <?php _e( 'Enable Plugin:', 'my-syntax-highlighter' ); ?>
                                             </th>
                                             <td>
-                                                <div class="trigger">
-                                                    <input type="checkbox" name="mshighlighter_settings[enable]" id="mshighlighter_settings[enable]" <?php if ( !empty($options['enable']) ) { checked( $options['enable'], "on" ); } ?> >
-                                                    <label for="mshighlighter_settings[enable]"></label>
-                                                </div>
+                                                <input type="checkbox" name="mshighlighter_settings[enable]" id="mshighlighter_settings[enable]" <?php if ( !empty($options['enable']) ) { checked( $options['enable'], "on" ); } ?> >
                                             </td>
                                         </tr>
                                         <tr valign='top'>
@@ -227,10 +224,7 @@ function mshighlighter_render_submenu_page() {
                                                 <?php _e( 'Display line numbers:', 'my-syntax-highlighter' ); ?>
                                             </th>
                                             <td>
-                                                <div class="trigger">
-                                                    <input type="checkbox" name="mshighlighter_settings[line_numbers]" id="mshighlighter_settings[line_numbers]" class="" <?php if ( !empty($options['line_numbers']) ) { checked( $options['line_numbers'], "on" ); } ?> >
-                                                    <label for="mshighlighter_settings[line_numbers]"></label>
-                                                </div>
+                                                <input type="checkbox" name="mshighlighter_settings[line_numbers]" id="mshighlighter_settings[line_numbers]" class="" <?php if ( !empty($options['line_numbers']) ) { checked( $options['line_numbers'], "on" ); } ?> >
                                             </td>
                                         </tr>
 
@@ -257,10 +251,7 @@ function mshighlighter_render_submenu_page() {
                                                 <?php _e( 'Automatic height of code block:', 'my-syntax-highlighter' ); ?>
                                             </th>
                                             <td>
-                                                <div class="trigger">
-                                                    <input type="checkbox" name="mshighlighter_settings[automatic_height]" id="mshighlighter_settings[automatic_height]" class="" <?php if ( !empty($options['automatic_height']) ) { checked( $options['automatic_height'], "on" ); } ?> >
-                                                    <label for="mshighlighter_settings[automatic_height]"></label>
-                                                </div>
+                                                <input type="checkbox" name="mshighlighter_settings[automatic_height]" id="mshighlighter_settings[automatic_height]" class="" <?php if ( !empty($options['automatic_height']) ) { checked( $options['automatic_height'], "on" ); } ?> >
                                             </td>
                                         </tr>
 

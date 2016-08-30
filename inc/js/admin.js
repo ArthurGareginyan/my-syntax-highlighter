@@ -1,23 +1,23 @@
 /*
- * My Syntax Highlighter
- * JavaScripts functions for Admin Pages
- * @since 1.0
- * @agareginyan
+ * JS functions for plugin settings page
+ *
+ * Copyright (c) 2016 Arthur Gareginyan ( http://www.arthurgareginyan.com ).
+ * All Rights Reserved.
  */
 
 
-(function(){
+jQuery(document).ready(function($) {
+
     "use strict";
 
-    jQuery(document).ready(function($) {
+    // Remove the "successful" message after 3 seconds
+    if (".updated") {
+        setTimeout(function() {
+            $(".updated").fadeOut();
+        }, 3000);
+    }
 
-        // Remove the "successful" message after 3 seconds
-        if (".updated") {
-            setTimeout(function() {
-                $(".updated").fadeOut();
-            }, 3000);
-        }
+    // Bootstrap Checkbox
+    $(':checkbox').checkboxpicker();
 
-    });
-
-}());
+});

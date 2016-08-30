@@ -1,19 +1,10 @@
 /*
- * My Syntax Highlighter
- * Style sheet for plugin's page
- * @since 1.0.1
- * @agareginyan
+ * Style sheet for plugin settings page
+ *
+ * Copyright (c) 2016 Arthur Gareginyan ( http://www.arthurgareginyan.com ).
+ * All Rights Reserved.
  */
 
-
-.aligncenter {
-    text-align: center;
-}
-
-.form-table {
-    clear: none;
-    margin-top: 30px;
-}
 
 /* Titles
  -------------------------------------------------------------- */
@@ -40,63 +31,21 @@ h3.title {
     border-bottom: 1px solid #eee;
 }
 
-.inner-sidebar h3.title {
-    text-align: center;
-}
-
-td.help-text {
-    margin-top: -10px;
-    font-style: italic;
-    font-size: 12px !important;
-    float: left;
-    clear: left;
-    color: #797979;
-    line-height: 15px;
-    padding-top: 0px !important;
-}
-
-.postbox a {
-    text-decoration: none;
-}
-
-/* CodeMirror Editor
- -------------------------------------------------------------- */
-.CodeMirror {
-    border: 1px solid #e0e0e0;
-    border-radius: 3px;
-}
-
 /* Sidebar
  -------------------------------------------------------------- */
 #side-sortables {
     position: relative;
 }
 
-.inner-sidebar h3.title {
+#side-sortables .postbox {
     text-align: center;
 }
 
-.postbox a {
-    text-decoration: none;
-}
-
-#about,
-#help,
-#donate,
-#advertisement {
-    text-align: center;
-}
-
-#help p {
+#side-sortables #help p {
     margin: 0;
 }
 
-#donate img,
-#donate p {
-    margin-top: 5px;
-}
-
-/* Responsive
+/* Responsive page
  -------------------------------------------------------------- */
 @media (max-width: 860px) {
     .inner-sidebar {
@@ -107,83 +56,42 @@ td.help-text {
     }
 }
 
-/* On/Off Trigger
+/* Help text
  -------------------------------------------------------------- */
-.trigger {
-    height: 23px;
-    padding-top: 5px;
-    width: 80px;
-    background: #f2f2f2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    position: relative;
-    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
-    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
-    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+td.help-text {
+    font-style: italic;
+    font-size: 12px !important;
+    float: left;
+    clear: left;
+    color: #797979;
+    line-height: 15px;
+    padding-top: 0px !important;
 }
 
-.trigger:after {
-    content: 'OFF';
-    margin-top: -3px;
-    font: 12px/26px Arial, sans-serif;
-    color: #ff0000;
-    position: absolute;
-    right: 10px;
-    z-index: 0;
-    font-weight: bold;
-    text-shadow: 1px 1px 0px rgba(255,255,255,.15);
-}
-
-.trigger:before {
-    content: 'ON';
-    margin-top: -3px;
-    font: 12px/26px Arial, sans-serif;
-    color: #00bf00;
-    position: absolute;
-    left: 10px;
-    z-index: 0;
-    font-weight: bold;
-}
-
-.trigger label {
-    display: block;
-    width: 37px;
-    height: 24px;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    transition: all .4s ease;
-    cursor: pointer;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    z-index: 1;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background: #B6B6B6;
-    border-color: #787878 #787878 #787878;
-    -webkit-box-shadow: 0 1px 0 #787878;
-    box-shadow: 0 2px 0 #787878;
-}
-.trigger label:hover {
-    background: #a6a6a6;
-}
-
-.trigger input[type=checkbox] {
-    visibility: hidden;
-}
-
-.trigger input[type=checkbox]:checked + label {
-    left: 43px;
-}
-
-/* Input text areas
+/* CodeMirror Editor
  -------------------------------------------------------------- */
+.CodeMirror {
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+/* Other
+ -------------------------------------------------------------- */
+.form-table {
+    clear: none;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.form-table th,
+.form-table td {
+    padding-bottom: 10px;
+}
+
 .form-table input[type=text] {
+    max-width: 80%;
     padding-top: 5px;
-    background: #f2f2f2;
+    background: #fcfcfc;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -191,6 +99,14 @@ td.help-text {
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
     -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.postbox a {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 0 !important;
 }
 
 /* <pre> and <code> tag in "Using" section
@@ -201,7 +117,6 @@ td.help-text {
     margin: 0 10px 0 10px;
 }
 #Using code {
-    background: 0;
     background: 0;
 }
 #Using p span {

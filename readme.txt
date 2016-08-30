@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.6
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,6 +30,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * 36 Themes
 * 14 Languages
 * 16 Shortcodes
+* Allow shortcodes in the text widget
 * Ready for translation (POT file included)
 
 
@@ -206,7 +207,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 **Credits**
 
-[CodeMirror](https://codemirror.net/) is an open-source project shared under a [MIT license](https://codemirror.net/LICENSE).
+[CodeMirror](https://codemirror.net/) is an open-source project shared under the [MIT license](https://codemirror.net/LICENSE).
+
+[Bootstrap](http://getbootstrap.com) released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+
+[Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
 
 **Links**
 
@@ -215,6 +220,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 1.1 =
+* Style sheet of settings page improved and better commented.
+* JS code improved.
+* Checkboxes replaced with cool triggers by using Bootstrap framework and Bootstrap-checkbox component.
+* Added the ability to use shortcodes in the text widgets.
 = 1.0.1 =
 * POT file updated.
 * Russian translation updated.
