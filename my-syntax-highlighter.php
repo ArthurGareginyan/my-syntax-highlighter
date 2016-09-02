@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 1.1
+ * Version: 1.2
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -29,6 +29,7 @@
  *
  */
 
+
 /**
  * Prevent Direct Access
  *
@@ -37,14 +38,15 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
- * Define constants
+ * Define global constants
  *
- * @since 0.3
+ * @since 1.2
  */
 defined('MSHIGHLIGHTER_DIR') or define('MSHIGHLIGHTER_DIR', dirname(plugin_basename(__FILE__)));
 defined('MSHIGHLIGHTER_BASE') or define('MSHIGHLIGHTER_BASE', plugin_basename(__FILE__));
 defined('MSHIGHLIGHTER_URL') or define('MSHIGHLIGHTER_URL', plugin_dir_url(__FILE__));
 defined('MSHIGHLIGHTER_PATH') or define('MSHIGHLIGHTER_PATH', plugin_dir_path(__FILE__));
+defined('MSHIGHLIGHTER_VERSION') or define('MSHIGHLIGHTER_VERSION', '1.2');
 
 /**
  * Register text domain
@@ -103,30 +105,30 @@ add_action( 'admin_init', 'mshighlighter_register_settings' );
 /**
  * Base for the _load_scripts hook
  *
- * @since 1.1
+ * @since 1.2
  */
 function mshighlighter_load_scripts_base($options) {
 
     // CodeMirror
-    wp_enqueue_script( 'codemirror-js', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/codemirror.js' );
-    wp_enqueue_style( 'codemirror-css', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/codemirror.css' );
+    wp_enqueue_script( 'mshighlighter-codemirror-js', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/codemirror.js' );
+    wp_enqueue_style( 'mshighlighter-codemirror-css', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/codemirror.css' );
     if ( $options['theme'] != "default" ) {
-        wp_enqueue_style( 'codemirror-theme', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
+        wp_enqueue_style( 'mshighlighter-codemirror-theme', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
     }
-    wp_enqueue_script( 'codemirror-settings', MSHIGHLIGHTER_URL . 'inc/js/codemirror-settings.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-settings', MSHIGHLIGHTER_URL . 'inc/js/codemirror-settings.js', array(), false, true );
 
     // CodeMirror Modes
-    wp_enqueue_script( 'codemirror-mode-clike', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/clike.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-css', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/css.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-htmlmixed', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/htmlmixed.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-javascript', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/javascript.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-markdown', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/markdown.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-perl', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/perl.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-php', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/php.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-sass', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/sass.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-shell', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/shell.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-sql', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/sql.js', array(), false, true );
-    wp_enqueue_script( 'codemirror-mode-xml', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/xml.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-clike', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/clike.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-css', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/css.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-htmlmixed', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/htmlmixed.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-javascript', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/javascript.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-markdown', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/markdown.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-perl', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/perl.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-php', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/php.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-sass', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/sass.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-shell', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/shell.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-sql', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/sql.js', array(), false, true );
+    wp_enqueue_script( 'mshighlighter-codemirror-mode-xml', MSHIGHLIGHTER_URL . 'inc/lib/codemirror/mode/xml.js', array(), false, true );
 
     // Create js object and injected it into the js file
     if ( !empty( $options['theme'] ) ) { $theme = $options['theme']; } else { $theme = "default"; }
@@ -139,13 +141,13 @@ function mshighlighter_load_scripts_base($options) {
                            'first_line_number' => $first_line_number,
                            'tab_size' => $tab_size,
                            );
-    wp_localize_script( 'codemirror-settings', 'scriptParams', $script_params );
+    wp_localize_script( 'mshighlighter-codemirror-settings', 'scriptParams', $script_params );
 }
 
 /**
  * Dymamic CSS for the _load_scripts hook
  *
- * @since 1.1
+ * @since 1.2
  */
 function mshighlighter_load_scripts_dynamic_css($options) {
 
@@ -158,15 +160,15 @@ function mshighlighter_load_scripts_dynamic_css($options) {
     $custom_css = ".CodeMirror { height: " . $block_height . " !important; }";
 
     // Inject dynamic CSS
-    wp_add_inline_style( 'front-css', $custom_css );
-    wp_add_inline_style( 'admin-css', $custom_css );
+    wp_add_inline_style( 'mshighlighter-front-css', $custom_css );
+    wp_add_inline_style( 'mshighlighter-admin-css', $custom_css );
 
 }
 
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 1.1
+ * @since 1.2
  */
 function mshighlighter_load_scripts_admin($hook) {
 
@@ -177,16 +179,16 @@ function mshighlighter_load_scripts_admin($hook) {
         $options = get_option( 'mshighlighter_settings' );
         
         // Load style sheet
-        wp_enqueue_style( 'admin-css', MSHIGHLIGHTER_URL . 'inc/css/admin.css' );
-        wp_enqueue_style( 'bootstrap', MSHIGHLIGHTER_URL . 'inc/css/bootstrap.css' );
-        wp_enqueue_style( 'bootstrap-theme', MSHIGHLIGHTER_URL . 'inc/css/bootstrap-theme.css' );
+        wp_enqueue_style( 'mshighlighter-admin-css', MSHIGHLIGHTER_URL . 'inc/css/admin.css' );
+        wp_enqueue_style( 'mshighlighter-bootstrap', MSHIGHLIGHTER_URL . 'inc/css/bootstrap.css' );
+        wp_enqueue_style( 'mshighlighter-bootstrap-theme', MSHIGHLIGHTER_URL . 'inc/css/bootstrap-theme.css' );
 
         // Call the function with dymamic CSS
         mshighlighter_load_scripts_dynamic_css($options);
 
         // Load JS functions
-        wp_enqueue_script( 'admin-js', MSHIGHLIGHTER_URL . 'inc/js/admin.js', array(), false, true );
-        wp_enqueue_script( 'bootstrap-checkbox', MSHIGHLIGHTER_URL . 'inc/js/bootstrap-checkbox.min.js' );
+        wp_enqueue_script( 'mshighlighter-admin-js', MSHIGHLIGHTER_URL . 'inc/js/admin.js', array(), false, true );
+        wp_enqueue_script( 'mshighlighter-bootstrap-checkbox', MSHIGHLIGHTER_URL . 'inc/js/bootstrap-checkbox.min.js' );
 
         // Call the function with a basis of scripts
         mshighlighter_load_scripts_base($options);
@@ -198,7 +200,7 @@ add_action( 'admin_enqueue_scripts', 'mshighlighter_load_scripts_admin' );
 /**
  * Load scripts and style sheet on front end of website
  *
- * @since 1.1
+ * @since 1.2
  */
 function mshighlighter_load_scripts_front() {
 
@@ -209,7 +211,7 @@ function mshighlighter_load_scripts_front() {
     if ( !empty( $options['enable'] ) && $options['enable'] == "on" ) {
 
         // Load style sheet
-        wp_enqueue_style( 'front-css', MSHIGHLIGHTER_URL . 'inc/css/front.css' );
+        wp_enqueue_style( 'mshighlighter-front-css', MSHIGHLIGHTER_URL . 'inc/css/front.css' );
 
         // Call the function with dymamic CSS
         mshighlighter_load_scripts_dynamic_css($options);
