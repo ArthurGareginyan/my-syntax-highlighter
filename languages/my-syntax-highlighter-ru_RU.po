@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2016-08-23 07:15+0300\n"
-"PO-Revision-Date: 2016-08-23 07:15+0300\n"
+"POT-Creation-Date: 2016-11-01 18:42+0300\n"
+"PO-Revision-Date: 2016-11-01 18:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: inc/php/settings_page.php:44 my-syntax-highlighter.php:82
+#: inc/php/settings_page.php:44 my-syntax-highlighter.php:85
 msgid "My Syntax Highlighter"
 msgstr ""
 
@@ -57,41 +57,39 @@ msgstr "Есть что сказать? Нужна помощь?"
 
 #: inc/php/settings_page.php:73
 msgid "Donate"
-msgstr "Пожертвование"
+msgstr "Поддержать разработку"
 
 #: inc/php/settings_page.php:75
 msgid ""
-"If you like this plugin and find it useful, please help me to make this "
-"plugin even better and keep it up-to-date."
+"I'm an independent developer, without a regular income, so every little "
+"contribution helps cover my costs and lets me spend more time building "
+"things for people like you to enjoy."
 msgstr ""
-"Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
-"помогите мне сделать его ещё лучше."
+"Я независимый разработчик, без регулярного дохода, так что каждый маленький "
+"вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
+"создание программ для людей как вы."
 
 #: inc/php/settings_page.php:79
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/php/settings_page.php:84
-msgid "Advertisement"
-msgstr "Реклама"
-
-#: inc/php/settings_page.php:103
+#: inc/php/settings_page.php:100
 msgid "Main Settings"
 msgstr "Основные Настройки"
 
-#: inc/php/settings_page.php:110
+#: inc/php/settings_page.php:107
 msgid "Enable Plugin:"
 msgstr "Включить плагин:"
 
-#: inc/php/settings_page.php:122
+#: inc/php/settings_page.php:116
 msgid "Enable or disable this plugin."
 msgstr "Включить или выключить этот плагин."
 
-#: inc/php/settings_page.php:128
+#: inc/php/settings_page.php:122
 msgid "Default language:"
 msgstr "Язык по-умолчанию:"
 
-#: inc/php/settings_page.php:161
+#: inc/php/settings_page.php:155
 msgid ""
 "Default language mode for the shortcode [code]. You can select -NONE- to "
 "leave without highlighting."
@@ -99,65 +97,65 @@ msgstr ""
 "Режим языка по умолчанию для шорткода [code]. Вы можете выбрать -NONE- для "
 "того, чтобы оставить без подсветки."
 
-#: inc/php/settings_page.php:167
+#: inc/php/settings_page.php:161
 msgid "Color theme:"
 msgstr "Цветовая схема:"
 
-#: inc/php/settings_page.php:221
+#: inc/php/settings_page.php:215
 msgid "Theme which you like to view."
 msgstr "Тема, которую вы хотите использовать."
 
-#: inc/php/settings_page.php:227
+#: inc/php/settings_page.php:221
 msgid "Display line numbers:"
 msgstr "Отображать номера строк:"
 
-#: inc/php/settings_page.php:239
+#: inc/php/settings_page.php:230
 msgid "First line number:"
 msgstr "Номер первой строки:"
 
-#: inc/php/settings_page.php:248
+#: inc/php/settings_page.php:239
 msgid "The width of Tab:"
-msgstr "Ширина Баба:"
+msgstr "Ширина Таба:"
 
-#: inc/php/settings_page.php:257
+#: inc/php/settings_page.php:248
 msgid "Automatic height of code block:"
-msgstr "Автоматическое высота блока кода:"
+msgstr "Автоматическая высота блока кода:"
 
-#: inc/php/settings_page.php:270
+#: inc/php/settings_page.php:258
 msgid "ON - Automatic height. OFF - Fixed height, with scrollbar."
 msgstr ""
 "ON - Автоматическая высота. OFF - Фиксированная высота, с ползунком "
 "прокрутки."
 
-#: inc/php/settings_page.php:276
+#: inc/php/settings_page.php:264
 msgid "The height of code block:"
 msgstr "Высота блока кода:"
 
-#: inc/php/settings_page.php:285
+#: inc/php/settings_page.php:273
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr "Высота (в пикселях) блока кода. Значение по умолчанию — 300px."
 
-#: inc/php/settings_page.php:291
+#: inc/php/settings_page.php:279
 msgid "Save Changes"
-msgstr "Сохранить Изменения"
+msgstr "Сохранить изменения"
 
-#: inc/php/settings_page.php:296
+#: inc/php/settings_page.php:284
 msgid "Preview"
-msgstr "Предпросмотр"
+msgstr "Предварительный просмотр"
 
-#: inc/php/settings_page.php:298
+#: inc/php/settings_page.php:286
 msgid "Click \"Save Changes\" to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
 
-#: inc/php/settings_page.php:300
+#: inc/php/settings_page.php:288
 msgid "This is an example of HTML language."
 msgstr "Это пример HTML языка."
 
-#: inc/php/settings_page.php:305
+#: inc/php/settings_page.php:293
 msgid "Using"
-msgstr "Использование"
+msgstr "Как пользоваться"
 
-#: inc/php/settings_page.php:307
+#: inc/php/settings_page.php:295
 msgid ""
 "Just switch to the Text/HTML editor and wrap your source code in one of the "
 "supported shortcodes (like `[code]...[/code]` that is universal shortcode) "
@@ -167,7 +165,7 @@ msgstr ""
 "поддерживаемых шорткодов (как `[code]...[/code]`. Этот шорткод "
 "универсальный) и этот плагин позаботится об остальном. Пример:"
 
-#: inc/php/settings_page.php:315
+#: inc/php/settings_page.php:303
 msgid ""
 "In this case, the shortcode will prevent WordPress from inserting paragraph "
 "breaks between `This`, `is` and `an \"example\"`, as well as ensure that the "
@@ -178,17 +176,19 @@ msgstr ""
 "`This`, `is` и `an \"example\"`, а также не даст преобразовать двойные "
 "кавычки вокруг `example ` в типографские (вьющиеся) кавычки."
 
-#: inc/php/settings_page.php:316
+#: inc/php/settings_page.php:304
 msgid "You can use shortcodes such as:"
 msgstr "Вы можете использовать шорткоды такие как:"
 
-#: inc/php/settings_page.php:317
+#: inc/php/settings_page.php:305
 msgid ""
 "[code] [php] [javascript] [js] [xml] [html] [css] [scss] [less] [sass] "
 "[markdown] [perl] [sql] [mysql] [shell] [bash]"
 msgstr ""
+"[code] [php] [javascript] [js] [xml] [html] [css] [scss] [less] [sass] "
+"[markdown] [perl] [sql] [mysql] [shell] [bash]"
 
-#: inc/php/settings_page.php:318
+#: inc/php/settings_page.php:306
 msgid ""
 "NOTE: To avoid problems, edit posts that contain your source code only in "
 "Text/HTML mode."
@@ -196,11 +196,11 @@ msgstr ""
 "Примечание: Чтобы избежать проблем, редактируйте посты содержащие исходный "
 "код только в режиме Text/HTML."
 
-#: my-syntax-highlighter.php:70
+#: my-syntax-highlighter.php:73
 msgid "Settings"
 msgstr "Настройки"
 
-#: my-syntax-highlighter.php:82
+#: my-syntax-highlighter.php:85
 msgid "Syntax Highlighter"
 msgstr ""
 
@@ -215,6 +215,16 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr ""
+
+#~ msgid "Advertisement"
+#~ msgstr "Реклама"
+
+#~ msgid ""
+#~ "If you like this plugin and find it useful, please help me to make this "
+#~ "plugin even better and keep it up-to-date."
+#~ msgstr ""
+#~ "Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
+#~ "помогите мне сделать его ещё лучше."
 
 #~ msgid "Advertising"
 #~ msgstr "Реклама"
