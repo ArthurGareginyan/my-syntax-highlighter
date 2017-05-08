@@ -1,8 +1,11 @@
 /*
  * Settings of CodeMirror editor
  *
- * Copyright (c) 2016 Arthur Gareginyan ( http://www.arthurgareginyan.com ).
- * All Rights Reserved.
+ * @package     My Syntax Highlighter
+ * @uthor       Arthur Gareginyan
+ * @link        http://www.arthurgareginyan.com
+ * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
+ * @since       2.0
  */
 
 

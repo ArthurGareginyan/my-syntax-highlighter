@@ -3,16 +3,16 @@ Contributors: Arthur Gareginyan
 Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.6
-Stable tag: 1.3
+Tested up to: 4.7
+Stable tag: 2.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
 
-== Description ==
 
-An easy to use WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
+== Description ==
+An easy to use, with intuitive interface WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library. If you want more options then tell me and I will be happy to add it.
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for. 
 
@@ -22,8 +22,16 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 = Features =
 
-* Easy to use Settings Page
-* Live preview on Settings Page
+* Lightweight and fast
+* Secure code with using clear coding standards
+* Intuitive interface with many settings
+* Cross browser compatible (work smooth in any modern browser)
+* Compatible with all WordPress themes
+* RTL compatible (right to left)
+* Translation ready
+
+**Key features include...**
+
 * Standalone Shortcode-Processor
 * Syntax highlighting (by CodeMirror)
 * Line numbering
@@ -31,7 +39,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * 14 Languages
 * 16 Shortcodes
 * Allow shortcodes in the text widget
-* Ready for translation (POT file included)
+* And much, much more!
 
 
 **A list of supported languages:**
@@ -114,25 +122,10 @@ Click to view language examples. Highlighted with Default theme.
 
 = Translation =
 
-Please keep in mind that not all translations are up to date. You are welcome to contribute!
-
 * English (default)
 * Russian
 
-= Usage =
-
-Just switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like `[code]...[/code]` that is universal shortcode) and this plugin takes care of the rest. Example:
-`[code]
-This 
-
-is 
-
-an "example"!
-[/code]`
-
-In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an "example"`, as well as ensure that the double quotes around `example` are not converted to typographic (curly) quotes.
-
-To avoid problems, only edit posts that contain your source code in Text/HTML mode.
+If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter) page.
 
 >**Contribution**
 >
@@ -146,19 +139,19 @@ To avoid problems, only edit posts that contain your source code in Text/HTML mo
 == Installation ==
 Install "My Syntax Highlighter" just as you would any other WordPress Plugin.
 
-Automatically via WordPress:
+Automatically via WordPress Admin area:
 
-1. Log into Dashboard of your WordPress website.
-2. Go to "`Plugins`" —> "`Add New`".
+1. Log into Admin area of your WordPress website.
+2. Go to "`Plugins`" -> "`Add New`".
 3. Find this plugin and click install.
 4. Activate this plugin through the "`Plugins`" tab.
 
-Manual via FTP:
+Manually via FTP access:
 
 1. Download a copy (ZIP file) of this plugin from WordPress.org.
 2. Unzip the ZIP file.
 3. Upload the unzipped catalog to your website's plugin directory (`/wp-content/plugins/`).
-4. Log into Dashboard of your WordPress website.
+4. Log into Admin area of your WordPress website.
 5. Activate this plugin through the "`Plugins`" tab.
 
 After installation, a "`Syntax Highlighter`" menu item will appear in the "`Settings`" section. Click on this in order to view plugin's administration page.
@@ -168,25 +161,34 @@ After installation, a "`Syntax Highlighter`" menu item will appear in the "`Sett
 
 == Frequently Asked Questions ==
 = Q. Will this plugin work on my WordPress.COM website? =
-A. Sorry, this plugin is available for use only on self-hosted (WordPress.org) websites.
+A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
 
 = Q. Can I use this plugin on my language? =
-A. Yes. But If your language is not available then you can make one. This plugin is ready for translation. The `.pot` file is included and placed in "`languages`" folder. Many of plugin users would be delighted if you shared your translation with the community. Just send the translation files (`*.po, *.mo`) to me at the arthurgareginyan@gmail.com and I will include the translation within the next plugin update.
+A. Yes. But If your language is not available then you can make one. This plugin is ready for translation. The `.pot` file is included and placed in the "`languages`" folder. Many of plugin users would be delighted if you shared your translation with the community. Just send the translation files (`*.po, *.mo`) to me at the arthurgareginyan@gmail.com and I will include the translation within the next plugin update.
 
-= Q. Does this plugin require modification to the theme? =
-A. Absolutely not. This plugin is added/configured entirely from the website's Admin section.
+= Q. How does it work? =
+A. Simply go to the plugin settings page, select the desired settings and click the "Save Changes" button. Enjoy the fancy syntax highlighting on your website. It's that simple!
+You can find the plugin settings page at "`WP Admin Panel`" -> "`Settings`" -> "`Syntax Highlighter`".
+
+= Q. Does this plugin requires any modification of the theme? =
+A. Absolutely not. This plugin is configurable entirely from the plugin settings page that you can find in the Admin Panel of your WordPress website.
+
+= Q. Does this require any knowledge of HTML or CSS? =
+A. Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings page.
 
 = Q. It's not working. What could be wrong? =
-A. As with every plugin, it's possible that things don't work. The most common reason for this is that the plugin has a conflict with another plugin you're using. It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
+A. As with every plugin, it's possible that things don't work. The most common reason for this is a web browser's cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser's cache.​ Clearing your browser's cache may solve the problem.
+
+It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
 
 = Q. Where to report bug if found? =
-A. Please visit [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/my-syntax-highlighter) and report.
+A. Please visit the [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/my-syntax-highlighter) and report.
 
 = Q. Where to share any ideas or suggestions to make the plugin better? =
-A. Please send me email [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com).
+A. Any suggestions are very welcome! Please send me an email to [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com). Thank you!
 
 = Q. I love this plugin! Can I help somehow? =
-A. Yes, any financial contributions are welcome! Just visit my website and click on the donate link, and thank you! [My website](http://www.arthurgareginyan.com/donate.html)
+A. Yes, any financial contributions are welcome! Just visit [my website](http://www.arthurgareginyan.com/donate.html), click on the donate button, and thank you!
 
 
 == Screenshots ==
@@ -207,11 +209,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 **Credits**
 
-[CodeMirror](https://codemirror.net/) is an open-source project shared under the [MIT license](https://codemirror.net/LICENSE).
-
-[Bootstrap](http://getbootstrap.com) released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
-
-[Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
+* The icon of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
+* The banner of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
+* [CodeMirror](https://codemirror.net/) is an open-source project shared under the [MIT license](https://codemirror.net/LICENSE).
+* [Bootstrap](http://getbootstrap.com) by Twitter, Inc. released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+* [Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
 
 **Links**
 
@@ -220,26 +222,67 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.0 =
+* The design of the plugin settings page is completely redone.
+* Added additional donate link to the "Plugins" page.
+* Readme for translations updated.
+* Advertisement banner removed.
+* The 'Using' section renamed to 'Usage'.
+* My Unicode signature added to the main file.
+* The 'front.css' file renamed to 'frontend.css'.
+* The donate button replaced with new.
+* The 'Donate' section renamed to 'Support'.
+* The 'donate.png' image removed.
+* Options from the settings page moved to a separate file.
+* Fixed a bug due to which the jQuery library was not loaded on the front end of the website if the visitor did not logged-in.
+* Added stylized descriptions of sections on the "Settings" tab.
+* Additional "Support" section added.
+* Added tab navigation menu for the settings page.
+* Added additional tabs on the settings page.
+* Added the CSS fix for height of line.
+* Code of the 'admin.css' file improved and better commented.
+* The 'bootstrap-checkbox.min.js' file renamed to 'bootstrap-checkbox.js'.
+* A full version of the Bootstrap framework is integrated.
+* Added the CSS code for the custom list numbers on the plugin settings page.
+* The main font is changed to "Verdana".
+* All PHP and HTML code is better formatted.
+* The header on the settings page of plugin is redesigned.
+* The "LICENSE.txt" file renamed to "license.txt".
+* The "humans.txt" file added.
+* On the plugin settings page, the "valign='top'" attribute removed from the "tr" element of HTML table and added the appropriate analog in CSS .
+* The "_service_info" setting added to the data-base.
+* Added function for managing information about the version number of the plugin.
+* Added the "Hello" message that show when the plugin is just installed.
+* Added the "Error" message that show when user is trying to degrade the version number of the plugin.
+* Fixed the parameter that contain the path to source files in all translation files.
+* The POT file updated.
+* Translations updated.
+
 = 1.3 =
 * Added the Readme.txt file for translation contribution.
 * Added global constant for plugin text-domain.
 * Fixed the "Undefined variable: block_height" error.
 * Translations updated.
 * Ad banner replaced with new.
+
 = 1.2 =
 * Added prefixes to the stylesheet and script names when using wp_enqueue_style() and wp_enqueue_script().
 * Added constant for storing the plugin version number.
+
 = 1.1 =
 * Style sheet of settings page improved and better commented.
 * JS code improved.
 * Checkboxes replaced with cool triggers by using Bootstrap framework and Bootstrap-checkbox component.
 * Added the ability to use shortcodes in the text widgets.
+
 = 1.0.1 =
 * POT file updated.
 * Russian translation updated.
 * Image "thanks.png" removed.
 * Advertisement replaced by new.
 * Added the subject with plugin name to email address on settings page.
+
 = 1.0 =
 * The directory structure is changed. All files are moved to directories with names of file extensions.
 * Some changes in design of settings page.
@@ -255,22 +298,24 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * POT file added.
 * Russian translation added.
 * Many more small changes.
+
 = 0.3 =
+* Release candidate.
 * [php], [html], [css], [javascript] shortcodes added.
 * Added option "Display line numbers".
 * Added option "First line number".
 * Added option "The width of Tab".
 * Image from plugin's settings page changed.
+
 = 0.2 =
 * Beta version.
+
 = 0.1 =
 * Alfa version.
 
 
 == Upgrade Notice ==
+= 2.0 =
+Please update to new release!
 = 1.0 =
 Please update to first stable release!
-= 0.3 =
-Prerelease.
-= 0.2 =
-Please update to beta version.
