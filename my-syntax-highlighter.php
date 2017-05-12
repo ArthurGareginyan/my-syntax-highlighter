@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0.1
+ * Version: 2.0.2
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -62,7 +62,7 @@ defined('MSHIGHLIGHTER_BASE') or define('MSHIGHLIGHTER_BASE', plugin_basename(__
 defined('MSHIGHLIGHTER_URL') or define('MSHIGHLIGHTER_URL', plugin_dir_url(__FILE__));
 defined('MSHIGHLIGHTER_PATH') or define('MSHIGHLIGHTER_PATH', plugin_dir_path(__FILE__));
 defined('MSHIGHLIGHTER_TEXT') or define('MSHIGHLIGHTER_TEXT', 'my-syntax-highlighter');
-defined('MSHIGHLIGHTER_VERSION') or define('MSHIGHLIGHTER_VERSION', '2.0.1');
+defined('MSHIGHLIGHTER_VERSION') or define('MSHIGHLIGHTER_VERSION', '2.0.2');
 
 /**
  * Load the plugin modules
