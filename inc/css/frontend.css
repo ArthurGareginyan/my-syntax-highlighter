@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       2.0
+ * @since       2.0.1
  */
 
 
@@ -17,10 +17,11 @@
     background-color: #f9f9f9;
 }
 
-.CodeMirror {
+.my-syntax-highlighter .CodeMirror {
     border-radius: 3px;
 }
 
-.CodeMirror pre {
+.my-syntax-highlighter .CodeMirror pre {
     height: 24px;
+    margin: 0 !important;
 }
