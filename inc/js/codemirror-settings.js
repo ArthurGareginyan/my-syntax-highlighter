@@ -14,10 +14,10 @@ jQuery(document).ready(function($) {
     "use strict";
 
     // Get values for variables
-    var theme = scriptParams["theme"];
-    var line_numbers = ( scriptParams["line_numbers"] == 'true' );
-    var first_line_number = parseInt( scriptParams["first_line_number"] );
-    var tab_size = parseInt( scriptParams["tab_size"] );
+    var theme = mshighlighter_scriptParams["theme"];
+    var line_numbers = ( mshighlighter_scriptParams["line_numbers"] == 'true' );
+    var first_line_number = parseInt( mshighlighter_scriptParams["first_line_number"] );
+    var tab_size = parseInt( mshighlighter_scriptParams["tab_size"] );
 
     // Find all textareas on page
     $('textarea.mshighlighter').each(function(index, elements) {

@@ -5,12 +5,12 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Render Settings Tab
  *
- * @since 1.3
+ * @since 2.1
  */
 ?>
     <!-- SIDEBAR -->
@@ -37,7 +37,7 @@ defined('ABSPATH') or die("Restricted access!");
                 <h3 class="title"><?php _e( 'Help', MSHIGHLIGHTER_TEXT ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'Got something to say? Need help?', MSHIGHLIGHTER_TEXT ); ?></p>
-                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=My Syntax Highlighter">arthurgareginyan@gmail.com</a></p>
+                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=<?php echo MSHIGHLIGHTER_NAME; ?>">arthurgareginyan@gmail.com</a></p>
                 </div>
             </div>
 
@@ -50,34 +50,12 @@ defined('ABSPATH') or die("Restricted access!");
         <div id="post-body-content" class="has-sidebar-content">
             <div class="meta-box-sortabless">
 
-                <form name="mshighlighter-form" action="options.php" method="post" enctype="multipart/form-data">
-                    <?php settings_fields( 'mshighlighter_settings_group' ); ?>
+                <form action="options.php" method="post" enctype="multipart/form-data">
+                    <?php settings_fields( MSHIGHLIGHTER_SETTINGS . '_settings_group' ); ?>
 
                     <?php
                         // Get options from the BD
-                        $options = get_option( 'mshighlighter_settings' );
-
-                        // Declare variables
-                        $example = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Code Example</title>
-</head>
-<body>
-    <h1>Code Example</h1>
-
-    <p><?php echo "Hello World!"; ?></p>
-
-    <div class="foobar">
-        This    is  an
-        example of  smart
-        tabs.
-    </div>
-
-    <p><a href="http://wordpress.org/">WordPress</a></p>
-</body>
-</html>';
+                        $options = get_option( MSHIGHLIGHTER_SETTINGS . '_settings' );
                     ?>
 
                     <div class="postbox" id="Settings">
@@ -87,24 +65,16 @@ defined('ABSPATH') or die("Restricted access!");
 
                             <table class="form-table">
 
-                                <tr>
-                                    <th>
-                                        <?php _e( 'Enable Plugin:', MSHIGHLIGHTER_TEXT ); ?>
-                                    </th>
-                                    <td>
-                                        <input type="checkbox" name="mshighlighter_settings[enable]" id="mshighlighter_settings[enable]" <?php if ( !empty($options['enable']) ) { checked( $options['enable'], "on" ); } ?> >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'>
-                                        <?php _e( 'Enable or disable this plugin.', MSHIGHLIGHTER_TEXT ); ?>
-                                    </td>
-                                </tr>
+                                <?php mshighlighter_setting( 'enable',
+                                                             __( 'Enable Plugin', MSHIGHLIGHTER_TEXT ),
+                                                             __( 'Enable or disable this plugin.', MSHIGHLIGHTER_TEXT ),
+                                                             'check'
+                                                            );
+                                ?>
 
                                 <tr>
                                     <th>
-                                        <?php _e( 'Default language:', MSHIGHLIGHTER_TEXT ); ?>
+                                        <?php _e( 'Default language', MSHIGHLIGHTER_TEXT ); ?>
                                     </th>
                                     <td>
                                         <select name="mshighlighter_settings[defaultLanguage]">
@@ -126,7 +96,7 @@ defined('ABSPATH') or die("Restricted access!");
                                                                          'Shell' => 'shell',
                                                                          'BASH' => 'bash'
                                                                          );
-                                                foreach ($defaultLanguage as $key => $value) {
+                                                foreach ( $defaultLanguage as $key => $value ) {
                                                     $selected = selected( $options['defaultLanguage'], $value );
                                                     echo '<option value="' . $value . '" id="' . $value . '"' . $selected . ' >' . $key . '</option>';
                                                 }
@@ -143,7 +113,7 @@ defined('ABSPATH') or die("Restricted access!");
 
                                 <tr>
                                     <th>
-                                        <?php _e( 'Color theme:', MSHIGHLIGHTER_TEXT ); ?>
+                                        <?php _e( 'Color theme', MSHIGHLIGHTER_TEXT ); ?>
                                     </th>
                                     <td>
                                         <select name="mshighlighter_settings[theme]">
@@ -186,7 +156,7 @@ defined('ABSPATH') or die("Restricted access!");
                                                                 'xq-light',
                                                                 'zenburn'
                                                                 );
-                                                foreach ($themes as $option) {
+                                                foreach ( $themes as $option ) {
                                                     $selected = selected( $options['theme'], $option );
                                                     echo '<option value="' . $option . '" id="' . $option . '"' . $selected . ' >' . $option . '</option>';
                                                 }
@@ -201,67 +171,51 @@ defined('ABSPATH') or die("Restricted access!");
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <th>
-                                        <?php _e( 'Display line numbers:', MSHIGHLIGHTER_TEXT ); ?>
-                                    </th>
-                                    <td>
-                                        <input type="checkbox" name="mshighlighter_settings[line_numbers]" id="mshighlighter_settings[line_numbers]" class="" <?php if ( !empty($options['line_numbers']) ) { checked( $options['line_numbers'], "on" ); } ?> >
-                                    </td>
-                                </tr>
+                                <?php mshighlighter_setting( 'line_numbers',
+                                                             __( 'Display line numbers', MSHIGHLIGHTER_TEXT ),
+                                                             '',
+                                                             'check'
+                                                            );
+                                ?>
 
-                                <tr>
-                                    <th>
-                                        <?php _e( 'First line number:', MSHIGHLIGHTER_TEXT ); ?>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="mshighlighter_settings[first_line_number]" id="mshighlighter_settings[first_line_number]" size="3" value="<?php if ( !empty($options['first_line_number']) ) { echo $options['first_line_number']; } else { echo "0"; } ?>" >
-                                    </td>
-                                </tr>
+                                <?php mshighlighter_setting( 'first_line_number',
+                                                             __( 'First line number', MSHIGHLIGHTER_TEXT ),
+                                                             '',
+                                                             'field',
+                                                             '0',
+                                                             '2'
+                                                            );
+                                ?>
 
-                                <tr>
-                                    <th>
-                                        <?php _e( 'The width of Tab:', MSHIGHLIGHTER_TEXT ); ?>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="mshighlighter_settings[tab_size]" id="mshighlighter_settings[tab_size]" size="1" value="<?php if ( !empty($options['tab_size']) ) { echo $options['tab_size']; } else { echo "4"; } ?>" >
-                                    </td>
-                                </tr>
+                                <?php mshighlighter_setting( 'tab_size',
+                                                             __( 'The width of Tab', MSHIGHLIGHTER_TEXT ),
+                                                             '',
+                                                             'field',
+                                                             '4',
+                                                             '2'
+                                                            );
+                                ?>
 
-                                <tr>
-                                    <th>
-                                        <?php _e( 'Automatic height of code block:', MSHIGHLIGHTER_TEXT ); ?>
-                                    </th>
-                                    <td>
-                                        <input type="checkbox" name="mshighlighter_settings[automatic_height]" id="mshighlighter_settings[automatic_height]" class="" <?php if ( !empty($options['automatic_height']) ) { checked( $options['automatic_height'], "on" ); } ?> >
-                                    </td>
-                                </tr>
+                                <?php mshighlighter_setting( 'automatic_height',
+                                                             __( 'Automatic height of code block', MSHIGHLIGHTER_TEXT ),
+                                                             __( 'ON - Automatic height. OFF - Fixed height, with scrollbar.', MSHIGHLIGHTER_TEXT ),
+                                                             'check'
+                                                            );
+                                ?>
 
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'>
-                                        <?php _e( 'ON - Automatic height. OFF - Fixed height, with scrollbar.', MSHIGHLIGHTER_TEXT ); ?>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <th>
-                                        <?php _e( 'The height of code block:', MSHIGHLIGHTER_TEXT ); ?>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="mshighlighter_settings[block_height]" id="mshighlighter_settings[block_height]" size="4" value="<?php if ( !empty($options['block_height']) ) { echo $options['block_height']; } else { echo "300"; } ?>" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'>
-                                        <?php _e( 'The height (in pixels) of code block. Default is 300px.', MSHIGHLIGHTER_TEXT ); ?>
-                                    </td>
-                                </tr>
-
+                                <?php mshighlighter_setting( 'block_height',
+                                                             __( 'The height of code block', MSHIGHLIGHTER_TEXT ),
+                                                             __( 'The height (in pixels) of code block. Default is 300px.', MSHIGHLIGHTER_TEXT ),
+                                                             'field',
+                                                             '300',
+                                                             '4'
+                                                         );
+                                ?>
 
                             </table>
+
                             <?php submit_button( __( 'Save Changes', MSHIGHLIGHTER_TEXT ), 'primary', 'submit', true ); ?>
+
                         </div>
                     </div>
 
@@ -269,12 +223,35 @@ defined('ABSPATH') or die("Restricted access!");
                         <h3 class="title"><?php _e( 'Preview', MSHIGHLIGHTER_TEXT ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'Click the "Save Changes" button to update this preview.', MSHIGHLIGHTER_TEXT ); ?></p>
+                            <?php
+                                // Put the example in a variable
+                                $example = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Code Example</title>
+</head>
+<body>
+    <h1>Code Example</h1>
+    
+    <p><?php echo "Hello World!"; ?></p>
+
+    <div class="foobar">
+        This    is  an
+        example of  smart
+        tabs.
+    </div>
+
+    <p><a href="http://wordpress.org/">WordPress</a></p>
+</body>
+</html>';
+                            ?>
                             <textarea readonly id="mshighlighter" class="mshighlighter" language="html" name="mshighlighter"><?php echo $example; ?></textarea>
                             <p><?php _e( 'This is an example of HTML language.', MSHIGHLIGHTER_TEXT ); ?></p>
                         </div>
                     </div>
 
-                    <div id="support-addition" class="postbox">
+                    <div class="postbox" id="support-addition">
                         <h3 class="title"><?php _e( 'Support', MSHIGHLIGHTER_TEXT ); ?></h3>
                         <div class="inside">
                             <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', MSHIGHLIGHTER_TEXT ); ?></p>

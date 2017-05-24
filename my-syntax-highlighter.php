@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0.2
+ * Version: 2.1
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -50,19 +50,23 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Define global constants
  *
- * @since 1.4
+ * @since 2.1
  */
-defined('MSHIGHLIGHTER_DIR') or define('MSHIGHLIGHTER_DIR', dirname(plugin_basename(__FILE__)));
-defined('MSHIGHLIGHTER_BASE') or define('MSHIGHLIGHTER_BASE', plugin_basename(__FILE__));
-defined('MSHIGHLIGHTER_URL') or define('MSHIGHLIGHTER_URL', plugin_dir_url(__FILE__));
-defined('MSHIGHLIGHTER_PATH') or define('MSHIGHLIGHTER_PATH', plugin_dir_path(__FILE__));
-defined('MSHIGHLIGHTER_TEXT') or define('MSHIGHLIGHTER_TEXT', 'my-syntax-highlighter');
-defined('MSHIGHLIGHTER_VERSION') or define('MSHIGHLIGHTER_VERSION', '2.0.2');
+defined( 'MSHIGHLIGHTER_DIR' ) or define( 'MSHIGHLIGHTER_DIR', dirname( plugin_basename( __FILE__ ) ) );
+defined( 'MSHIGHLIGHTER_BASE' ) or define( 'MSHIGHLIGHTER_BASE', plugin_basename( __FILE__ ) );
+defined( 'MSHIGHLIGHTER_URL' ) or define( 'MSHIGHLIGHTER_URL', plugin_dir_url( __FILE__ ) );
+defined( 'MSHIGHLIGHTER_PATH' ) or define( 'MSHIGHLIGHTER_PATH', plugin_dir_path( __FILE__ ) );
+defined( 'MSHIGHLIGHTER_TEXT' ) or define( 'MSHIGHLIGHTER_TEXT', 'my-syntax-highlighter' );
+defined( 'MSHIGHLIGHTER_SLUG' ) or define( 'MSHIGHLIGHTER_SLUG', 'my-syntax-highlighter' );
+defined( 'MSHIGHLIGHTER_PREFIX' ) or define( 'MSHIGHLIGHTER_PREFIX', 'mshighlighter' );
+defined( 'MSHIGHLIGHTER_SETTINGS' ) or define( 'MSHIGHLIGHTER_SETTINGS', 'mshighlighter' );
+defined( 'MSHIGHLIGHTER_NAME' ) or define( 'MSHIGHLIGHTER_NAME', 'My Syntax Highlighter' );
+defined( 'MSHIGHLIGHTER_VERSION' ) or define( 'MSHIGHLIGHTER_VERSION', get_file_data( __FILE__, array( 'Version' ) ) );
 
 /**
  * Load the plugin modules

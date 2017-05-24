@@ -5,14 +5,14 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Delete options on uninstall
  *
- * @since 0.1
+ * @since 2.1
  */
 function mshighlighter_uninstall() {
-    delete_option( 'mshighlighter_settings' );
+    delete_option( MSHIGHLIGHTER_SETTINGS . '_settings' );
 }
-register_uninstall_hook( __FILE__, 'mshighlighter_uninstall' );
+register_uninstall_hook( __FILE__, MSHIGHLIGHTER_PREFIX . '_uninstall' );
