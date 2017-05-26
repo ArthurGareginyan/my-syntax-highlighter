@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 2.1
+ * @since 2.2
  */
 ?>
     <!-- SIDEBAR -->
@@ -54,7 +54,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <?php settings_fields( MSHIGHLIGHTER_SETTINGS . '_settings_group' ); ?>
 
                     <?php
-                        // Get options from the BD
+                        // Get options from the database
                         $options = get_option( MSHIGHLIGHTER_SETTINGS . '_settings' );
                     ?>
 
