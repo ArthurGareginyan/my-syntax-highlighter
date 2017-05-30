@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       2.0
+ * @since       2.3
  */
 
 
@@ -437,4 +437,8 @@ textarea,
 .CodeMirror {
     border: 1px solid #e0e0e0;
     border-radius: 3px;
+}
+
+.CodeMirror-linenumber {
+    text-align: center !important;
 }

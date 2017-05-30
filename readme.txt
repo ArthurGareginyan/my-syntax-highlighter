@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.7
-Stable tag: 2.2
+Stable tag: 2.3
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -35,6 +35,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Standalone Shortcode-Processor
 * Syntax highlighting (by CodeMirror)
 * Line numbering
+* Dollar sign before line
 * 36 Themes
 * 14 Languages
 * 16 Shortcodes
@@ -225,6 +226,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.3 =
+* Added option for adding dollar sign before every code line.
+* Numbers of lines centered.
 
 = 2.2 =
 * Compatibility with PHP version 5.2 improved.

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2017-05-24 05:56+0300\n"
-"PO-Revision-Date: 2017-05-24 05:56+0300\n"
+"POT-Creation-Date: 2017-05-29 18:46+0300\n"
+"PO-Revision-Date: 2017-05-29 18:47+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -68,7 +68,7 @@ msgid "Author"
 msgstr "Автор"
 
 #: inc/php/page.php:44 inc/php/page.php:179 inc/php/settings.php:28
-#: inc/php/settings.php:253
+#: inc/php/settings.php:262
 msgid "Support"
 msgstr "Поддержка"
 
@@ -121,10 +121,13 @@ msgid ""
 "To avoid problems, edit posts that contain your source code only in Text/"
 "HTML mode."
 msgstr ""
+"Что бы избежать проблем редактируйте записи которые содержат ваш исходный "
+"код только в режиме Text/HTML."
 
 #: inc/php/page.php:79
 msgid "Enjoy the fancy syntax highlighting on your website."
 msgstr ""
+"Наслаждайтесь результатом модной подсветки синтаксиса на вашем веб-сайте."
 
 #: inc/php/page.php:79
 msgid "It's that simple!"
@@ -284,7 +287,7 @@ msgstr ""
 "Легко публикуйте подсвеченный код без потери его форматирования или внесения "
 "каких-либо изменений вручную. Поддержка множества языков, шорткодов и тем."
 
-#: inc/php/settings.php:30 inc/php/settings.php:255
+#: inc/php/settings.php:30 inc/php/settings.php:264
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
@@ -294,11 +297,11 @@ msgstr ""
 "вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
 "создание программ для людей как вы."
 
-#: inc/php/settings.php:31 inc/php/settings.php:256
+#: inc/php/settings.php:31 inc/php/settings.php:265
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:32 inc/php/settings.php:257
+#: inc/php/settings.php:32 inc/php/settings.php:266
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
@@ -320,7 +323,7 @@ msgstr "Здесь вы можете настроить этот плагин."
 
 #: inc/php/settings.php:69
 msgid "Enable Plugin"
-msgstr ""
+msgstr "Включить плагин"
 
 #: inc/php/settings.php:70
 msgid "Enable or disable this plugin."
@@ -328,7 +331,7 @@ msgstr "Включить или выключить этот плагин."
 
 #: inc/php/settings.php:77
 msgid "Default language"
-msgstr ""
+msgstr "Язык по-умолчанию:"
 
 #: inc/php/settings.php:110
 msgid ""
@@ -340,7 +343,7 @@ msgstr ""
 
 #: inc/php/settings.php:116
 msgid "Color theme"
-msgstr ""
+msgstr "Цветовая схема"
 
 #: inc/php/settings.php:170
 msgid "Theme which you like to view."
@@ -348,48 +351,56 @@ msgstr "Тема, которую вы хотите использовать."
 
 #: inc/php/settings.php:175
 msgid "Display line numbers"
-msgstr ""
+msgstr "Отображать номера строк"
 
 #: inc/php/settings.php:182
 msgid "First line number"
-msgstr ""
+msgstr "Номер первой строки"
 
 #: inc/php/settings.php:191
-msgid "The width of Tab"
-msgstr ""
+msgid "Display dollar sign ($)"
+msgstr "Отображать знак доллара ($)"
 
-#: inc/php/settings.php:200
+#: inc/php/settings.php:192
+msgid "Display the dollar sign ($) before every code line."
+msgstr "Отображать знак доллара ($) перед каждой строкой с кодом."
+
+#: inc/php/settings.php:198
 msgid "Automatic height of code block"
-msgstr ""
+msgstr "Автоматическая высота блока кода"
 
-#: inc/php/settings.php:201
+#: inc/php/settings.php:199
 msgid "ON - Automatic height. OFF - Fixed height, with scrollbar."
 msgstr ""
 "ON - Автоматическая высота. OFF - Фиксированная высота, с ползунком "
 "прокрутки."
 
-#: inc/php/settings.php:207
+#: inc/php/settings.php:205
 msgid "The height of code block"
-msgstr ""
+msgstr "Высота блока кода"
 
-#: inc/php/settings.php:208
+#: inc/php/settings.php:206
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr "Высота (в пикселях) блока кода. Значение по умолчанию — 300px."
 
-#: inc/php/settings.php:216
+#: inc/php/settings.php:214
+msgid "The width of Tab"
+msgstr "Ширина Таба"
+
+#: inc/php/settings.php:224
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/php/settings.php:221
+#: inc/php/settings.php:230
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/php/settings.php:223
+#: inc/php/settings.php:232
 msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 "Нажмите кнопку «Сохранить изменения», чтобы обновить этот пред. просмотр."
 
-#: inc/php/settings.php:248
+#: inc/php/settings.php:257
 msgid "This is an example of HTML language."
 msgstr "Это пример HTML языка."
 
@@ -408,6 +419,9 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr "http://www.arthurgareginyan.com"
+
+#~ msgid "Display the dollar sign ($) in the beginning of every line."
+#~ msgstr "Отображать знак доллара ($) в начале каждой строки."
 
 #~ msgid "Enable Plugin:"
 #~ msgstr "Включить плагин:"

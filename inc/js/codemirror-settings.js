@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       2.0
+ * @since       2.3
  */
 
 
@@ -17,6 +17,7 @@ jQuery(document).ready(function($) {
     var theme = mshighlighter_scriptParams["theme"];
     var line_numbers = ( mshighlighter_scriptParams["line_numbers"] == 'true' );
     var first_line_number = parseInt( mshighlighter_scriptParams["first_line_number"] );
+    var dollar_sign = mshighlighter_scriptParams["dollar_sign"];
     var tab_size = parseInt( mshighlighter_scriptParams["tab_size"] );
 
     // Find all textareas on page
@@ -90,5 +91,14 @@ jQuery(document).ready(function($) {
         editor.refresh();
 
     });
+
+    // Replace line numbers with dollar sign
+    if ( dollar_sign == 'true' ) {
+        $(".CodeMirror-linenumber").each(function() {
+            var number = $(this).text();
+            var dollar = number.replace(/[0-9]+/, "$");
+            $(this).text(dollar);
+        });
+    }
 
 });

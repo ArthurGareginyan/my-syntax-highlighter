@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 2.2
+ * @since 2.3
  */
 ?>
     <!-- SIDEBAR -->
@@ -187,12 +187,10 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                             );
                                 ?>
 
-                                <?php mshighlighter_setting( 'tab_size',
-                                                             __( 'The width of Tab', MSHIGHLIGHTER_TEXT ),
-                                                             '',
-                                                             'field',
-                                                             '4',
-                                                             '2'
+                                <?php mshighlighter_setting( 'dollar_sign',
+                                                             __( 'Display dollar sign ($)', MSHIGHLIGHTER_TEXT ),
+                                                             __( 'Display the dollar sign ($) before every code line.', MSHIGHLIGHTER_TEXT ),
+                                                             'check'
                                                             );
                                 ?>
 
@@ -210,6 +208,15 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                              '300',
                                                              '4'
                                                          );
+                                ?>
+
+                                <?php mshighlighter_setting( 'tab_size',
+                                                             __( 'The width of Tab', MSHIGHLIGHTER_TEXT ),
+                                                             '',
+                                                             'field',
+                                                             '4',
+                                                             '2'
+                                                            );
                                 ?>
 
                             </table>

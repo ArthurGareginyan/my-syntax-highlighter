@@ -20,6 +20,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Standalone Shortcode-Processor
 * Syntax highlighting (by CodeMirror)
 * Line numbering
+* Dollar sign before line
 * 36 Themes
 * 14 Languages
 * 16 Shortcodes

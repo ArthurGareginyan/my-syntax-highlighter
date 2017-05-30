@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2017-05-24 05:55+0300\n"
+"POT-Creation-Date: 2017-05-29 18:46+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: inc/php/page.php:44 inc/php/page.php:179 inc/php/settings.php:28 inc/php/settings.php:253
+#: inc/php/page.php:44 inc/php/page.php:179 inc/php/settings.php:28 inc/php/settings.php:262
 msgid "Support"
 msgstr ""
 
@@ -250,17 +250,17 @@ msgid ""
 "Supporting multiple languages, shortcodes and themes."
 msgstr ""
 
-#: inc/php/settings.php:30 inc/php/settings.php:255
+#: inc/php/settings.php:30 inc/php/settings.php:264
 msgid ""
 "I'm an independent developer, without a regular income, so every little contribution helps cover my "
 "costs and lets me spend more time building things for people like you to enjoy."
 msgstr ""
 
-#: inc/php/settings.php:31 inc/php/settings.php:256
+#: inc/php/settings.php:31 inc/php/settings.php:265
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:32 inc/php/settings.php:257
+#: inc/php/settings.php:32 inc/php/settings.php:266
 msgid "Thanks for your support!"
 msgstr ""
 
@@ -314,38 +314,46 @@ msgid "First line number"
 msgstr ""
 
 #: inc/php/settings.php:191
-msgid "The width of Tab"
+msgid "Display dollar sign ($)"
 msgstr ""
 
-#: inc/php/settings.php:200
+#: inc/php/settings.php:192
+msgid "Display the dollar sign ($) before every code line."
+msgstr ""
+
+#: inc/php/settings.php:198
 msgid "Automatic height of code block"
 msgstr ""
 
-#: inc/php/settings.php:201
+#: inc/php/settings.php:199
 msgid "ON - Automatic height. OFF - Fixed height, with scrollbar."
 msgstr ""
 
-#: inc/php/settings.php:207
+#: inc/php/settings.php:205
 msgid "The height of code block"
 msgstr ""
 
-#: inc/php/settings.php:208
+#: inc/php/settings.php:206
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr ""
 
-#: inc/php/settings.php:216
+#: inc/php/settings.php:214
+msgid "The width of Tab"
+msgstr ""
+
+#: inc/php/settings.php:224
 msgid "Save Changes"
 msgstr ""
 
-#: inc/php/settings.php:221
+#: inc/php/settings.php:230
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings.php:223
+#: inc/php/settings.php:232
 msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/settings.php:248
+#: inc/php/settings.php:257
 msgid "This is an example of HTML language."
 msgstr ""
 

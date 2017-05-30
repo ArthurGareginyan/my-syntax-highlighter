@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Base for the _load_scripts hook
  *
- * @since 2.1
+ * @since 2.3
  */
 function mshighlighter_load_scripts_base( $options ) {
 
@@ -40,13 +40,15 @@ function mshighlighter_load_scripts_base( $options ) {
 
     // Dynamic JS. Create JS object and injected it into the JS file
     if ( !empty( $options['theme'] ) ) { $theme = $options['theme']; } else { $theme = "default"; }
-    if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) { $line_numbers = "true"; } else { $line_numbers = "false"; }
+    if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) || !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) { $line_numbers = "true"; } else { $line_numbers = "false"; }
     if ( !empty( $options['first_line_number'] ) ) { $first_line_number = $options['first_line_number']; } else { $first_line_number = "0"; }
+    if ( !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) { $dollar_sign = "true"; } else { $dollar_sign = "false"; }
     if ( !empty( $options['tab_size'] ) ) { $tab_size = $options['tab_size']; } else { $tab_size = "4"; }
     $script_params = array(
                            'theme' => $theme,
                            'line_numbers' => $line_numbers,
                            'first_line_number' => $first_line_number,
+                           'dollar_sign' => $dollar_sign,
                            'tab_size' => $tab_size,
                            );
     wp_localize_script( MSHIGHLIGHTER_PREFIX . '-codemirror-settings-js', MSHIGHLIGHTER_PREFIX . '_scriptParams', $script_params );

@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       2.0.1
+ * @since       2.3
  */
 
 
@@ -24,4 +24,8 @@
 .my-syntax-highlighter .CodeMirror pre {
     height: 24px;
     margin: 0 !important;
+}
+
+.my-syntax-highlighter .CodeMirror-linenumber {
+    text-align: center;
 }
