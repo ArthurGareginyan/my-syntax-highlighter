@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 2.3
+ * @since 2.4
  */
 ?>
     <!-- SIDEBAR -->
@@ -21,6 +21,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <h3 class="title"><?php _e( 'About', MSHIGHLIGHTER_TEXT ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'Simple post syntax-highlighted code without losing it\'s formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.', MSHIGHLIGHTER_TEXT ); ?></p>
+                    <p class="version"><?php _e( 'Version', MSHIGHLIGHTER_TEXT ); ?> <?php echo MSHIGHLIGHTER_VERSION; ?></p>
                 </div>
             </div>
 

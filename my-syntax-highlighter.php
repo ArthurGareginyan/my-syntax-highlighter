@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.3
+ * Version: 2.4
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -79,7 +79,7 @@ mshighlighter_define_constants( 'SETTINGS', 'mshighlighter' );
  */
 require_once( MSHIGHLIGHTER_PATH . 'inc/php/core.php' );
 require_once( MSHIGHLIGHTER_PATH . 'inc/php/upgrade.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/version.php' );
+require_once( MSHIGHLIGHTER_PATH . 'inc/php/versioning.php' );
 require_once( MSHIGHLIGHTER_PATH . 'inc/php/enqueue.php' );
 require_once( MSHIGHLIGHTER_PATH . 'inc/php/functional.php' );
 require_once( MSHIGHLIGHTER_PATH . 'inc/php/page.php' );
