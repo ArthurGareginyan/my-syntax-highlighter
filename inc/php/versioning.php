@@ -18,6 +18,7 @@ function mshighlighter_versioning() {
     //                       SETTING VARIABLES                       //
     ///////////////////////////////////////////////////////////////////
 
+    // Put value of constants to variables for easier access
     $version_files = MSHIGHLIGHTER_VERSION;
     $settings = MSHIGHLIGHTER_SETTINGS;
 

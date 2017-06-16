@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2017-06-04 20:37+0300\n"
+"POT-Creation-Date: 2017-06-16 03:35+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,12 +14,12 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: my-syntax-highlighter.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;"
-"esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/php/core.php:31 inc/php/page.php:40
+#: inc/php/core.php:31 inc/php/page.php:47
 msgid "Settings"
 msgstr ""
 
@@ -48,195 +48,209 @@ msgstr ""
 msgid "Please update the plugin to the latest version, and all will be fine."
 msgstr ""
 
-#: inc/php/page.php:28
+#: inc/php/page.php:34
 #, php-format
 msgid "by %s Arthur Gareginyan %s"
 msgstr ""
 
-#: inc/php/page.php:41 inc/php/page.php:60
+#: inc/php/page.php:40
+msgid "Version"
+msgstr ""
+
+#: inc/php/page.php:48 inc/php/page.php:67
 msgid "Usage"
 msgstr ""
 
-#: inc/php/page.php:42
+#: inc/php/page.php:49
 msgid "F.A.Q."
 msgstr ""
 
-#: inc/php/page.php:43 inc/php/page.php:170
+#: inc/php/page.php:50 inc/php/page.php:189
 msgid "Author"
 msgstr ""
 
-#: inc/php/page.php:44 inc/php/page.php:179 inc/php/settings.php:29 inc/php/settings.php:263
+#: inc/php/page.php:51 inc/php/page.php:198 inc/php/settings.php:28 inc/php/settings.php:261
 msgid "Support"
 msgstr ""
 
-#: inc/php/page.php:45
+#: inc/php/page.php:52
 msgid "Family"
 msgstr ""
 
-#: inc/php/page.php:62
+#: inc/php/page.php:69
 msgid "To add the syntax highlighting to your code in any post, simply follow these steps:"
 msgstr ""
 
-#: inc/php/page.php:64
+#: inc/php/page.php:71
 msgid "Go to the \"Settings\" tab."
 msgstr ""
 
-#: inc/php/page.php:65
-msgid "Select the desired settings and click the \"Save Changes\" button."
+#: inc/php/page.php:72
+msgid "Select the desired settings."
 msgstr ""
 
-#: inc/php/page.php:66
+#: inc/php/page.php:73
+msgid "Click the \"Save changes\" button."
+msgstr ""
+
+#: inc/php/page.php:74
 msgid ""
-"On the WP Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the "
-"supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:"
+"On the WP Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</"
+"code> that is universal shortcode). Example:"
 msgstr ""
 
-#: inc/php/page.php:75
+#: inc/php/page.php:83
 msgid ""
-"In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` "
-"and `an \"example\"`, as well as ensure that the double quotes around `example` are not converted to "
-"typographic (curly) quotes."
+"In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an \"example\"`, as well as ensure that the "
+"double quotes around `example` are not converted to typographic (curly) quotes."
 msgstr ""
 
-#: inc/php/page.php:76
+#: inc/php/page.php:84
 msgid "You can use shortcodes such as:"
 msgstr ""
 
-#: inc/php/page.php:78 inc/php/page.php:81
+#: inc/php/page.php:86 inc/php/page.php:89
 msgid "Note!"
 msgstr ""
 
-#: inc/php/page.php:78
+#: inc/php/page.php:86
 msgid "To avoid problems, edit posts that contain your source code only in Text/HTML mode."
 msgstr ""
 
-#: inc/php/page.php:79
+#: inc/php/page.php:87
 msgid "Enjoy the fancy syntax highlighting on your website."
 msgstr ""
 
-#: inc/php/page.php:79
+#: inc/php/page.php:87
 msgid "It's that simple!"
 msgstr ""
 
-#: inc/php/page.php:81
+#: inc/php/page.php:89
 msgid "If you want more options then tell me and I will be happy to add it."
 msgstr ""
 
-#: inc/php/page.php:90
+#: inc/php/page.php:98
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: inc/php/page.php:112
+#: inc/php/page.php:102
+msgid "If you have a question, please read the Frequently Asked Questions below to see if the answer is here."
+msgstr ""
+
+#: inc/php/page.php:124
 msgid "Will this plugin work on my WordPress.COM website?"
 msgstr ""
 
-#: inc/php/page.php:113
+#: inc/php/page.php:125
 msgid "Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites."
 msgstr ""
 
-#: inc/php/page.php:115
+#: inc/php/page.php:127
 msgid "Can I use this plugin on my language?"
 msgstr ""
 
-#: inc/php/page.php:117
+#: inc/php/page.php:129
 #, php-format
 msgid ""
-"Yes. But If your language is not available then you can make one. This plugin is ready for translation. "
-"The<code>.pot</code>file is included and placed in the <code>languages</code> folder. Many of plugin "
-"users would be delighted if you shared your translation with the community. Just send the translation "
-"files (<code>*.po, *.mo</code>) to me at the %s and I will include the translation within the next "
-"plugin update."
-msgstr ""
-
-#: inc/php/page.php:122
-msgid "How does it work?"
-msgstr ""
-
-#: inc/php/page.php:123
-msgid ""
-"On the \"Settings\" tab, select the desired settings and click the \"Save Changes\" button. Enjoy the "
-"fancy syntax highlighting on your website. It's that simple!"
-msgstr ""
-
-#: inc/php/page.php:125
-msgid "Does this plugin requires any modification of the theme?"
-msgstr ""
-
-#: inc/php/page.php:126
-msgid "Absolutely not. This plugin is configurable entirely from the plugin settings page."
-msgstr ""
-
-#: inc/php/page.php:128
-msgid "Does this require any knowledge of HTML or CSS?"
-msgstr ""
-
-#: inc/php/page.php:129
-msgid ""
-"Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use "
-"plugin settings page."
-msgstr ""
-
-#: inc/php/page.php:131
-msgid "It's not working. What could be wrong?"
-msgstr ""
-
-#: inc/php/page.php:132
-msgid ""
-"As with every plugin, it's possible that things don't work. The most common reason for this is a web "
-"browser's cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to "
-"reduce bandwidth usage and server load. This is called the browser's cache.​ Clearing your browser's "
-"cache may solve the problem."
+"Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. "
+"The POT file is included and placed in the <code>languages</code> folder. Just send the PO file to me at the %s and I will include this translation within the "
+"next plugin update. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!"
 msgstr ""
 
 #: inc/php/page.php:133
-msgid ""
-"It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's "
-"support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as "
-"much information as possible, including a link to your website where the problem can be seen."
+msgid "Maybe not all existed translations are up to date. You are welcome to contribute corrections!"
 msgstr ""
 
 #: inc/php/page.php:135
-msgid ""
-"The last WordPress update is preventing me from editing my website that is using this plugin. Why is "
-"this?"
+msgid "How does it work?"
 msgstr ""
 
 #: inc/php/page.php:136
 msgid ""
-"This plugin can not cause such problem. More likely, the problem are related to the settings of the "
-"website. It could just be a cache, so please try to clear your website's cache (may be you using a "
-"caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser. Also "
-"please try to re-login to the website, this too can help."
+"On the \"Settings\" tab, select the desired settings and click the \"Save changes\" button. Enjoy the fancy syntax highlighting on your website. It's that "
+"simple!"
 msgstr ""
 
 #: inc/php/page.php:138
+msgid "Does this plugin requires any modification of the theme?"
+msgstr ""
+
+#: inc/php/page.php:139
+msgid "Absolutely not. This plugin is configurable entirely from the plugin settings page."
+msgstr ""
+
+#: inc/php/page.php:141
+msgid "Does this require any knowledge of HTML or CSS?"
+msgstr ""
+
+#: inc/php/page.php:142
+msgid "Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings page."
+msgstr ""
+
+#: inc/php/page.php:144
+msgid "It's not working. What could be wrong?"
+msgstr ""
+
+#: inc/php/page.php:145
+msgid ""
+"As with every plugin, it's possible that things don't work. The most common reason for this is a web browser's cache. Every web browser stores a cache of the "
+"websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser's cache.​ Clearing your browser's cache may "
+"solve the problem."
+msgstr ""
+
+#: inc/php/page.php:146
+msgid ""
+"It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, I'd be happy to give it "
+"a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen."
+msgstr ""
+
+#: inc/php/page.php:148
+msgid "The last WordPress update is preventing me from editing my website that is using this plugin. Why is this?"
+msgstr ""
+
+#: inc/php/page.php:149
+msgid ""
+"This plugin can not cause such problem. More likely, the problem are related to the settings of the website. It could just be a cache, so please try to clear "
+"your website's cache (may be you using a caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser. Also please try "
+"to re-login to the website, this too can help."
+msgstr ""
+
+#: inc/php/page.php:151
 msgid "Where to report bug if found?"
 msgstr ""
 
-#: inc/php/page.php:140
+#: inc/php/page.php:153
 #, php-format
 msgid "Please visit the %s Dedicated Plugin Page on GitHub %s and report."
 msgstr ""
 
-#: inc/php/page.php:146
+#: inc/php/page.php:159
 msgid "Where to share any ideas or suggestions to make the plugin better?"
 msgstr ""
 
-#: inc/php/page.php:148
+#: inc/php/page.php:161
 #, php-format
-msgid ""
-"Any suggestions are very welcome! Please send me an email to %s arthurgareginyan@gmail.com %s. Thank you!"
+msgid "Any suggestions are very welcome! Please send me an email to %s. Thank you!"
 msgstr ""
 
-#: inc/php/page.php:154
+#: inc/php/page.php:166
 msgid "I love this plugin! Can I help somehow?"
 msgstr ""
 
-#: inc/php/page.php:156
+#: inc/php/page.php:168
+#, php-format
+msgid "Yes, any financial contributions are welcome! Just visit %s my website %s, click on the donate button, and thank you!"
+msgstr ""
+
+#: inc/php/page.php:174
+msgid "My question wasn't answered here."
+msgstr ""
+
+#: inc/php/page.php:176
 #, php-format
 msgid ""
-"Yes, any financial contributions are welcome! Just visit %s my website %s, click on the donate button, "
-"and thank you!"
+"You can ask your question on the plugin support page %s. But please keep in mind that this plugin is free, and there is no a special support team, so I have "
+"no way to answer everyone."
 msgstr ""
 
 #: inc/php/settings.php:21
@@ -245,119 +259,112 @@ msgstr ""
 
 #. Description of the plugin/theme
 #: inc/php/settings.php:23
+msgid "Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes."
+msgstr ""
+
+#: inc/php/settings.php:30 inc/php/settings.php:263
 msgid ""
-"Simple post syntax-highlighted code without losing it's formatting or making any manual changes. "
-"Supporting multiple languages, shortcodes and themes."
+"I'm an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for "
+"people like you to enjoy."
 msgstr ""
 
-#: inc/php/settings.php:24
-msgid "Version"
-msgstr ""
-
-#: inc/php/settings.php:31 inc/php/settings.php:265
-msgid ""
-"I'm an independent developer, without a regular income, so every little contribution helps cover my "
-"costs and lets me spend more time building things for people like you to enjoy."
-msgstr ""
-
-#: inc/php/settings.php:32 inc/php/settings.php:266
+#: inc/php/settings.php:31 inc/php/settings.php:264
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:33 inc/php/settings.php:267
+#: inc/php/settings.php:32 inc/php/settings.php:265
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/php/settings.php:38
+#: inc/php/settings.php:37
 msgid "Help"
 msgstr ""
 
-#: inc/php/settings.php:40
-msgid "Got something to say? Need help?"
+#: inc/php/settings.php:39
+msgid "If you have a question, please read the information in the FAQ section."
 msgstr ""
 
-#: inc/php/settings.php:63
+#: inc/php/settings.php:61
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings.php:65
+#: inc/php/settings.php:63
 msgid "There you can configure this plugin."
 msgstr ""
 
-#: inc/php/settings.php:70
+#: inc/php/settings.php:68
 msgid "Enable Plugin"
 msgstr ""
 
-#: inc/php/settings.php:71
+#: inc/php/settings.php:69
 msgid "Enable or disable this plugin."
 msgstr ""
 
-#: inc/php/settings.php:78
+#: inc/php/settings.php:76
 msgid "Default language"
 msgstr ""
 
-#: inc/php/settings.php:111
-msgid ""
-"Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting."
+#: inc/php/settings.php:109
+msgid "Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting."
 msgstr ""
 
-#: inc/php/settings.php:117
+#: inc/php/settings.php:115
 msgid "Color theme"
 msgstr ""
 
-#: inc/php/settings.php:171
+#: inc/php/settings.php:169
 msgid "Theme which you like to view."
 msgstr ""
 
-#: inc/php/settings.php:176
+#: inc/php/settings.php:174
 msgid "Display line numbers"
 msgstr ""
 
-#: inc/php/settings.php:183
+#: inc/php/settings.php:181
 msgid "First line number"
 msgstr ""
 
-#: inc/php/settings.php:192
+#: inc/php/settings.php:190
 msgid "Display dollar sign ($)"
 msgstr ""
 
-#: inc/php/settings.php:193
+#: inc/php/settings.php:191
 msgid "Display the dollar sign ($) before every code line."
 msgstr ""
 
-#: inc/php/settings.php:199
+#: inc/php/settings.php:197
 msgid "Automatic height of code block"
 msgstr ""
 
-#: inc/php/settings.php:200
+#: inc/php/settings.php:198
 msgid "ON - Automatic height. OFF - Fixed height, with scrollbar."
 msgstr ""
 
-#: inc/php/settings.php:206
+#: inc/php/settings.php:204
 msgid "The height of code block"
 msgstr ""
 
-#: inc/php/settings.php:207
+#: inc/php/settings.php:205
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr ""
 
-#: inc/php/settings.php:215
+#: inc/php/settings.php:213
 msgid "The width of Tab"
 msgstr ""
 
-#: inc/php/settings.php:225
-msgid "Save Changes"
+#: inc/php/settings.php:223
+msgid "Save changes"
 msgstr ""
 
-#: inc/php/settings.php:231
+#: inc/php/settings.php:229
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings.php:233
-msgid "Click the \"Save Changes\" button to update this preview."
+#: inc/php/settings.php:231
+msgid "Click the \"Save changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/settings.php:258
+#: inc/php/settings.php:256
 msgid "This is an example of HTML language."
 msgstr ""
 

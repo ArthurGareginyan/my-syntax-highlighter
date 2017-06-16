@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 2.4
+Stable tag: 2.5
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -123,10 +123,14 @@ Click to view language examples. Highlighted with Default theme.
 
 = Translation =
 
+This plugin is ready for translation and has already been translated into several languages.
+
 * English (default)
 * Russian
 
-If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter) page.
+Maybe not all existed translations are up to date. You are welcome to contribute corrections!
+
+If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
 
 >**Contribution**
 >
@@ -155,9 +159,9 @@ Manually via FTP access:
 4. Log into Admin Panel of your WordPress website.
 5. Activate this plugin through the "`Plugins`" tab.
 
-After installation, a "`Syntax Highlighter`" menu item will appear in the "`Settings`" section. Click on this in order to view plugin's administration page.
+After installation and activation, the "`Syntax Highlighter`" menu item will appear in the "`Settings`" section of Admin Panel. Click on it in order to view the plugin settings page.
 
-[More help installing Plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
+[More help installing plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
 
 == Frequently Asked Questions ==
@@ -165,10 +169,10 @@ After installation, a "`Syntax Highlighter`" menu item will appear in the "`Sett
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
 
 = Q. Can I use this plugin on my language? =
-A. Yes. But If your language is not available then you can make one. This plugin is ready for translation. The `.pot` file is included and placed in the "`languages`" folder. Many of plugin users would be delighted if you shared your translation with the community. Just send the translation files (`*.po, *.mo`) to me at the arthurgareginyan@gmail.com and I will include the translation within the next plugin update.
+A. Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. The POT file is included and placed in the "`languages`" folder. Just send the PO file to me at the arthurgareginyan@gmail.com and I will include this translation within the next plugin update. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
 
 = Q. How does it work? =
-A. Simply go to the plugin settings page, select the desired settings and click the "Save Changes" button. Enjoy the fancy syntax highlighting on your website. It's that simple!
+A. Simply go to the plugin settings page, select the desired settings and click the "Save changes" button. Enjoy the fancy syntax highlighting on your website. It's that simple!
 You can find the plugin settings page at "`WP Admin Panel`" -> "`Settings`" -> "`Syntax Highlighter`".
 
 = Q. Does this plugin requires any modification of the theme? =
@@ -226,6 +230,13 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.5 =
+* On the plugin settings page, text of buttons are corrected.
+* On the plugin settings page, the information about the plugin version number moved to header section.
+* Some mention of constants replaced with variables for easier access.
+* Content of the "Usage" tab updated.
+* Content of the "FAQ" tab updated.
 
 = 2.4 =
 * To the plugin settings page added information about the plugin version number.
