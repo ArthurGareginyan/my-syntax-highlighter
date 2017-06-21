@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 2.5
+Stable tag: 2.5.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Simple post syntax-highlighted code without losing it's formatting or making any
 
 
 == Description ==
-An easy to use, with intuitive interface WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library. If you want more options then tell me and I will be happy to add it.
+An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library. If you want more options then tell me and I will be happy to add it.
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for. 
 
@@ -128,15 +128,13 @@ This plugin is ready for translation and has already been translated into severa
 * English (default)
 * Russian
 
-Maybe not all existed translations are up to date. You are welcome to contribute corrections!
-
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
 
 >**Contribution**
 >
 >Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 >
->* [Donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
 >* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/my-syntax-highlighter?rate=5#postform) this plugin.
 >* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/my-syntax-highlighter) if you have any ideas or suggestions to make this plugin better.
 
@@ -196,7 +194,7 @@ A. Please visit the [Dedicated Plugin Page on GitHub](https://github.com/ArthurG
 A. Any suggestions are very welcome! Please send me an email to [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com). Thank you!
 
 = Q. I love this plugin! Can I help somehow? =
-A. Yes, any financial contributions are welcome! Just visit [my website](http://www.arthurgareginyan.com/donate.html), click on the donate button, and thank you!
+A. Yes, any financial contributions are welcome! Just visit [my website](https://www.arthurgareginyan.com/donate.html), click on the donate button, and thank you!
 
 
 == Screenshots ==
@@ -208,7 +206,7 @@ A. Yes, any financial contributions are welcome! Just visit [my website](http://
 
 == Other Notes ==
 
-"My Syntax Highlighter" is one of the personal software projects of [Arthur Gareginyan](http://www.arthurgareginyan.com).
+"My Syntax Highlighter" is one of the personal software projects of [Arthur Gareginyan](https://www.arthurgareginyan.com).
 
 **License**
 
@@ -217,19 +215,23 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 **Credits**
 
-* The icon of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
-* The banner of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
+* The icon of plugin is a copyrighted image created by [Arthur Gareginyan](https://www.arthurgareginyan.com). (C) All rights reserved.
+* The banner of plugin is a copyrighted image created by [Arthur Gareginyan](https://www.arthurgareginyan.com). (C) All rights reserved.
 * [CodeMirror](https://codemirror.net/) is an open-source project shared under the [MIT license](https://codemirror.net/LICENSE).
 * [Bootstrap](http://getbootstrap.com) by Twitter, Inc. released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 * [Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
 
 **Links**
 
-* [Developer Website](http://www.arthurgareginyan.com)
+* [Developer Website](https://www.arthurgareginyan.com)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/my-syntax-highlighter)
 
 
 == Changelog ==
+
+= 2.5.1 =
+* The HTTPS mixed content issue fixed by changing all links to HTTPS.
+* Content of the "FAQ" section updated.
 
 = 2.5 =
 * On the plugin settings page, text of buttons are corrected.

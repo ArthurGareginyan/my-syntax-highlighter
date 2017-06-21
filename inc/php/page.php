@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Page
  *
- * @since 2.5
+ * @since 2.5.1
  */
 function mshighlighter_render_submenu_page() {
 
@@ -32,7 +32,7 @@ function mshighlighter_render_submenu_page() {
             <span>
                 <?php printf(
                               __( 'by %s Arthur Gareginyan %s', $text ),
-                                  '<a href="http://www.arthurgareginyan.com" target="_blank">',
+                                  '<a href="https://www.arthurgareginyan.com" target="_blank">',
                                   '</a>'
                              );
                 ?>
@@ -125,12 +125,15 @@ an "example"!
                         <div class="answer-1"><?php _e( 'Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.', $text ); ?></div>
 
                         <div class="question-2"><?php _e( 'Can I use this plugin on my language?', $text ); ?></div>
-                        <div class="answer-2"><?php printf(
-                                                            __( 'Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. The POT file is included and placed in the <code>languages</code> folder. Just send the PO file to me at the %s and I will include this translation within the next plugin update. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!', $text ),
-                                                                '<a href="mailto:arthurgareginyan@gmail.com?subject=New translation of the ' . $name . ' plugin">arthurgareginyan@gmail.com</a>'
-                                                          );
+                        <div class="answer-2"><?php _e( 'Yes. This plugin is ready for translation and has already been translated into several languages.', $text ); ?><br><br>
+                                              <?php printf(
+                                                            __( 'If you want to help translate this plugin then please visit the %s. You can also use the POT file, that is included and placed in the "languages" folder, in order to create a translation PO file. Just send the PO file to me at the %s and I will include this translation within the next plugin update.', $text ),
+                                                            '<a href="https://translate.wordpress.org/projects/wp-plugins/' . $slug . '" target="_blank">translation page</a>',
+                                                            '<a href="mailto:arthurgareginyan@gmail.com?subject=New translation of the ' . $name . ' plugin">arthurgareginyan@gmail.com</a>'
+                                                           );
                                               ?><br><br>
-                                              <?php _e( 'Maybe not all existed translations are up to date. You are welcome to contribute corrections!', $text ); ?></div>
+                                              <?php _e( 'Maybe not all existed translations are up to date. You are welcome to contribute corrections!', $text ); ?><br><br>
+                                              <?php _e( 'Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!', $text ); ?></div>
 
                         <div class="question-3"><?php _e( 'How does it work?', $text ); ?></div>
                         <div class="answer-3"><?php _e( 'On the "Settings" tab, select the desired settings and click the "Save changes" button. Enjoy the fancy syntax highlighting on your website. It\'s that simple!', $text ); ?></div>
@@ -159,14 +162,14 @@ an "example"!
                         <div class="question-9"><?php _e( 'Where to share any ideas or suggestions to make the plugin better?', $text ); ?></div>
                         <div class="answer-9"><?php printf(
                                                             __( 'Any suggestions are very welcome! Please send me an email to %s. Thank you!', $text ),
-                                                                '<a href="mailto:arthurgareginyan@gmail.com?subject=Suggestions about the ' . $name . '">arthurgareginyan@gmail.com</a>'
+                                                                '<a href="mailto:arthurgareginyan@gmail.com?subject=Suggestions about the ' . $name . ' plugin">arthurgareginyan@gmail.com</a>'
                                                           );
                                               ?></div>
 
                         <div class="question-10"><?php _e( 'I love this plugin! Can I help somehow?', $text ); ?></div>
                         <div class="answer-10"><?php printf(
                                                             __( 'Yes, any financial contributions are welcome! Just visit %s my website %s, click on the donate button, and thank you!', $text ),
-                                                                '<a href="http://www.arthurgareginyan.com/donate.html" target="_blank">',
+                                                                '<a href="https://www.arthurgareginyan.com/donate.html" target="_blank">',
                                                                 '</a>'
                                                            );
                                                ?></div>
