@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Base for the _load_scripts hook
  *
- * @since 2.5
+ * @since 2.6
  */
 function mshighlighter_load_scripts_base( $options ) {
 
@@ -22,7 +22,7 @@ function mshighlighter_load_scripts_base( $options ) {
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
 
-    // CodeMirror
+    // CodeMirror library
     wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/codemirror.js' );
     wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/codemirror.css' );
     if ( $options['theme'] != "default" ) {
@@ -44,17 +44,21 @@ function mshighlighter_load_scripts_base( $options ) {
     wp_enqueue_script( $prefix . '-codemirror-mode-xml-js', $url . 'inc/lib/codemirror/mode/xml.js', array(), false, true );
 
     // Dynamic JS. Create JS object and injected it into the JS file
-    if ( !empty( $options['theme'] ) ) { $theme = $options['theme']; } else { $theme = "default"; }
-    if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) || !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) { $line_numbers = "true"; } else { $line_numbers = "false"; }
-    if ( !empty( $options['first_line_number'] ) ) { $first_line_number = $options['first_line_number']; } else { $first_line_number = "0"; }
-    if ( !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) { $dollar_sign = "true"; } else { $dollar_sign = "false"; }
-    if ( !empty( $options['tab_size'] ) ) { $tab_size = $options['tab_size']; } else { $tab_size = "4"; }
+    $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
+    $tab_size = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
+    $dollar_sign = ( !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) ? 'true' : 'false';
+    if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) || !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) {
+        $line_numbers = "true";
+    } else {
+        $line_numbers = "false";
+    }
     $script_params = array(
                            'theme' => $theme,
                            'line_numbers' => $line_numbers,
                            'first_line_number' => $first_line_number,
-                           'dollar_sign' => $dollar_sign,
                            'tab_size' => $tab_size,
+                           'dollar_sign' => $dollar_sign
                            );
     wp_localize_script( $prefix . '-codemirror-settings-js', $prefix . '_scriptParams', $script_params );
 
@@ -79,7 +83,7 @@ function mshighlighter_load_scripts_base( $options ) {
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 2.5
+ * @since 2.6
  */
 function mshighlighter_load_scripts_admin( $hook ) {
 
@@ -95,14 +99,8 @@ function mshighlighter_load_scripts_admin( $hook ) {
         return;
     }
 
-    // Read options from BD
+    // Read options from database
     $options = get_option( $settings . '_settings' );
-
-    // Style sheet
-    wp_enqueue_style( $prefix . '-admin-css', $url . 'inc/css/admin.css' );
-
-    // JavaScript
-    wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), false, true );
 
     // Bootstrap library
     wp_enqueue_style( $prefix . '-bootstrap-css', $url . 'inc/lib/bootstrap/bootstrap.css' );
@@ -111,6 +109,12 @@ function mshighlighter_load_scripts_admin( $hook ) {
 
     // Other libraries
     wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js' );
+
+    // Style sheet
+    wp_enqueue_style( $prefix . '-admin-css', $url . 'inc/css/admin.css' );
+
+    // JavaScript
+    wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), false, true );
 
     // Call the function that contain a basis of scripts
     mshighlighter_load_scripts_base( $options );
@@ -131,7 +135,7 @@ function mshighlighter_load_scripts_frontend() {
     $url = MSHIGHLIGHTER_URL;
     $settings = MSHIGHLIGHTER_SETTINGS;
 
-    // Read options from BD
+    // Read options from database
     $options = get_option( $settings . '_settings' );
 
     // If the "Enable Plugin" option is on

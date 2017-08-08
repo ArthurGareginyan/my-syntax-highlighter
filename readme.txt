@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 2.5.1
+Stable tag: 2.6
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,15 +12,16 @@ Simple post syntax-highlighted code without losing it's formatting or making any
 
 
 == Description ==
+
 An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library. If you want more options then tell me and I will be happy to add it.
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for. 
+Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for.
 
 This plugin also uses standalone Shortcode-Processor to prevent WordPress from converting newlines to HTML paragraphs, replacing apostrophes with typographic quotes and so on.
 
 This plugin is just plug and play, no tedious configurations or hacks, just install, enable and start using your new shortcodes.
 
-= Features =
+**Features**
 
 * Lightweight and fast
 * Secure code with using clear coding standards
@@ -42,7 +43,6 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Allow shortcodes in the text widget
 * And much, much more!
 
-
 **A list of supported languages:**
 
 Click to view language examples. Highlighted with Default theme.
@@ -62,7 +62,6 @@ Click to view language examples. Highlighted with Default theme.
 * [Shell](http://codemirror.net/mode/shell/index.html)
 * [BASH](http://codemirror.net/mode/shell/index.html)
 
-
 **A list of supported shortcodes:**
 
 * [code][/code]
@@ -81,7 +80,6 @@ Click to view language examples. Highlighted with Default theme.
 * [mysql][/mysql]
 * [shell][/shell]
 * [bash][/bash]
-
 
 **A list of supported themes:**
 
@@ -121,7 +119,7 @@ Click to view language examples. Highlighted with Default theme.
 * xq-light
 * zenburn
 
-= Translation =
+**Translation**
 
 This plugin is ready for translation and has already been translated into several languages.
 
@@ -130,16 +128,17 @@ This plugin is ready for translation and has already been translated into severa
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
 
->**Contribution**
->
->Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
->
->* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
->* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/my-syntax-highlighter?rate=5#postform) this plugin.
->* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/my-syntax-highlighter) if you have any ideas or suggestions to make this plugin better.
+**Contribution**
+
+Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+
+* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/my-syntax-highlighter?rate=5#postform) this plugin.
+* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/my-syntax-highlighter) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
+
 Install "My Syntax Highlighter" just as you would any other WordPress Plugin.
 
 Automatically via WordPress Admin Panel:
@@ -163,6 +162,7 @@ After installation and activation, the "`Syntax Highlighter`" menu item will app
 
 
 == Frequently Asked Questions ==
+
 = Q. Will this plugin work on my WordPress.COM website? =
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
 
@@ -198,6 +198,7 @@ A. Yes, any financial contributions are welcome! Just visit [my website](https:/
 
 
 == Screenshots ==
+
 1. Plugin settings page.
 2. Example of post with added source code and wrapped it in shortcode provided by this plugin. Default theme of highlighter.
 3. Example of post with added source code and wrapped it in shortcode provided by this plugin. The "The Matrix" theme of highlighter.
@@ -205,6 +206,8 @@ A. Yes, any financial contributions are welcome! Just visit [my website](https:/
 
 
 == Other Notes ==
+
+****
 
 "My Syntax Highlighter" is one of the personal software projects of [Arthur Gareginyan](https://www.arthurgareginyan.com).
 
@@ -228,6 +231,16 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.6 =
+* Stylesheet in the admin.css file improved.
+* The '!important' declarations in the admin.css file removed.
+* Code formatting in the admin.js file improved.
+* Code commenting improved.
+* Load of the additional remote CSS file removed from the admin.js file.
+* Changed the sorting of enqueueing of scripts.
+* The ''Family' page tab renamed to 'Store'.
+* Added ad banner of my store website.
 
 = 2.5.1 =
 * The HTTPS mixed content issue fixed by changing all links to HTTPS.

@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        https://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       2.3
+ * @since       2.6
  */
 
 
@@ -74,17 +74,17 @@ jQuery(document).ready(function($) {
                                          mode = "text/x-php";
                                          break;
                             }
-                                         
+
 
         // Chanhe editor to CodeMirror
         var editor = CodeMirror.fromTextArea( elements , {
-                                lineNumbers: line_numbers,
-                                firstLineNumber: first_line_number,
-                                matchBrackets: true,
-                                indentUnit: tab_size,
-                                readOnly: true,
-                                theme: theme,
-                                mode: mode
+            lineNumbers: line_numbers,
+            firstLineNumber: first_line_number,
+            matchBrackets: true,
+            indentUnit: tab_size,
+            readOnly: true,
+            theme: theme,
+            mode: mode
         });
 
         // Refresh CodeMirror editor
