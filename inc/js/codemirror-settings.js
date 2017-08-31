@@ -2,10 +2,9 @@
  * Settings of CodeMirror editor
  *
  * @package     My Syntax Highlighter
- * @uthor       Arthur Gareginyan
+ * @author      Arthur Gareginyan
  * @link        https://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       2.6
  */
 
 

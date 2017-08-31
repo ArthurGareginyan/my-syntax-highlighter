@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 2.7
+ * Version: 2.8
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -45,43 +45,44 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Define global constants
- *
- * @since 2.2
  */
-$plugin_data = get_file_data( __FILE__, array( 'name'=>'Plugin Name', 'version'=>'Version', 'text'=>'Text Domain' ) );
-function mshighlighter_define_constants( $constant_name, $value ) {
-    $constant_name = 'MSHIGHLIGHTER_' . $constant_name;
+$plugin_data = get_file_data( __FILE__,
+                              array(
+                                     'name'    => 'Plugin Name',
+                                     'version' => 'Version',
+                                     'text'    => 'Text Domain'
+                                   )
+                            );
+function spacexchimp_p010_define_constants( $constant_name, $value ) {
+    $constant_name = 'SPACEXCHIMP_P010_' . $constant_name;
     if ( !defined( $constant_name ) )
         define( $constant_name, $value );
 }
-mshighlighter_define_constants( 'DIR', dirname( plugin_basename( __FILE__ ) ) );
-mshighlighter_define_constants( 'BASE', plugin_basename( __FILE__ ) );
-mshighlighter_define_constants( 'URL', plugin_dir_url( __FILE__ ) );
-mshighlighter_define_constants( 'PATH', plugin_dir_path( __FILE__ ) );
-mshighlighter_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) ) );
-mshighlighter_define_constants( 'NAME', $plugin_data['name'] );
-mshighlighter_define_constants( 'VERSION', $plugin_data['version'] );
-mshighlighter_define_constants( 'TEXT', $plugin_data['text'] );
-mshighlighter_define_constants( 'PREFIX', 'mshighlighter' );
-mshighlighter_define_constants( 'SETTINGS', 'mshighlighter' );
+spacexchimp_p010_define_constants( 'DIR', dirname( plugin_basename( __FILE__ ) ) );
+spacexchimp_p010_define_constants( 'BASE', plugin_basename( __FILE__ ) );
+spacexchimp_p010_define_constants( 'URL', plugin_dir_url( __FILE__ ) );
+spacexchimp_p010_define_constants( 'PATH', plugin_dir_path( __FILE__ ) );
+spacexchimp_p010_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) ) );
+spacexchimp_p010_define_constants( 'NAME', $plugin_data['name'] );
+spacexchimp_p010_define_constants( 'VERSION', $plugin_data['version'] );
+spacexchimp_p010_define_constants( 'TEXT', $plugin_data['text'] );
+spacexchimp_p010_define_constants( 'PREFIX', 'mshighlighter' );
+spacexchimp_p010_define_constants( 'SETTINGS', 'mshighlighter' );
 
 /**
  * Load the plugin modules
- *
- * @since 2.2
  */
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/core.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/upgrade.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/versioning.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/enqueue.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/functional.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/page.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/messages.php' );
-require_once( MSHIGHLIGHTER_PATH . 'inc/php/uninstall.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/core.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/upgrade.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/versioning.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/enqueue.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/functional.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/controls.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/page.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/messages.php' );
+require_once( SPACEXCHIMP_P010_PATH . 'inc/php/uninstall.php' );

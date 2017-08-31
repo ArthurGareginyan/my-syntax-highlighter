@@ -2,15 +2,11 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Render Settings Tab Content
- *
- * @since 2.7
  */
 ?>
     <div class="has-sidebar sm-padded">
@@ -18,25 +14,28 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
             <div class="meta-box-sortabless">
 
                 <form action="options.php" method="post" enctype="multipart/form-data">
-                    <?php settings_fields( MSHIGHLIGHTER_SETTINGS . '_settings_group' ); ?>
+                    <?php settings_fields( SPACEXCHIMP_P010_SETTINGS . '_settings_group' ); ?>
 
                     <?php
                         // Get options from the database
-                        $options = get_option( MSHIGHLIGHTER_SETTINGS . '_settings' );
+                        $options = get_option( SPACEXCHIMP_P010_SETTINGS . '_settings' );
                     ?>
+
+                    <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
+                        <i class="fa fa-save" aria-hidden="true"></i>
+                        <span><?php _e( 'Save changes', $text ); ?></span>
+                    </button>
 
                     <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
-
                             <table class="form-table">
-
-                                <?php mshighlighter_setting( 'enable',
-                                                             __( 'Enable Plugin', $text ),
-                                                             __( 'Enable or disable this plugin.', $text ),
-                                                             'check'
-                                                            );
+                                <?php
+                                    spacexchimp_p010_control_switch( 'enable',
+                                                                     __( 'Enable plugin', $text ),
+                                                                     __( 'Enable or disable this plugin.', $text )
+                                                                   );
                                 ?>
 
                                 <tr>
@@ -122,7 +121,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                 'xq-dark',
                                                                 'xq-light',
                                                                 'zenburn'
-                                                                );
+                                                               );
                                                 foreach ( $themes as $option ) {
                                                     $selected = selected( $options['theme'], $option );
                                                     echo '<option value="' . $option . '" id="' . $option . '"' . $selected . ' >' . $option . '</option>';
@@ -138,60 +137,40 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     </td>
                                 </tr>
 
-                                <?php mshighlighter_setting( 'line_numbers',
-                                                             __( 'Display line numbers', $text ),
-                                                             '',
-                                                             'check'
-                                                            );
+                                <?php
+                                    spacexchimp_p010_control_switch( 'line_numbers',
+                                                                     __( 'Line numbers', $text ),
+                                                                     __( 'Display the line numbers in the code block.', $text )
+                                                                   );
+                                    spacexchimp_p010_control_number( 'first_line_number',
+                                                                     __( 'First line number', $text ),
+                                                                     __( 'You can set the number of the first line.', $text ),
+                                                                     '0'
+                                                                   );
+                                    spacexchimp_p010_control_switch( 'dollar_sign',
+                                                                     __( 'Dollar sign ($)', $text ),
+                                                                     __( 'Display the dollar sign ($) before every code line.', $text )
+                                                                   );
+                                    spacexchimp_p010_control_switch( 'automatic_height',
+                                                                     __( 'Automatic height of code block', $text ),
+                                                                     __( 'YES - Automatic height. NO - Fixed height, with scrollbar.', $text )
+                                                                   );
+                                    spacexchimp_p010_control_number( 'block_height',
+                                                                     __( 'Height of code block', $text ),
+                                                                     __( 'The height (in pixels) of code block. Default is 300px.', $text ),
+                                                                     '300'
+                                                                   );
+                                     spacexchimp_p010_control_number( 'tab_size',
+                                                                      __( 'Size of Tab', $text ),
+                                                                      __( 'The width (in spaces) of Tab. Default is 4.', $text ),
+                                                                      '4'
+                                                                    );
                                 ?>
-
-                                <?php mshighlighter_setting( 'first_line_number',
-                                                             __( 'First line number', $text ),
-                                                             '',
-                                                             'field',
-                                                             '0',
-                                                             '2'
-                                                            );
-                                ?>
-
-                                <?php mshighlighter_setting( 'dollar_sign',
-                                                             __( 'Display dollar sign ($)', $text ),
-                                                             __( 'Display the dollar sign ($) before every code line.', $text ),
-                                                             'check'
-                                                            );
-                                ?>
-
-                                <?php mshighlighter_setting( 'automatic_height',
-                                                             __( 'Automatic height of code block', $text ),
-                                                             __( 'YES - Automatic height. NO - Fixed height, with scrollbar.', $text ),
-                                                             'check'
-                                                            );
-                                ?>
-
-                                <?php mshighlighter_setting( 'block_height',
-                                                             __( 'The height of code block', $text ),
-                                                             __( 'The height (in pixels) of code block. Default is 300px.', $text ),
-                                                             'field',
-                                                             '300',
-                                                             '4'
-                                                         );
-                                ?>
-
-                                <?php mshighlighter_setting( 'tab_size',
-                                                             __( 'The width of Tab', $text ),
-                                                             '',
-                                                             'field',
-                                                             '4',
-                                                             '2'
-                                                            );
-                                ?>
-
                             </table>
-
-                            <?php submit_button( __( 'Save changes', $text ), 'primary', 'submit', true ); ?>
-
                         </div>
                     </div>
+
+                    <input type="submit" name="submit" id="submit" class="btn btn-default btn-lg button-save-main" value="<?php _e( 'Save changes', $text ); ?>">
 
                     <div class="postbox" id="preview">
                         <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
@@ -229,9 +208,9 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                         <div class="inside">
                             <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default btn-labeled">
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default button-labeled">
                                                         <span class="btn-label">
-                                                            <img src="<?php echo MSHIGHLIGHTER_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
+                                                            <img src="<?php echo SPACEXCHIMP_P010_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
                                                         </span>
                                                         <?php _e( 'Donate with PayPal', $text ); ?>
                                                 </a>

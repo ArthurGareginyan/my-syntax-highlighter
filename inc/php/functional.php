@@ -2,61 +2,13 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Render checkboxes and fields for saving settings data to database
- *
- * @since 2.6
- */
-function mshighlighter_setting( $name, $label, $help=null, $field=null, $placeholder=null, $size=null ) {
-
-    // Read options from database and declare variables
-    $options = get_option( MSHIGHLIGHTER_SETTINGS . '_settings' );
-    $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
-
-    // Generate the table
-    $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
-
-    if ( $field == "check" ) {
-        $input = "<input type='checkbox' name='" . MSHIGHLIGHTER_SETTINGS . "_settings[$name]' id='" . MSHIGHLIGHTER_SETTINGS . "_settings[$name]' $checked class='$name' >";
-    } elseif ( $field == "field" ) {
-        $input = "<input type='text' name='" . MSHIGHLIGHTER_SETTINGS . "_settings[$name]' id='" . MSHIGHLIGHTER_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' class='$name' >";
-    }
-
-    // Put table to the variables $out and $help_out
-    $out = "<tr>
-                <th scope='row'>
-                    $label
-                </th>
-                <td>
-                    $input
-                </td>
-            </tr>";
-    if ( !empty( $help ) ) {
-        $help_out = "<tr>
-                        <td></td>
-                        <td class='help-text'>
-                            $help
-                        </td>
-                     </tr>";
-    } else {
-        $help_out = "";
-    }
-
-    // Print the generated table
-    echo $out . $help_out;
-}
-
-/**
  * Shortcode-Processor. Functionality to set up shortcode correctly
- *
- * @since 2.1
  */
-function mshighlighter_shortcode_processor( $content ) {
+function spacexchimp_p010_shortcode_processor( $content ) {
 
     global $shortcode_tags;
 
@@ -69,7 +21,7 @@ function mshighlighter_shortcode_processor( $content ) {
 
     // Create different shortcodes
     foreach( $language as $lang ){
-        add_shortcode( $lang, MSHIGHLIGHTER_PREFIX . '_shortcode' );
+        add_shortcode( $lang, 'spacexchimp_p010_shortcode' );
     }
 
     // Run the shortcodes function on the content now that it's just this plugin's shortcodes
@@ -80,17 +32,15 @@ function mshighlighter_shortcode_processor( $content ) {
 
     return $content;
 }
-add_filter( 'the_content', MSHIGHLIGHTER_PREFIX . '_shortcode_processor', 7 );
+add_filter( 'the_content', 'spacexchimp_p010_shortcode_processor', 7 );
 
 /**
  * Callback for shortcodes. Uses in Shortcode-Processor
- *
- * @since 2.6
  */
-function mshighlighter_shortcode( $atts, $content = null, $lang ) {
+function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
 
     // Read options from database and declare variables
-    $options = get_option( MSHIGHLIGHTER_SETTINGS . '_settings' );
+    $options = get_option( SPACEXCHIMP_P010_SETTINGS . '_settings' );
 
     // Default language for the [code] shortcode
     $defaultLanguage = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
@@ -110,7 +60,5 @@ function mshighlighter_shortcode( $atts, $content = null, $lang ) {
 
 /**
  * Allow shortcodes in the text widget
- *
- * @since 1.1
  */
 add_filter( 'widget_text', 'do_shortcode' );

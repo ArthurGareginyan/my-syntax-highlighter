@@ -2,22 +2,18 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Base for the _load_scripts hook
- *
- * @since 2.6
  */
-function mshighlighter_load_scripts_base( $options ) {
+function spacexchimp_p010_load_scripts_base( $options ) {
 
     // Put value of constants to variables for easier access
-    $slug = MSHIGHLIGHTER_SLUG;
-    $prefix = MSHIGHLIGHTER_PREFIX;
-    $url = MSHIGHLIGHTER_URL;
+    $slug = SPACEXCHIMP_P010_SLUG;
+    $prefix = SPACEXCHIMP_P010_PREFIX;
+    $url = SPACEXCHIMP_P010_URL;
 
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
@@ -82,16 +78,14 @@ function mshighlighter_load_scripts_base( $options ) {
 
 /**
  * Load scripts and style sheet for settings page
- *
- * @since 2.6
  */
-function mshighlighter_load_scripts_admin( $hook ) {
+function spacexchimp_p010_load_scripts_admin( $hook ) {
 
     // Put value of constants to variables for easier access
-    $slug = MSHIGHLIGHTER_SLUG;
-    $prefix = MSHIGHLIGHTER_PREFIX;
-    $url = MSHIGHLIGHTER_URL;
-    $settings = MSHIGHLIGHTER_SETTINGS;
+    $slug = SPACEXCHIMP_P010_SLUG;
+    $prefix = SPACEXCHIMP_P010_PREFIX;
+    $url = SPACEXCHIMP_P010_URL;
+    $settings = SPACEXCHIMP_P010_SETTINGS;
 
     // Return if the page is not a settings page of this plugin
     $settings_page = 'settings_page_' . $slug;
@@ -107,6 +101,9 @@ function mshighlighter_load_scripts_admin( $hook ) {
     wp_enqueue_style( $prefix . '-bootstrap-theme-css', $url . 'inc/lib/bootstrap/bootstrap-theme.css' );
     wp_enqueue_script( $prefix . '-bootstrap-js', $url . 'inc/lib/bootstrap/bootstrap.js' );
 
+    // Font Awesome library
+    wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.css', 'screen' );
+
     // Other libraries
     wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js' );
 
@@ -117,23 +114,21 @@ function mshighlighter_load_scripts_admin( $hook ) {
     wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), false, true );
 
     // Call the function that contain a basis of scripts
-    mshighlighter_load_scripts_base( $options );
+    spacexchimp_p010_load_scripts_base( $options );
 
 }
-add_action( 'admin_enqueue_scripts', MSHIGHLIGHTER_PREFIX . '_load_scripts_admin' );
+add_action( 'admin_enqueue_scripts', 'spacexchimp_p010_load_scripts_admin' );
 
 /**
  * Load scripts and style sheet for front end of website
- *
- * @since 2.5
  */
-function mshighlighter_load_scripts_frontend() {
+function spacexchimp_p010_load_scripts_frontend() {
 
     // Put value of constants to variables for easier access
-    $slug = MSHIGHLIGHTER_SLUG;
-    $prefix = MSHIGHLIGHTER_PREFIX;
-    $url = MSHIGHLIGHTER_URL;
-    $settings = MSHIGHLIGHTER_SETTINGS;
+    $slug = SPACEXCHIMP_P010_SLUG;
+    $prefix = SPACEXCHIMP_P010_PREFIX;
+    $url = SPACEXCHIMP_P010_URL;
+    $settings = SPACEXCHIMP_P010_SETTINGS;
 
     // Read options from database
     $options = get_option( $settings . '_settings' );
@@ -145,8 +140,8 @@ function mshighlighter_load_scripts_frontend() {
         wp_enqueue_style( $prefix . '-frontend-css', $url . 'inc/css/frontend.css' );
 
         // Call the function that contain a basis of scripts
-        mshighlighter_load_scripts_base( $options );
+        spacexchimp_p010_load_scripts_base( $options );
     }
 
 }
-add_action( 'wp_enqueue_scripts', MSHIGHLIGHTER_PREFIX . '_load_scripts_frontend' );
+add_action( 'wp_enqueue_scripts', 'spacexchimp_p010_load_scripts_frontend' );
