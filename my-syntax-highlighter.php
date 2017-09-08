@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 2.8
+ * Version: 2.9
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -71,8 +71,8 @@ spacexchimp_p010_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) 
 spacexchimp_p010_define_constants( 'NAME', $plugin_data['name'] );
 spacexchimp_p010_define_constants( 'VERSION', $plugin_data['version'] );
 spacexchimp_p010_define_constants( 'TEXT', $plugin_data['text'] );
-spacexchimp_p010_define_constants( 'PREFIX', 'mshighlighter' );
-spacexchimp_p010_define_constants( 'SETTINGS', 'mshighlighter' );
+spacexchimp_p010_define_constants( 'PREFIX', 'spacexchimp_p010' );
+spacexchimp_p010_define_constants( 'SETTINGS', 'spacexchimp_p010' );
 
 /**
  * Load the plugin modules

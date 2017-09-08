@@ -43,7 +43,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                         <?php _e( 'Default language', $text ); ?>
                                     </th>
                                     <td>
-                                        <select name="mshighlighter_settings[defaultLanguage]">
+                                        <select name="spacexchimp_p010_settings[defaultLanguage]">
                                             <?php
                                                 $defaultLanguage = array(
                                                                          '- NONE -' => '',
@@ -82,7 +82,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                         <?php _e( 'Color theme', $text ); ?>
                                     </th>
                                     <td>
-                                        <select name="mshighlighter_settings[theme]">
+                                        <select name="spacexchimp_p010_settings[theme]">
                                             <?php
                                                 $themes = array(
                                                                 'default',
