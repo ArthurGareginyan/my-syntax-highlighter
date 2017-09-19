@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 2.11
+Stable tag: 2.12
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -232,6 +232,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.12 =
+* Fixed the issue due tof which the 'Space X-Chimp' sub menu item in the brand menu item was displayed.
+* Added branded footer text on the plugin's settings page.
 
 = 2.11 =
 * The hard coded HTML list options are replaced with the PHP function that dynamically creates lists.
