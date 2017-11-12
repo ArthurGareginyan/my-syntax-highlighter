@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 2.14
+ * Version: 2.15
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
