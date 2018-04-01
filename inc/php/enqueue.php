@@ -19,25 +19,19 @@ function spacexchimp_p010_load_scripts_base( $options ) {
     wp_enqueue_script( 'jquery' );
 
     // CodeMirror library
-    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/codemirror.js' );
-    wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/codemirror.css' );
+    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js' );
+    wp_enqueue_script( $prefix . '-codemirror-meta-js', $url . 'inc/lib/codemirror/mode/meta.js' );
+    wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css' );
     if ( $options['theme'] != "default" ) {
         wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
     }
     wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), false, true );
 
     // CodeMirror Modes
-    wp_enqueue_script( $prefix . '-codemirror-mode-clike-js', $url . 'inc/lib/codemirror/mode/clike.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-css-js', $url . 'inc/lib/codemirror/mode/css.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-htmlmixed-js', $url . 'inc/lib/codemirror/mode/htmlmixed.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-javascript-js', $url . 'inc/lib/codemirror/mode/javascript.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-markdown-js', $url . 'inc/lib/codemirror/mode/markdown.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-perl-js', $url . 'inc/lib/codemirror/mode/perl.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-php-js', $url . 'inc/lib/codemirror/mode/php.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-sass-js', $url . 'inc/lib/codemirror/mode/sass.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-shell-js', $url . 'inc/lib/codemirror/mode/shell.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-sql-js', $url . 'inc/lib/codemirror/mode/sql.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-xml-js', $url . 'inc/lib/codemirror/mode/xml.js', array(), false, true );
+    $modes = spacexchimp_p010_get_cm_modes();
+    foreach( $modes as $mode) {
+        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), false, true );
+    }
 
     // Dynamic JS. Create JS object and injected it into the JS file
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
