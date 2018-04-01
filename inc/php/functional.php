@@ -77,6 +77,7 @@ function spacexchimp_p010_get_cm_modes() {
 
 /**
  * Get a list of "Language Name" => "mode" pairs
+ * @TODO These pairs can be extracted from lib/codemirror/mode/meta.js
  * @return Array array of all language mode pairs supported by codemirror
  */
 function spacexchimp_p010_get_cm_language_mode_pairs() {
