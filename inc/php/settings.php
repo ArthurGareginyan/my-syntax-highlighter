@@ -8,10 +8,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab Content
  */
-
-$languages = spacexchimp_p010_get_cm_language_mode_pairs();
-$languages = array_combine( array_keys( $languages ), array_keys( $languages ) );
-$languages = array( '' => '- NONE - ' ) + $languages;
 ?>
     <div class="has-sidebar sm-padded">
         <div id="post-body-content" class="has-sidebar-content">
@@ -35,9 +31,24 @@ $languages = array( '' => '- NONE - ' ) + $languages;
                                                                      __( 'Enable plugin', $text ),
                                                                      __( 'Enable or disable this plugin.', $text )
                                                                    );
-                                    // Unique languae names but non-unique modes, hence reversed key-value pair
                                     spacexchimp_p010_control_list( 'defaultLanguage',
-                                                                    $languages,
+                                                                    array(
+                                                                           ''           => '- NONE -',
+                                                                           'php'        => 'PHP',
+                                                                           'javascript' => 'JavaScript',
+                                                                           'xml'        => 'XML',
+                                                                           'html'       => 'HTML',
+                                                                           'css'        => 'CSS',
+                                                                           'scss'       => 'SCSS',
+                                                                           'less'       => 'LESS',
+                                                                           'sass'       => 'SASS',
+                                                                           'markdown'   => 'Markdown',
+                                                                           'perl'       => 'Perl',
+                                                                           'sql'        => 'SQL',
+                                                                           'mysql'      => 'MySQL',
+                                                                           'shell'      => 'Shell',
+                                                                           'bash'       => 'BASH'
+                                                                         ),
                                                                    __( 'Default language', $text ),
                                                                    __( 'Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting.', $text ),
                                                                    ''
