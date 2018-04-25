@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.17
+Stable tag: 2.18
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -243,6 +243,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.18 =
+* Fixed the link "Settings", located in the plugin's meta row on the "Plugins" page. The suffix ".php" was deleted.
+* Fixed information stored in the header of the translation files.
+* Translation files updated.
 
 = 2.17 =
 * Some texts updated, and typos corrected.

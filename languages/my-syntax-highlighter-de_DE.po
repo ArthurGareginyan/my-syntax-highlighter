@@ -1,10 +1,10 @@
-# Translation of Development (trunk) in German (Germany)
-# This file is distributed under the same license as the Development (trunk) package.
+# Translation of plugin - My Syntax Highlighter - in German (Germany)
+# This file is distributed under the same license as the plugin - My Syntax Highlighter.
 msgid ""
 msgstr ""
-"Project-Id-Version: Development (trunk)\n"
-"POT-Creation-Date: 2018-04-20 01:35+0300\n"
-"PO-Revision-Date: 2018-04-20 01:35+0300\n"
+"Project-Id-Version: My Syntax Highlighter\n"
+"POT-Creation-Date: 2018-04-25 05:53+0300\n"
+"PO-Revision-Date: 2018-04-25 05:53+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -396,7 +396,7 @@ msgstr "Wenn Sie Fragen haben, lesen Sie bitte auch die Fragen im FAQ Bereich."
 
 #. Plugin Name of the plugin/theme
 msgid "My Syntax Highlighter"
-msgstr ""
+msgstr "My Syntax Highlighter"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/ArthurGareginyan/my-syntax-highlighter"
@@ -409,6 +409,3 @@ msgstr "Space X-Chimp"
 #. Author URI of the plugin/theme
 msgid "https://www.spacexchimp.com"
 msgstr "https://www.spacexchimp.com"
-
-#~ msgid "Arthur Gareginyan"
-#~ msgstr "Arthur Gareginyan"
