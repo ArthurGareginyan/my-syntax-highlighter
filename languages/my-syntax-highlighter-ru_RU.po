@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-04-25 05:53+0300\n"
-"PO-Revision-Date: 2018-04-25 05:53+0300\n"
+"POT-Creation-Date: 2018-05-06 12:14+0300\n"
+"PO-Revision-Date: 2018-05-06 12:14+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -95,15 +95,15 @@ msgid "Click the \"Save changes\" button."
 msgstr "Нажмите кнопку «Сохранить изменения»."
 
 #: inc/php/page.php:70
-msgid "On the WP Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:"
-msgstr "На странице WP Post/Page Editor перейдите в редактор Text/HTML и заверните ваш исходный код в один из поддерживаемых коротких кодов (как <code>[code]...[/code]</code> это универсальный короткий код). Пример:"
+msgid "On the WordPress Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:"
+msgstr "На странице WordPress Post/Page Editor перейдите в редактор Text/HTML и заверните ваш исходный код в один из поддерживаемых коротких кодов (как <code>[code]...[/code]</code> это универсальный короткий код). Пример:"
 
 #: inc/php/page.php:79
 msgid "In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an \"example\"`, as well as ensure that the double quotes around `example` are not converted to typographic (curly) quotes."
 msgstr "В этом случае, шорткод не даст WordPress вставить теги разрыва абзацев между `This`, `is` и `an \"example\"`, а также не даст преобразовать двойные кавычки вокруг `example ` в типографские (вьющиеся) кавычки."
 
 #: inc/php/page.php:80
-msgid "You can use shortcodes such as:"
+msgid "You can use the following shortcodes:"
 msgstr "Вы можете использовать шорткоды такие как:"
 
 #: inc/php/page.php:82 inc/php/page.php:85

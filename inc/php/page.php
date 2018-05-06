@@ -67,7 +67,7 @@ function spacexchimp_p010_render_submenu_page() {
                             <li><?php _e( 'Go to the "Settings" tab.', $text ); ?></li>
                             <li><?php _e( 'Select the desired settings.', $text ); ?></li>
                             <li><?php _e( 'Click the "Save changes" button.', $text ); ?></li>
-                            <li><?php _e( 'On the WP Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:', $text ); ?><br><br>
+                            <li><?php _e( 'On the WordPress Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:', $text ); ?><br><br>
 
 <pre><code>[code]
 This
@@ -77,7 +77,7 @@ is
 an "example"!
 [/code]</code></pre>
                                 <p><?php _e( 'In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an "example"`, as well as ensure that the double quotes around `example` are not converted to typographic (curly) quotes.', $text ); ?></p>
-                                <p><?php _e( 'You can use shortcodes such as:', $text ); ?><p>
+                                <p><?php _e( 'You can use the following shortcodes:', $text ); ?><p>
                                 <code>[code] [php] [javascript] [js] [xml] [html] [css] [scss] [less] [sass] [markdown] [perl] [sql] [mysql] [shell] [bash]</code>
                                 <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php _e( 'To avoid problems, edit posts that contain your source code only in Text/HTML mode.', $text ); ?></p></li>
                             <li><?php _e( 'Enjoy the fancy syntax highlighting on your website.', $text ); ?> <?php _e( 'It\'s that simple!', $text ); ?></li>

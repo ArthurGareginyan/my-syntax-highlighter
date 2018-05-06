@@ -14,30 +14,31 @@ function spacexchimp_p010_load_scripts_base( $options ) {
     $slug = SPACEXCHIMP_P010_SLUG;
     $prefix = SPACEXCHIMP_P010_PREFIX;
     $url = SPACEXCHIMP_P010_URL;
+    $version = SPACEXCHIMP_P010_VERSION;
 
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
 
     // CodeMirror library
-    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/codemirror.js' );
-    wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/codemirror.css' );
+    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/codemirror.js', array(), $version, false );
+    wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/codemirror.css', array(), $version, 'all' );
     if ( $options['theme'] != "default" ) {
-        wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
+        wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css', array(), $version, 'all' );
     }
-    wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), false, true );
+    wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
 
     // CodeMirror Modes
-    wp_enqueue_script( $prefix . '-codemirror-mode-clike-js', $url . 'inc/lib/codemirror/mode/clike.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-css-js', $url . 'inc/lib/codemirror/mode/css.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-htmlmixed-js', $url . 'inc/lib/codemirror/mode/htmlmixed.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-javascript-js', $url . 'inc/lib/codemirror/mode/javascript.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-markdown-js', $url . 'inc/lib/codemirror/mode/markdown.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-perl-js', $url . 'inc/lib/codemirror/mode/perl.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-php-js', $url . 'inc/lib/codemirror/mode/php.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-sass-js', $url . 'inc/lib/codemirror/mode/sass.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-shell-js', $url . 'inc/lib/codemirror/mode/shell.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-sql-js', $url . 'inc/lib/codemirror/mode/sql.js', array(), false, true );
-    wp_enqueue_script( $prefix . '-codemirror-mode-xml-js', $url . 'inc/lib/codemirror/mode/xml.js', array(), false, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-clike-js', $url . 'inc/lib/codemirror/mode/clike.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-css-js', $url . 'inc/lib/codemirror/mode/css.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-htmlmixed-js', $url . 'inc/lib/codemirror/mode/htmlmixed.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-javascript-js', $url . 'inc/lib/codemirror/mode/javascript.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-markdown-js', $url . 'inc/lib/codemirror/mode/markdown.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-perl-js', $url . 'inc/lib/codemirror/mode/perl.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-php-js', $url . 'inc/lib/codemirror/mode/php.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-sass-js', $url . 'inc/lib/codemirror/mode/sass.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-shell-js', $url . 'inc/lib/codemirror/mode/shell.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-sql-js', $url . 'inc/lib/codemirror/mode/sql.js', array(), $version, true );
+    wp_enqueue_script( $prefix . '-codemirror-mode-xml-js', $url . 'inc/lib/codemirror/mode/xml.js', array(), $version, true );
 
     // Dynamic JS. Create JS object and injected it into the JS file
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
@@ -86,6 +87,7 @@ function spacexchimp_p010_load_scripts_admin( $hook ) {
     $prefix = SPACEXCHIMP_P010_PREFIX;
     $url = SPACEXCHIMP_P010_URL;
     $settings = SPACEXCHIMP_P010_SETTINGS;
+    $version = SPACEXCHIMP_P010_VERSION;
 
     // Return if the page is not a settings page of this plugin
     $settings_page = 'settings_page_' . $slug;
@@ -95,21 +97,21 @@ function spacexchimp_p010_load_scripts_admin( $hook ) {
     $options = get_option( $settings . '_settings' );
 
     // Bootstrap library
-    wp_enqueue_style( $prefix . '-bootstrap-css', $url . 'inc/lib/bootstrap/bootstrap.css' );
-    wp_enqueue_style( $prefix . '-bootstrap-theme-css', $url . 'inc/lib/bootstrap/bootstrap-theme.css' );
-    wp_enqueue_script( $prefix . '-bootstrap-js', $url . 'inc/lib/bootstrap/bootstrap.js' );
+    wp_enqueue_style( $prefix . '-bootstrap-css', $url . 'inc/lib/bootstrap/bootstrap.css', array(), $version, 'all' );
+    wp_enqueue_style( $prefix . '-bootstrap-theme-css', $url . 'inc/lib/bootstrap/bootstrap-theme.css', array(), $version, 'all' );
+    wp_enqueue_script( $prefix . '-bootstrap-js', $url . 'inc/lib/bootstrap/bootstrap.js', array(), $version, false );
 
     // Font Awesome library
-    wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.css', 'screen' );
+    wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.css', array(), $version, 'screen' );
 
     // Other libraries
-    wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js' );
+    wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js', array(), $version, false );
 
     // Style sheet
-    wp_enqueue_style( $prefix . '-admin-css', $url . 'inc/css/admin.css' );
+    wp_enqueue_style( $prefix . '-admin-css', $url . 'inc/css/admin.css', array(), $version, 'all' );
 
     // JavaScript
-    wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), false, true );
+    wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), $version, true );
 
     // Call the function that contain a basis of scripts
     spacexchimp_p010_load_scripts_base( $options );
@@ -127,6 +129,7 @@ function spacexchimp_p010_load_scripts_frontend() {
     $prefix = SPACEXCHIMP_P010_PREFIX;
     $url = SPACEXCHIMP_P010_URL;
     $settings = SPACEXCHIMP_P010_SETTINGS;
+    $version = SPACEXCHIMP_P010_VERSION;
 
     // Read options from database
     $options = get_option( $settings . '_settings' );
@@ -135,7 +138,7 @@ function spacexchimp_p010_load_scripts_frontend() {
     if ( !empty( $options['enable'] ) && $options['enable'] == "on" ) {
 
         // Style sheet
-        wp_enqueue_style( $prefix . '-frontend-css', $url . 'inc/css/frontend.css' );
+        wp_enqueue_style( $prefix . '-frontend-css', $url . 'inc/css/frontend.css', array(), $version, 'all' );
 
         // Call the function that contain a basis of scripts
         spacexchimp_p010_load_scripts_base( $options );

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-04-25 05:53+0300\n"
-"PO-Revision-Date: 2018-04-25 05:53+0300\n"
+"POT-Creation-Date: 2018-05-06 12:14+0300\n"
+"PO-Revision-Date: 2018-05-06 12:14+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -95,7 +95,7 @@ msgid "Click the \"Save changes\" button."
 msgstr "Klicken Sie den \"Änderungen speichern\" button."
 
 #: inc/php/page.php:70
-msgid "On the WP Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:"
+msgid "On the WordPress Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:"
 msgstr ""
 
 #: inc/php/page.php:79
@@ -103,7 +103,7 @@ msgid "In this case, the shortcode will prevent WordPress from inserting paragra
 msgstr ""
 
 #: inc/php/page.php:80
-msgid "You can use shortcodes such as:"
+msgid "You can use the following shortcodes:"
 msgstr ""
 
 #: inc/php/page.php:82 inc/php/page.php:85

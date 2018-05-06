@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.18
+Stable tag: 2.19
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -244,6 +244,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
+= 2.19 =
+* Added auto-versioning of the CSS and JavaScript files to avoid cache issues.
+* CSS code in the file 'admin.css' is optimized.
+* Some texts corrected. Translation files updated.
+
 = 2.18 =
 * Fixed the link "Settings", located in the plugin's meta row on the "Plugins" page. The suffix ".php" was deleted.
 * Fixed information stored in the header of the translation files.
@@ -364,7 +369,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Value of the "_VERSION" constant replaced with information from the plugin header data.
 * All references to the plugin name, slug, prefix are replaced with constants.
 * Added function that render checkboxes and fields for saving plugin settings to database.
-* Added prefix to the name of the variable in 'wp_localize_script' WP function, to prevent conflicts.
+* Added prefix to the name of the variable in 'wp_localize_script' WordPress function, to prevent conflicts.
 * The "_load_scripts_base" function improved.
 * The dynamic CSS moved from the "mshighlighter_load_scripts_dynamic_css" function to the "mshighlighter_load_scripts_base".
 * The "name" attribute removed from the "form" tag.
