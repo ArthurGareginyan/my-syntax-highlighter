@@ -31,20 +31,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 Click to view language examples. Highlighted with Default theme.
 
-* [PHP](http://codemirror.net/mode/php/index.html)
-* [JavaScript](http://codemirror.net/mode/javascript/index.html)
-* [XML](http://codemirror.net/mode/xml/index.html)
-* [HTML](http://codemirror.net/mode/htmlmixed/index.html)
-* [CSS](http://codemirror.net/mode/css/index.html)
-* [SCSS](http://codemirror.net/mode/css/scss.html)
-* [LESS](http://codemirror.net/mode/css/less.html)
-* [SASS](http://codemirror.net/mode/sass/index.html)
-* [MarkDown](http://codemirror.net/mode/markdown/index.html)
-* [Perl](http://codemirror.net/mode/perl/index.html)
-* [SQL](http://codemirror.net/mode/sql/index.html)
-* [MySQL](http://codemirror.net/mode/sql/index.html)
-* [Shell](http://codemirror.net/mode/shell/index.html)
-* [BASH](http://codemirror.net/mode/shell/index.html)
+* PHP [(See Example)](http://codemirror.net/mode/php/index.html)* JavaScript [(See Example)](http://codemirror.net/mode/javascript/index.html)* XML [(See Example)](http://codemirror.net/mode/xml/index.html)* HTML [(See Example)](http://codemirror.net/mode/htmlmixed/index.html)* CSS [(See Example)](http://codemirror.net/mode/css/index.html)* SCSS [(See Example)](http://codemirror.net/mode/css/scss.html)* LESS [(See Example)](http://codemirror.net/mode/css/less.html)* SASS [(See Example)](http://codemirror.net/mode/sass/index.html)* MarkDown [(See Example)](http://codemirror.net/mode/markdown/index.html)* Perl [(See Example)](http://codemirror.net/mode/perl/index.html)* SQL [(See Example)](http://codemirror.net/mode/sql/index.html)* MySQL [(See Example)](http://codemirror.net/mode/sql/index.html)* Shell [(See Example)](http://codemirror.net/mode/shell/index.html)* BASH [(See Example)](http://codemirror.net/mode/shell/index.html)
 
 
 **A list of supported shortcodes:**
