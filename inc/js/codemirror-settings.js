@@ -24,58 +24,57 @@ jQuery(document).ready(function($) {
 
         // Switch language mode
         var language = $( elements ).attr( "language" );
-        var mode = "";
+        var mime = 'text';
         switch( language ) {
                                 case "php":
-                                         mode = "text/x-php";                // PHP
-                                         //mode = "application/x-httpd-php"; // HTML/PHP
+                                         mime = "text/x-php";                // PHP
+                                         //mime = "application/x-httpd-php"; // HTML/PHP
                                          break;
                                 case "javascript":
-                                         mode = "text/javascript";
+                                         mime = "text/javascript";
                                          break;
                                 case "js":
-                                         mode = "text/javascript";
+                                         mime = "text/javascript";
                                          break;
                                 case "xml":
-                                         mode = "application/xml";
+                                         mime = "application/xml";
                                          break;
                                 case "html":
-                                         mode = "text/html";
+                                         mime = "text/html";
                                          break;
                                 case "css":
-                                         mode = "text/css";
+                                         mime = "text/css";
                                          break;
                                 case "scss":
-                                         mode = "text/css";
+                                         mime = "text/css";
                                          break;
                                 case "less":
-                                         mode = "text/css";
+                                         mime = "text/css";
                                          break;
                                 case "sass":
-                                         mode = "text/x-sass";
+                                         mime = "text/x-sass";
                                          break;
                                 case "markdown":
-                                         mode = "text/x-markdown";
+                                         mime = "text/x-markdown";
                                          break;
                                 case "perl":
-                                         mode = "text/x-perl";
+                                         mime = "text/x-perl";
                                          break;
                                 case "sql":
-                                         mode = "text/x-sql";
+                                         mime = "text/x-sql";
                                          break;
                                 case "mysql":
-                                         mode = "text/x-mysql";
+                                         mime = "text/x-mysql";
                                          break;
                                 case "shell":
-                                         mode = "text/x-php";
+                                         mime = "text/x-php";
                                          break;
                                 case "bash":
-                                         mode = "text/x-php";
+                                         mime = "text/x-php";
                                          break;
                             }
 
-
-        // Chanhe editor to CodeMirror
+        // Change editor to CodeMirror
         var editor = CodeMirror.fromTextArea( elements , {
             lineNumbers: line_numbers,
             firstLineNumber: first_line_number,
@@ -83,7 +82,7 @@ jQuery(document).ready(function($) {
             indentUnit: tab_size,
             readOnly: true,
             theme: theme,
-            mode: mode
+            mode: mime
         });
 
         // Refresh CodeMirror editor

@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.19
+Stable tag: 2.20
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,20 +47,20 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 Click to view language examples. Highlighted with Default theme.
 
-* [PHP](http://codemirror.net/mode/php/index.html)
-* [JavaScript](http://codemirror.net/mode/javascript/index.html)
-* [XML](http://codemirror.net/mode/xml/index.html)
-* [HTML](http://codemirror.net/mode/htmlmixed/index.html)
-* [CSS](http://codemirror.net/mode/css/index.html)
-* [SCSS](http://codemirror.net/mode/css/scss.html)
-* [LESS](http://codemirror.net/mode/css/less.html)
-* [SASS](http://codemirror.net/mode/sass/index.html)
-* [MarkDown](http://codemirror.net/mode/markdown/index.html)
-* [Perl](http://codemirror.net/mode/perl/index.html)
-* [SQL](http://codemirror.net/mode/sql/index.html)
-* [MySQL](http://codemirror.net/mode/sql/index.html)
-* [Shell](http://codemirror.net/mode/shell/index.html)
-* [BASH](http://codemirror.net/mode/shell/index.html)
+* PHP [(See Example)](http://codemirror.net/mode/php/index.html)
+* JavaScript [(See Example)](http://codemirror.net/mode/javascript/index.html)
+* XML [(See Example)](http://codemirror.net/mode/xml/index.html)
+* HTML [(See Example)](http://codemirror.net/mode/htmlmixed/index.html)
+* CSS [(See Example)](http://codemirror.net/mode/css/index.html)
+* SCSS [(See Example)](http://codemirror.net/mode/css/scss.html)
+* LESS [(See Example)](http://codemirror.net/mode/css/less.html)
+* SASS [(See Example)](http://codemirror.net/mode/sass/index.html)
+* MarkDown [(See Example)](http://codemirror.net/mode/markdown/index.html)
+* Perl [(See Example)](http://codemirror.net/mode/perl/index.html)
+* SQL [(See Example)](http://codemirror.net/mode/sql/index.html)
+* MySQL [(See Example)](http://codemirror.net/mode/sql/index.html)
+* Shell [(See Example)](http://codemirror.net/mode/shell/index.html)
+* BASH [(See Example)](http://codemirror.net/mode/shell/index.html)
 
 **A list of supported shortcodes:**
 
@@ -83,41 +83,41 @@ Click to view language examples. Highlighted with Default theme.
 
 **A list of supported themes:**
 
-* 3024-day
-* 3024-night
-* ambiance-mobile
-* ambiance
-* base16-dark
-* base16-light
-* blackboard
-* cobalt
-* colorforth
-* eclipse
-* elegant
-* erlang-dark
-* lesser-dark
-* liquibyte
-* mbo
-* mdn-like
-* midnight
-* monokai
-* neat
-* neo
-* night
-* paraiso-dark
-* paraiso-light
-* pastel-on-dark
-* rubyblue
-* solarized
-* the-matrix
-* tomorrow-night-bright
-* tomorrow-night-eighties
-* ttcn
-* twilight
-* vibrant-ink
-* xq-dark
-* xq-light
-* zenburn
+* 3024 day
+* 3024 night
+* Ambiance mobile
+* Ambiance
+* Base16 dark
+* Base16 light
+* Blackboard
+* Cobalt
+* Colorforth
+* Eclipse
+* Elegant
+* Erlang dark
+* Lesser dark
+* Liquibyte
+* MBO
+* MDN-like
+* Midnight
+* Monokai
+* Neat
+* Neo
+* Night
+* Paraiso dark
+* Paraiso light
+* Pastel on dark
+* Rubyblue
+* Solarized
+* The matrix
+* Tomorrow night bright
+* Tomorrow night eighties
+* TTCN
+* Twilight
+* Vibrant ink
+* XQ dark
+* XQ light
+* Zenburn
 
 **Translation**
 
@@ -243,6 +243,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.20 =
+* CodeMirror library updated to the latest version v5.37.0. The directory structure is changed (files is better organized). Added a test files for the CodeMirror modes.
+* The 'codemirror-settings.js' file updated. The 'mode' variable renamed to 'mime'. The default value for the 'mime' variable changed to 'text'. The typo is corrected. (Thanks to Evan Anderson @ejdanderson)
+* Added a function for getting the names of the CodeMirror modes by scanning the CodeMirror library included in the plugin. (Thanks to Evan Anderson @ejdanderson)
+* Added a callback function that returns an array of pairs "Language Name" => "mode" of the CodeMirror modes. (Thanks to Evan Anderson @ejdanderson)
+* Added a callback function that returns an array of pairs "theme" => "Theme Name" of the CodeMirror themes.
+* Added a callback function that returns an array of shortcode names.
+* Updated the method of loading the CodeMirror modes. (Thanks to Evan Anderson @ejdanderson)
+* The '_shortcode_processor' function updated. The shortcode names are moved to a separate function.
+* The description in the Readme file updated.
 
 = 2.19 =
 * Added auto-versioning of the CSS and JavaScript files to avoid cache issues.

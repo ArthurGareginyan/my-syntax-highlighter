@@ -16,6 +16,17 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <form action="options.php" method="post" enctype="multipart/form-data">
                     <?php settings_fields( SPACEXCHIMP_P010_SETTINGS . '_settings_group' ); ?>
 
+                    <?php
+                        // Preparing an array with unique names of languages but non-unique modes (reversed key-value pair)
+                        $languages = spacexchimp_p010_get_codemirror_mode_pairs();
+                        $languages = array_flip( $languages );
+                        $languages = array( '' => '- NONE - ' ) + $languages;
+
+                        // Preparing an array with the names of themes
+                        $themes = spacexchimp_p010_get_codemirror_theme_pairs();
+                        $themes = array( 'default' => 'Default' ) + $themes;
+                    ?>
+
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
                         <i class="fa fa-save" aria-hidden="true"></i>
                         <span><?php _e( 'Save changes', $text ); ?></span>
@@ -32,66 +43,13 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                      __( 'Enable or disable this plugin.', $text )
                                                                    );
                                     spacexchimp_p010_control_list( 'defaultLanguage',
-                                                                    array(
-                                                                           ''           => '- NONE -',
-                                                                           'php'        => 'PHP',
-                                                                           'javascript' => 'JavaScript',
-                                                                           'xml'        => 'XML',
-                                                                           'html'       => 'HTML',
-                                                                           'css'        => 'CSS',
-                                                                           'scss'       => 'SCSS',
-                                                                           'less'       => 'LESS',
-                                                                           'sass'       => 'SASS',
-                                                                           'markdown'   => 'Markdown',
-                                                                           'perl'       => 'Perl',
-                                                                           'sql'        => 'SQL',
-                                                                           'mysql'      => 'MySQL',
-                                                                           'shell'      => 'Shell',
-                                                                           'bash'       => 'BASH'
-                                                                         ),
+                                                                    $languages,
                                                                    __( 'Default language', $text ),
                                                                    __( 'Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting.', $text ),
                                                                    ''
                                                                  );
                                     spacexchimp_p010_control_list( 'theme',
-                                                                    array(
-                                                                           'default'                 => 'Default',
-                                                                           '3024-day'                => '3024 day',
-                                                                           '3024-night'              => '3024 night',
-                                                                           'ambiance-mobile'         => 'Ambiance mobile',
-                                                                           'ambiance'                => 'Ambiance',
-                                                                           'base16-dark'             => 'Base16 dark',
-                                                                           'base16-light'            => 'Base16 light',
-                                                                           'blackboard'              => 'Blackboard',
-                                                                           'cobalt'                  => 'Cobalt',
-                                                                           'colorforth'              => 'Colorforth',
-                                                                           'eclipse'                 => 'Eclipse',
-                                                                           'elegant'                 => 'Elegant',
-                                                                           'erlang-dark'             => 'Erlang dark',
-                                                                           'lesser-dark'             => 'Lesser dark',
-                                                                           'liquibyte'               => 'Liquibyte',
-                                                                           'mbo'                     => 'MBO',
-                                                                           'mdn-like'                => 'MDN like',
-                                                                           'midnight'                => 'Midnight',
-                                                                           'monokai'                 => 'Monokai',
-                                                                           'neat'                    => 'Neat',
-                                                                           'neo'                     => 'Neo',
-                                                                           'night'                   => 'Night',
-                                                                           'paraiso-dark'            => 'Paraiso dark',
-                                                                           'paraiso-light'           => 'Paraiso light',
-                                                                           'pastel-on-dark'          => 'Pastel on dark',
-                                                                           'rubyblue'                => 'Rubyblue',
-                                                                           'solarized'               => 'Solarized',
-                                                                           'the-matrix'              => 'The matrix',
-                                                                           'tomorrow-night-bright'   => 'Tomorrow night bright',
-                                                                           'tomorrow-night-eighties' => 'Tomorrow night eighties',
-                                                                           'ttcn'                    => 'TTCN',
-                                                                           'twilight'                => 'Twilight',
-                                                                           'vibrant-ink'             => 'Vibrant ink',
-                                                                           'xq-dark'                 => 'XQ dark',
-                                                                           'xq-light'                => 'XQ light',
-                                                                           'zenburn'                 => 'Zenburn'
-                                                                         ),
+                                                                    $themes,
                                                                    __( 'Color theme', $text ),
                                                                    __( 'You can choose the theme which you like to view.', $text ),
                                                                    'default'
