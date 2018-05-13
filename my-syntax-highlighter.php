@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 2.20
+ * Version: 2.21
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/

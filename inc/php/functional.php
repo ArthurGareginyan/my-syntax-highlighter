@@ -43,9 +43,9 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     $options = get_option( SPACEXCHIMP_P010_SETTINGS . '_settings' );
 
     // Default language for the [code] shortcode
-    $defaultLanguage = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
+    $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
     if ( $lang == "code" ) {
-        $lang = $defaultLanguage;
+        $lang = $default_language;
     }
 
     // Cleaning

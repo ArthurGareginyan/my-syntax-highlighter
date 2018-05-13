@@ -46,10 +46,10 @@ jQuery(document).ready(function($) {
                                          mime = "text/css";
                                          break;
                                 case "scss":
-                                         mime = "text/css";
+                                         mime = "text/x-scss";
                                          break;
                                 case "less":
-                                         mime = "text/css";
+                                         mime = "text/x-less";
                                          break;
                                 case "sass":
                                          mime = "text/x-sass";
@@ -67,15 +67,15 @@ jQuery(document).ready(function($) {
                                          mime = "text/x-mysql";
                                          break;
                                 case "shell":
-                                         mime = "text/x-php";
+                                         mime = "text/x-sh";
                                          break;
                                 case "bash":
-                                         mime = "text/x-php";
+                                         mime = "text/x-sh";
                                          break;
                             }
 
         // Change editor to CodeMirror
-        var editor = CodeMirror.fromTextArea( elements , {
+        var editor = CodeMirror.fromTextArea( elements, {
             lineNumbers: line_numbers,
             firstLineNumber: first_line_number,
             matchBrackets: true,

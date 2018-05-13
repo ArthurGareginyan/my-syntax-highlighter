@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.20
+Stable tag: 2.21
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -243,6 +243,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.21 =
+* The 'codemirror-settings.js' file updated. The mime for the modes 'scss', 'less', 'shell', and 'bash' are changed from 'text/css', 'text/css', 'text/x-php' and 'text/x-php' to 'text/x-scss', 'text/x-less', 'text/x-sh' and 'text/x-sh' respectively.
+* The function '_shortcode' updated. Variables are renamed for easier reading.
 
 = 2.20 =
 * CodeMirror library updated to the latest version v5.37.0. The directory structure is changed (files is better organized). Added a test files for the CodeMirror modes.
