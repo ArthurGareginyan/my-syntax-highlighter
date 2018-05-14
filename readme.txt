@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.21
+Stable tag: 2.22
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -243,6 +243,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.22 =
+* Added a callback function that returns an HTML tables of shortcodes. In the "Usage" tab on the plugin settings page added two tables showing the available shortcodes.
+* Translation files updated.
 
 = 2.21 =
 * The 'codemirror-settings.js' file updated. The mime for the modes 'scss', 'less', 'shell', and 'bash' are changed from 'text/css', 'text/css', 'text/x-php' and 'text/x-php' to 'text/x-scss', 'text/x-less', 'text/x-sh' and 'text/x-sh' respectively.

@@ -77,9 +77,9 @@ is
 an "example"!
 [/code]</code></pre>
                                 <p><?php _e( 'In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an "example"`, as well as ensure that the double quotes around `example` are not converted to typographic (curly) quotes.', $text ); ?></p>
-                                <p><?php _e( 'You can use the following shortcodes:', $text ); ?><p>
-                                <code>[code] [php] [javascript] [js] [xml] [html] [css] [scss] [less] [sass] [markdown] [perl] [sql] [mysql] [shell] [bash]</code>
                                 <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php _e( 'To avoid problems, edit posts that contain your source code only in Text/HTML mode.', $text ); ?></p></li>
+                                <p><?php _e( 'You can use the following shortcodes:', $text ); ?><p>
+                                <?php spacexchimp_p010_get_shortcode_table(); ?>
                             <li><?php _e( 'Enjoy the fancy syntax highlighting on your website.', $text ); ?> <?php _e( 'It\'s that simple!', $text ); ?></li>
                         </ol>
                         <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php printf(

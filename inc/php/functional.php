@@ -20,7 +20,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $shortcodes_names = spacexchimp_p010_get_shortcode_names();
 
     // Create different shortcodes
-    foreach( $shortcodes_names as $shortcode_name ){
+    foreach( $shortcodes_names as $shortcode_name ) {
         add_shortcode( $shortcode_name, 'spacexchimp_p010_shortcode' );
     }
 
@@ -165,4 +165,70 @@ function spacexchimp_p010_get_codemirror_theme_pairs() {
                   'xq-light'                => 'XQ light',
                   'zenburn'                 => 'Zenburn'
     );
+}
+
+/**
+ * Callback for getting an HTML table of shortcodes
+ * @return html code of 2 tables showing available shortcodes
+ */
+function spacexchimp_p010_get_shortcode_table() {
+
+    // Get array of shortcode names and wrap it for show via HTML
+    $array_1 = spacexchimp_p010_get_codemirror_mode_pairs();
+    ksort( $array_1 );
+
+    // Set array of additional shortcode names and wrap it for show via HTML
+    $array_2 = array(
+                     'code'  => 'default language',
+                     'js'    => 'javascript',
+                     'scss'  => 'css',
+                     'less'  => 'css',
+                     'mysql' => 'sql',
+                     'bash'  => 'shell'
+                    );
+
+    // Table titles
+    $title_1 = __( 'Language &rarr; Shortcode', SPACEXCHIMP_P010_TEXT );
+    $title_2 = __( 'Shortcode aliases', SPACEXCHIMP_P010_TEXT );
+
+    // Generate list of items for tables
+    $list_1 = '';
+    $list_2 = '';
+    foreach( $array_1 as $shortcode_key => $shortcode_value ) {
+        $list_1 .= '<tr><th>' . $shortcode_key . '</th><td><code>[' . $shortcode_value . ']</code></td></tr>';
+    }
+    foreach( $array_2 as $shortcode_alias_key => $shortcode_alias_value ) {
+        $list_2 .= '<tr><th>[' . $shortcode_alias_key . ']</th><td><code>[' . $shortcode_alias_value . ']</code></td></tr>';
+    }
+
+    // Generate tables
+    $out = '<div class="panel panel-success">
+                <div class="panel-heading">' . $title_1 . '</div>
+                <table class="table table-striped">
+                    <tbody>'
+                        . $list_1 .
+                    '</tbody>
+                </table>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">' . $title_2 . '</div>
+                <table class="table table-striped">
+                    <tbody>'
+                        . $list_2 .
+                    '</tbody>
+                </table>
+            </div>
+            <style>
+                #tab-usage .panel {
+                    display: inline-block;
+                    min-width: 250px;
+                    max-width: 400px;
+                }
+                #tab-usage .panel .panel-heading {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            </style>';
+
+    echo $out;
 }

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-05-06 12:14+0300\n"
+"POT-Creation-Date: 2018-05-14 16:55+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,6 +28,14 @@ msgstr ""
 
 #: inc/php/core.php:52
 msgid "Syntax Highlighter"
+msgstr ""
+
+#: inc/php/functional.php:192
+msgid "Language &rarr; Shortcode"
+msgstr ""
+
+#: inc/php/functional.php:193
+msgid "Shortcode aliases"
 msgstr ""
 
 #: inc/php/messages.php:26
@@ -64,7 +72,7 @@ msgstr ""
 msgid "F.A.Q."
 msgstr ""
 
-#: inc/php/page.php:46 inc/php/settings.php:166 inc/php/sidebar.php:30
+#: inc/php/page.php:46 inc/php/settings.php:124 inc/php/sidebar.php:30
 msgid "Support"
 msgstr ""
 
@@ -100,16 +108,16 @@ msgstr ""
 msgid "In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an \"example\"`, as well as ensure that the double quotes around `example` are not converted to typographic (curly) quotes."
 msgstr ""
 
-#: inc/php/page.php:80
-msgid "You can use the following shortcodes:"
-msgstr ""
-
-#: inc/php/page.php:82 inc/php/page.php:85
+#: inc/php/page.php:80 inc/php/page.php:85
 msgid "Note!"
 msgstr ""
 
-#: inc/php/page.php:82
+#: inc/php/page.php:80
 msgid "To avoid problems, edit posts that contain your source code only in Text/HTML mode."
+msgstr ""
+
+#: inc/php/page.php:81
+msgid "You can use the following shortcodes:"
 msgstr ""
 
 #: inc/php/page.php:83
@@ -246,7 +254,7 @@ msgstr ""
 msgid "Support Me"
 msgstr ""
 
-#: inc/php/page.php:204 inc/php/settings.php:173 inc/php/sidebar.php:37
+#: inc/php/page.php:204 inc/php/settings.php:131 inc/php/sidebar.php:37
 msgid "Donate with PayPal"
 msgstr ""
 
@@ -271,107 +279,107 @@ msgstr ""
 msgid "Thank you for your support!"
 msgstr ""
 
-#: inc/php/settings.php:21 inc/php/settings.php:131
+#: inc/php/settings.php:32 inc/php/settings.php:89
 msgid "Save changes"
 msgstr ""
 
-#: inc/php/settings.php:25
+#: inc/php/settings.php:36
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings.php:27
+#: inc/php/settings.php:38
 msgid "There you can configure this plugin."
 msgstr ""
 
-#: inc/php/settings.php:31
+#: inc/php/settings.php:42
 msgid "Enable plugin"
 msgstr ""
 
-#: inc/php/settings.php:32
+#: inc/php/settings.php:43
 msgid "Enable or disable this plugin."
 msgstr ""
 
-#: inc/php/settings.php:52
+#: inc/php/settings.php:47
 msgid "Default language"
 msgstr ""
 
-#: inc/php/settings.php:53
+#: inc/php/settings.php:48
 msgid "Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting."
 msgstr ""
 
-#: inc/php/settings.php:95
+#: inc/php/settings.php:53
 msgid "Color theme"
 msgstr ""
 
-#: inc/php/settings.php:96
+#: inc/php/settings.php:54
 msgid "You can choose the theme which you like to view."
 msgstr ""
 
-#: inc/php/settings.php:100
+#: inc/php/settings.php:58
 msgid "Line numbers"
 msgstr ""
 
-#: inc/php/settings.php:101
+#: inc/php/settings.php:59
 msgid "Display the line numbers in the code block."
 msgstr ""
 
-#: inc/php/settings.php:104
+#: inc/php/settings.php:62
 msgid "First line number"
 msgstr ""
 
-#: inc/php/settings.php:105
+#: inc/php/settings.php:63
 msgid "You can set the number of the first line."
 msgstr ""
 
-#: inc/php/settings.php:109
+#: inc/php/settings.php:67
 msgid "Dollar sign ($)"
 msgstr ""
 
-#: inc/php/settings.php:110
+#: inc/php/settings.php:68
 msgid "Display the dollar sign ($) before every code line."
 msgstr ""
 
-#: inc/php/settings.php:113
+#: inc/php/settings.php:71
 msgid "Automatic height of code block"
 msgstr ""
 
-#: inc/php/settings.php:114
+#: inc/php/settings.php:72
 msgid "YES - Automatic height. NO - Fixed height, with scrollbar."
 msgstr ""
 
-#: inc/php/settings.php:117
+#: inc/php/settings.php:75
 msgid "Height of code block"
 msgstr ""
 
-#: inc/php/settings.php:118
+#: inc/php/settings.php:76
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr ""
 
-#: inc/php/settings.php:122
+#: inc/php/settings.php:80
 msgid "Size of Tab"
 msgstr ""
 
-#: inc/php/settings.php:123
+#: inc/php/settings.php:81
 msgid "The width (in spaces) of Tab. Default is 4."
 msgstr ""
 
-#: inc/php/settings.php:134
+#: inc/php/settings.php:92
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings.php:136
+#: inc/php/settings.php:94
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/settings.php:161
+#: inc/php/settings.php:119
 msgid "This is an example of HTML language."
 msgstr ""
 
-#: inc/php/settings.php:168 inc/php/sidebar.php:32
+#: inc/php/settings.php:126 inc/php/sidebar.php:32
 msgid "I'm an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy."
 msgstr ""
 
-#: inc/php/settings.php:175 inc/php/sidebar.php:39
+#: inc/php/settings.php:133 inc/php/sidebar.php:39
 msgid "Thanks for your support!"
 msgstr ""
 
