@@ -27,7 +27,7 @@ function spacexchimp_p010_load_scripts_base( $options ) {
     }
     wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
 
-    // CodeMirror Modes
+    // CodeMirror modes
     $modes = spacexchimp_p010_get_codemirror_mode_names();
     foreach( $modes as $mode) {
         wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );

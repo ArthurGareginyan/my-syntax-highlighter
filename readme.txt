@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.22
+Stable tag: 2.23
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,7 +13,7 @@ Simple post syntax-highlighted code without losing it's formatting or making any
 
 == Description ==
 
-An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library. If you want more options then tell us and we will be happy to add it.
+An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for.
 
@@ -243,6 +243,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.23 =
+* Added new constant "_FILE".
+* Added a function that runs during the plugin activation. Now the date of the first activation of the plugin is recorded in the database.
+* Some texts updated, and typos corrected.
 
 = 2.22 =
 * Added a callback function that returns an HTML tables of shortcodes. In the "Usage" tab on the plugin settings page added two tables showing the available shortcodes.
