@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.24
+Stable tag: 2.25
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,17 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * 16 Shortcodes
 * Allow shortcodes in the text widget
 * And much, much more!
+
+**PRO features include...**
+
+* 55 Themes (all provided themes from CodeMirror)
+* 153 Languages (all provided languages from CodeMirror)
+* 121 Shortcodes
+* Programming language selection option
+* Loading CodeMirror files on pages only when needed
+* Well documented
+
+[Get the PRO version now!](https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html)
 
 **A list of supported languages:**
 
@@ -240,9 +251,14 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 * [Developer website](https://www.spacexchimp.com)
 * [Dedicated plugin page on GitHub](https://github.com/ArthurGareginyan/my-syntax-highlighter)
+* [Premium Version](https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html)
 
 
 == Changelog ==
+
+= 2.25 =
+* Added information about the PRO version of the plugin.
+* Translation files updated.
 
 = 2.24 =
 * Fixed bug: "WARNING: /inc/php/enqueue.php:26 - Illegal string offset 'theme'".

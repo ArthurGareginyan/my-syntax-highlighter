@@ -80,6 +80,12 @@ an "example"!
                                 <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php _e( 'To avoid problems, edit posts that contain your source code only in Text/HTML mode.', $text ); ?></p></li>
                                 <p><?php _e( 'You can use the following shortcodes:', $text ); ?><p>
                                 <?php spacexchimp_p010_get_shortcode_table(); ?>
+                                <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php printf(
+                                                                                                    __( 'The PRO version supports 153 programming languages and 121 shortcodes. %s Learn more %s', $text ),
+                                                                                                    '<a href="https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html" target="_blank">',
+                                                                                                    '&rarr; </a>'
+                                                                                                  );
+                                                                                      ?></p>
                             <li><?php _e( 'Enjoy the fancy syntax highlighting on your website.', $text ); ?> <?php _e( 'It\'s that simple!', $text ); ?></li>
                         </ol>
                         <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php printf(
