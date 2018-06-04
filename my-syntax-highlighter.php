@@ -5,7 +5,7 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 2.25
+ * Version: 2.26
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -78,4 +78,3 @@ require_once( SPACEXCHIMP_P010_PATH . 'inc/php/functional.php' );
 require_once( SPACEXCHIMP_P010_PATH . 'inc/php/controls.php' );
 require_once( SPACEXCHIMP_P010_PATH . 'inc/php/page.php' );
 require_once( SPACEXCHIMP_P010_PATH . 'inc/php/messages.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/uninstall.php' );
