@@ -20,7 +20,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $shortcodes_names = spacexchimp_p010_get_shortcode_names();
 
     // Create different shortcodes
-    foreach( $shortcodes_names as $shortcode_name ) {
+    foreach ( $shortcodes_names as $shortcode_name ) {
         add_shortcode( $shortcode_name, 'spacexchimp_p010_shortcode' );
     }
 
@@ -194,10 +194,10 @@ function spacexchimp_p010_get_shortcode_table() {
     // Generate list of items for tables
     $list_1 = '';
     $list_2 = '';
-    foreach( $array_1 as $shortcode_key => $shortcode_value ) {
+    foreach ( $array_1 as $shortcode_key => $shortcode_value ) {
         $list_1 .= '<tr><th>' . $shortcode_key . '</th><td><code>[' . $shortcode_value . ']</code></td></tr>';
     }
-    foreach( $array_2 as $shortcode_alias_key => $shortcode_alias_value ) {
+    foreach ( $array_2 as $shortcode_alias_key => $shortcode_alias_value ) {
         $list_2 .= '<tr><th>[' . $shortcode_alias_key . ']</th><td><code>[' . $shortcode_alias_value . ']</code></td></tr>';
     }
 

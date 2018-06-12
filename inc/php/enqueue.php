@@ -20,17 +20,15 @@ function spacexchimp_p010_load_scripts_base( $options ) {
     wp_enqueue_script( 'jquery' );
 
     // CodeMirror library
-    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js', array(), $version, false );
     wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css', array(), $version, 'all' );
+    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js', array(), $version, false );
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     if ( $theme != "default" ) {
         wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $theme . '.css', array(), $version, 'all' );
     }
     wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
-
-    // CodeMirror modes
     $modes = spacexchimp_p010_get_codemirror_mode_names();
-    foreach( $modes as $mode) {
+    foreach ( $modes as $mode ) {
         wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
     }
 

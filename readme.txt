@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.26
+Stable tag: 2.27
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -256,9 +256,12 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
+= 2.27 =
+* CodeMirror library updated to the latest version v5.38.0. The directory structure is changed (files are better organized).
+
 = 2.26 =
 * Fixed a bug due to which the plugin data that stored in the database to not be deleted during the uninstallation of the plugin.
-* The contents of the file 'uninstall.php is moved to the file 'core.php'. The file 'uninstall.php' is deleted.
+* The contents of the file 'uninstall.php' is moved to the file 'core.php'. The file 'uninstall.php' is deleted.
 * Some texts are corrected.
 
 = 2.25 =
@@ -282,7 +285,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * The function '_shortcode' updated. Variables are renamed for easier reading.
 
 = 2.20 =
-* CodeMirror library updated to the latest version v5.37.0. The directory structure is changed (files is better organized). Added a test files for the CodeMirror modes.
+* CodeMirror library updated to the latest version v5.37.0. The directory structure is changed (files are better organized). Added a test files for the CodeMirror modes.
 * The 'codemirror-settings.js' file updated. The 'mode' variable renamed to 'mime'. The default value for the 'mime' variable changed to 'text'. The typo is corrected. (Thanks to Evan Anderson @ejdanderson)
 * Added a function for getting the names of the CodeMirror modes by scanning the CodeMirror library included in the plugin. (Thanks to Evan Anderson @ejdanderson)
 * Added a callback function that returns an array of pairs "Language Name" => "mode" of the CodeMirror modes. (Thanks to Evan Anderson @ejdanderson)
