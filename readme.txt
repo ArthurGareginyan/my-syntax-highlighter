@@ -71,7 +71,6 @@ Click to view language examples. Highlighted with Default theme.
 * SQL [(See Example)](http://codemirror.net/mode/sql/index.html)
 * MySQL [(See Example)](http://codemirror.net/mode/sql/index.html)
 * Shell [(See Example)](http://codemirror.net/mode/shell/index.html)
-* BASH [(See Example)](http://codemirror.net/mode/shell/index.html)
 
 **A list of supported shortcodes:**
 
