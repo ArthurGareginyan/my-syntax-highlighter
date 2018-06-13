@@ -4,9 +4,9 @@
 
 ![screenshot](https://github.com/ArthurGareginyan/my-syntax-highlighter/blob/master/assets/banner-772x250.png)
 
-An easy to use WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
+An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for. 
+Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for.
 
 This plugin also uses standalone Shortcode-Processor to prevent WordPress from converting newlines to HTML paragraphs, replacing apostrophes with typographic quotes and so on.
 
@@ -15,28 +15,47 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 ## Features
 
-* Easy to use Settings Page
-* Live preview on Settings Page
+* Lightweight and fast
+* Secure code with using clear coding standards
+* Intuitive interface with many settings
+* Cross browser compatible (work smooth in any modern browser)
+* Compatible with all WordPress themes
+* RTL compatible (right to left)
+* Translation ready
+* Published on [WordPess.org](http://wordpess.org/)
+
+**Key features include...**
+
 * Standalone Shortcode-Processor
 * Syntax highlighting (by CodeMirror)
 * Line numbering
 * Dollar sign before line
 * 36 Themes
 * 14 Languages
-* 16 Shortcodes
-* Ready for translation (POT file included)
-* Published on [WordPess.org](http://wordpess.org/)
+* 15 Shortcodes
+* Allow shortcodes in the text widget
+* And much, much more!
+
+**PRO features include...**
+
+* 55 Themes (all provided themes from CodeMirror)
+* 153 Languages (all provided languages from CodeMirror)
+* 121 Shortcodes
+* Programming language selection option
+* Loading CodeMirror files on pages only when needed
+* Well documented
+
+[Get the PRO version now!](https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html)
 
 **A list of supported languages:**
 
 Click to view language examples. Highlighted with Default theme.
 
-* PHP [(See Example)](http://codemirror.net/mode/php/index.html)* JavaScript [(See Example)](http://codemirror.net/mode/javascript/index.html)* XML [(See Example)](http://codemirror.net/mode/xml/index.html)* HTML [(See Example)](http://codemirror.net/mode/htmlmixed/index.html)* CSS [(See Example)](http://codemirror.net/mode/css/index.html)* SCSS [(See Example)](http://codemirror.net/mode/css/scss.html)* LESS [(See Example)](http://codemirror.net/mode/css/less.html)* SASS [(See Example)](http://codemirror.net/mode/sass/index.html)* MarkDown [(See Example)](http://codemirror.net/mode/markdown/index.html)* Perl [(See Example)](http://codemirror.net/mode/perl/index.html)* SQL [(See Example)](http://codemirror.net/mode/sql/index.html)* MySQL [(See Example)](http://codemirror.net/mode/sql/index.html)* Shell [(See Example)](http://codemirror.net/mode/shell/index.html)* BASH [(See Example)](http://codemirror.net/mode/shell/index.html)
-
+* PHP → [see example](http://codemirror.net/mode/php/index.html)* JavaScript → [see example](http://codemirror.net/mode/javascript/index.html)* XML → [see example](http://codemirror.net/mode/xml/index.html)* HTML → [see example](http://codemirror.net/mode/htmlmixed/index.html)* CSS → [see example](http://codemirror.net/mode/css/index.html)* SCSS → [see example](http://codemirror.net/mode/css/scss.html)* LESS → [see example](http://codemirror.net/mode/css/less.html)* SASS → [see example](http://codemirror.net/mode/sass/index.html)* MarkDown → [see example](http://codemirror.net/mode/markdown/index.html)* Perl → [see example](http://codemirror.net/mode/perl/index.html)* SQL → [see example](http://codemirror.net/mode/sql/index.html)* MySQL → [see example](http://codemirror.net/mode/sql/index.html)* Shell → [see example](http://codemirror.net/mode/shell/index.html)
 
 **A list of supported shortcodes:**
 
-* [code][/code]
+* [code][/code] - сustomizable shortcode
 * [php][/php]
 * [javascript][/javascript]
 * [js][/js]
@@ -51,53 +70,56 @@ Click to view language examples. Highlighted with Default theme.
 * [sql][/sql]
 * [mysql][/mysql]
 * [shell][/shell]
-* [bash][/bash]
 
 
 **A list of supported themes:**
 
-* 3024-day
-* 3024-night
-* ambiance-mobile
-* ambiance
-* base16-dark
-* base16-light
-* blackboard
-* cobalt
-* colorforth
-* eclipse
-* elegant
-* erlang-dark
-* lesser-dark
-* liquibyte
-* mbo
-* mdn-like
-* midnight
-* monokai
-* neat
-* neo
-* night
-* paraiso-dark
-* paraiso-light
-* pastel-on-dark
-* rubyblue
-* solarized
-* the-matrix
-* tomorrow-night-bright
-* tomorrow-night-eighties
-* ttcn
-* twilight
-* vibrant-ink
-* xq-dark
-* xq-light
-* zenburn
+* 3024 day
+* 3024 night
+* Ambiance mobile
+* Ambiance
+* Base16 dark
+* Base16 light
+* Blackboard
+* Cobalt
+* Colorforth
+* Eclipse
+* Elegant
+* Erlang dark
+* Lesser dark
+* Liquibyte
+* MBO
+* MDN-like
+* Midnight
+* Monokai
+* Neat
+* Neo
+* Night
+* Paraiso dark
+* Paraiso light
+* Pastel on dark
+* Rubyblue
+* Solarized
+* The matrix
+* Tomorrow night bright
+* Tomorrow night eighties
+* TTCN
+* Twilight
+* Vibrant ink
+* XQ dark
+* XQ light
+* Zenburn
 
 ## Translation
 
-Please keep in mind that not all translations are up to date. You are welcome to contribute!
+This plugin is ready for translation and has already been translated into several languages.
 
 * English (default)
-* Russian
+* Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
+* German (translation by Michael)
+* Spanish (translation by Patricio Toledo)
+
+If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
 
 
 ## Contributing
