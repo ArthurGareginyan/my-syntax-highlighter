@@ -128,7 +128,7 @@ msgstr ""
 
 #: inc/php/page.php:84
 #, php-format
-msgid "The PRO version supports 153 programming languages and 121 shortcodes. %s Learn more %s"
+msgid "The PRO version supports 154 programming languages and 125 shortcodes. %s Learn more %s"
 msgstr ""
 
 #: inc/php/page.php:89

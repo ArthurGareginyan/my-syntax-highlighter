@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.27
+Stable tag: 2.28
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,7 +13,7 @@ Simple post syntax-highlighted code without losing it's formatting or making any
 
 == Description ==
 
-An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
+An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 13 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for.
 
@@ -38,8 +38,8 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Line numbering
 * Dollar sign before line
 * 36 Themes
-* 14 Languages
-* 16 Shortcodes
+* 13 Languages
+* 15 Shortcodes
 * Allow shortcodes in the text widget
 * And much, much more!
 
@@ -58,23 +58,23 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 Click to view language examples. Highlighted with Default theme.
 
-* PHP [(See Example)](http://codemirror.net/mode/php/index.html)
-* JavaScript [(See Example)](http://codemirror.net/mode/javascript/index.html)
-* XML [(See Example)](http://codemirror.net/mode/xml/index.html)
-* HTML [(See Example)](http://codemirror.net/mode/htmlmixed/index.html)
-* CSS [(See Example)](http://codemirror.net/mode/css/index.html)
-* SCSS [(See Example)](http://codemirror.net/mode/css/scss.html)
-* LESS [(See Example)](http://codemirror.net/mode/css/less.html)
-* SASS [(See Example)](http://codemirror.net/mode/sass/index.html)
-* MarkDown [(See Example)](http://codemirror.net/mode/markdown/index.html)
-* Perl [(See Example)](http://codemirror.net/mode/perl/index.html)
-* SQL [(See Example)](http://codemirror.net/mode/sql/index.html)
-* MySQL [(See Example)](http://codemirror.net/mode/sql/index.html)
-* Shell [(See Example)](http://codemirror.net/mode/shell/index.html)
+* PHP → [see example](http://codemirror.net/mode/php/index.html)
+* JavaScript → [see example](http://codemirror.net/mode/javascript/index.html)
+* XML → [see example](http://codemirror.net/mode/xml/index.html)
+* HTML → [see example](http://codemirror.net/mode/htmlmixed/index.html)
+* CSS → [see example](http://codemirror.net/mode/css/index.html)
+* SCSS → [see example](http://codemirror.net/mode/css/scss.html)
+* LESS → [see example](http://codemirror.net/mode/css/less.html)
+* SASS → [see example](http://codemirror.net/mode/sass/index.html)
+* MarkDown → [see example](http://codemirror.net/mode/markdown/index.html)
+* Perl → [see example](http://codemirror.net/mode/perl/index.html)
+* SQL → [see example](http://codemirror.net/mode/sql/index.html)
+* MySQL → [see example](http://codemirror.net/mode/sql/index.html)
+* Shell → [see example](http://codemirror.net/mode/shell/index.html)
 
 **A list of supported shortcodes:**
 
-* [code][/code]
+* [code][/code] - customizable shortcode
 * [php][/php]
 * [javascript][/javascript]
 * [js][/js]
@@ -89,7 +89,6 @@ Click to view language examples. Highlighted with Default theme.
 * [sql][/sql]
 * [mysql][/mysql]
 * [shell][/shell]
-* [bash][/bash]
 
 **A list of supported themes:**
 
@@ -236,7 +235,7 @@ A. Yes, any contributions are very welcome! Please visit [our donation page](htt
 **License**
 
 This plugin is licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html) and is distributed free of charge.
-Commercial licensing (e.g. for projects that can’t use an open-source license) is available upon request.
+Commercial licensing (e.g. for projects that can’t use an open-source licence) is available upon request.
 
 **Credits**
 
@@ -254,6 +253,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.28 =
+* The shortcode "bash" is removed because of uselessness. Users can use the shortcode "shell" to highlight the BASH code.
+* Added code for loading the addons of the CodeMirror library.
+* Added the addon 'autorefresh.js' to the CodeMirror editor. The code for manual refreshing the CodeMirror editor is deleted.
 
 = 2.27 =
 * CodeMirror library updated to the latest version v5.38.0. The directory structure is changed (files are better organized).

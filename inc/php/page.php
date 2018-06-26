@@ -81,7 +81,7 @@ an "example"!
                                 <p><?php _e( 'You can use the following shortcodes:', $text ); ?><p>
                                 <?php spacexchimp_p010_get_shortcode_table(); ?>
                                 <p class="note"><b><?php _e( 'Note!', $text ); ?></b> <?php printf(
-                                                                                                    __( 'The PRO version supports 153 programming languages and 121 shortcodes. %s Learn more %s', $text ),
+                                                                                                    __( 'The PRO version supports 154 programming languages and 125 shortcodes. %s Learn more %s', $text ),
                                                                                                     '<a href="https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html" target="_blank">',
                                                                                                     '&rarr; </a>'
                                                                                                   );

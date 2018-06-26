@@ -94,8 +94,7 @@ function spacexchimp_p010_get_shortcode_names() {
                   'perl',
                   'sql',
                   'mysql',
-                  'shell',
-                  'bash'
+                  'shell'
     );
 }
 
@@ -106,7 +105,6 @@ function spacexchimp_p010_get_shortcode_names() {
  */
 function spacexchimp_p010_get_codemirror_mode_pairs() {
     return array(
-                  'BASH'       => 'bash',
                   'CSS'        => 'css',
                   'HTML'       => 'html',
                   'JavaScript' => 'javascript',
@@ -183,8 +181,7 @@ function spacexchimp_p010_get_shortcode_table() {
                      'js'    => 'javascript',
                      'scss'  => 'css',
                      'less'  => 'css',
-                     'mysql' => 'sql',
-                     'bash'  => 'shell'
+                     'mysql' => 'sql'
                     );
 
     // Table titles

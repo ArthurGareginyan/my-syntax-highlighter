@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
     var dollar_sign = spacexchimp_p010_scriptParams["dollar_sign"];
     var tab_size = parseInt( spacexchimp_p010_scriptParams["tab_size"] );
 
-    // Find all textareas on page
+    // Find textareas on page and replace them with the CodeMirror editor
     $('textarea.mshighlighter').each(function(index, elements) {
 
         // Switch language mode
@@ -69,12 +69,8 @@ jQuery(document).ready(function($) {
                                 case "shell":
                                          mime = "text/x-sh";
                                          break;
-                                case "bash":
-                                         mime = "text/x-sh";
-                                         break;
                             }
 
-        // Change editor to CodeMirror
         var editor = CodeMirror.fromTextArea( elements, {
             lineNumbers: line_numbers,
             firstLineNumber: first_line_number,
@@ -84,10 +80,6 @@ jQuery(document).ready(function($) {
             theme: theme,
             mode: mime
         });
-
-        // Refresh CodeMirror editor
-        editor.refresh();
-
     });
 
     // Replace line numbers with dollar sign
