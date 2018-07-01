@@ -1,5 +1,5 @@
 /*
- * Settings of CodeMirror editor
+ * CodeMirror editor settings
  *
  * @package     My Syntax Highlighter
  * @author      Arthur Gareginyan
@@ -20,10 +20,10 @@ jQuery(document).ready(function($) {
     var tab_size = parseInt( spacexchimp_p010_scriptParams["tab_size"] );
 
     // Find textareas on page and replace them with the CodeMirror editor
-    $('textarea.mshighlighter').each(function(index, elements) {
+    $('textarea.mshighlighter').each(function(index, element) {
 
         // Switch language mode
-        var language = $( elements ).attr( "language" );
+        var language = $( element ).attr( "language" );
         var mime = 'text';
         switch( language ) {
                                 case "php":
@@ -71,14 +71,15 @@ jQuery(document).ready(function($) {
                                          break;
                             }
 
-        var editor = CodeMirror.fromTextArea( elements, {
+        var editor = CodeMirror.fromTextArea(element, {
             lineNumbers: line_numbers,
             firstLineNumber: first_line_number,
             matchBrackets: true,
             indentUnit: tab_size,
             readOnly: true,
             theme: theme,
-            mode: mime
+            mode: mime,
+            autoRefresh: true
         });
     });
 
