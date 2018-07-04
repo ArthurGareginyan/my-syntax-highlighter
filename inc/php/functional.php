@@ -39,6 +39,9 @@ add_filter( 'the_content', 'spacexchimp_p010_shortcode_processor', 7 );
  */
 function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
 
+    // Put value of constants to variables for easier access
+    $prefix = SPACEXCHIMP_P010_PREFIX;
+
     // Read options from database and declare variables
     $options = get_option( SPACEXCHIMP_P010_SETTINGS . '_settings' );
 
@@ -46,6 +49,29 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
     if ( $lang == "code" ) {
         $lang = $default_language;
+    }
+
+    // Enqueue CodeMirror library
+    wp_enqueue_style( $prefix . '-codemirror-css' );
+    wp_enqueue_script( $prefix . '-codemirror-js' );
+    wp_enqueue_script( $prefix . '-codemirror-settings-js' );
+
+    // Enqueue CodeMirror addons
+    $addons = array( 'autorefresh' );
+    foreach ( $addons as $addon ) {
+        wp_enqueue_script( $prefix . '-codemirror-addon-' . $addon . '-js' );
+    }
+
+    // Enqueue CodeMirror modes
+    $modes = spacexchimp_p010_get_codemirror_mode_names();
+    foreach ( $modes as $mode ) {
+        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js' );
+    }
+
+    // Enqueue CodeMirror theme
+    $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    if ( $theme != "default" ) {
+        wp_enqueue_style( $prefix . '-codemirror-theme-css' );
     }
 
     // Cleaning

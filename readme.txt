@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.29
+Stable tag: 2.30
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -253,6 +253,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.30 =
+* New feature added: Loading of the CodeMirror files on pages occurs only when needed. If a page does not contain a shortcode, then the CodeMirror files will not be added to the page. Previously, this feature was available only in the PRO version of the plugin.
 
 = 2.29 =
 * Fixed localization of the word "licence". (Thanks to Garrett Hyder @garrett-eclipse)

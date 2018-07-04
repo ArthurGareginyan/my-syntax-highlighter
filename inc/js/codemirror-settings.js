@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
     var tab_size = parseInt( spacexchimp_p010_scriptParams["tab_size"] );
 
     // Find textareas on page and replace them with the CodeMirror editor
-    $('textarea.mshighlighter').each(function(index, element) {
+    $('textarea.mshighlighter').each(function(index, element){
 
         // Switch language mode
         var language = $( element ).attr( "language" );
@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 
     // Replace line numbers with dollar sign
     if ( dollar_sign == 'true' ) {
-        $(".CodeMirror-linenumber").each(function() {
+        $(".CodeMirror-linenumber").each(function(){
             var number = $(this).text();
             var dollar = number.replace(/[0-9]+/, "$");
             $(this).text(dollar);

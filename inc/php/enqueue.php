@@ -20,24 +20,24 @@ function spacexchimp_p010_load_scripts_base( $options ) {
     wp_enqueue_script( 'jquery' );
 
     // CodeMirror library
-    wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css', array(), $version, 'all' );
-    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js', array(), $version, false );
-    wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
-    $modes = spacexchimp_p010_get_codemirror_mode_names();
-    foreach ( $modes as $mode ) {
-        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
-    }
+    wp_register_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css', array(), $version, 'all' );
+    wp_register_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js', array(), $version, false );
+    wp_register_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
     $addons = array(
                     'display' => array( 'autorefresh' )
                    );
     foreach ( $addons as $addons_group_name => $addons_group ) {
         foreach ( $addons_group as $addon ) {
-            wp_enqueue_script( $prefix . '-codemirror-addon-' . $addon . '-js', $url . 'inc/lib/codemirror/addon/' . $addons_group_name . '/' . $addon . '.js', array(), $version, false );
+            wp_register_script( $prefix . '-codemirror-addon-' . $addon . '-js', $url . 'inc/lib/codemirror/addon/' . $addons_group_name . '/' . $addon . '.js', array(), $version, false );
         }
+    }
+    $modes = spacexchimp_p010_get_codemirror_mode_names();
+    foreach ( $modes as $mode ) {
+        wp_register_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
     }
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     if ( $theme != "default" ) {
-        wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $theme . '.css', array(), $version, 'all' );
+        wp_register_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $theme . '.css', array(), $version, 'all' );
     }
 
     // Dynamic JS. Create JS object and injected it into the JS file
@@ -115,6 +115,29 @@ function spacexchimp_p010_load_scripts_admin( $hook ) {
 
     // Call the function that contain a basis of scripts
     spacexchimp_p010_load_scripts_base( $options );
+
+    // CodeMirror library
+    wp_enqueue_script( $prefix . '-codemirror-js' );
+    wp_enqueue_script( $prefix . '-codemirror-settings-js' );
+    wp_enqueue_style( $prefix . '-codemirror-css' );
+
+    // CodeMirror modes (only those that are used in the preview section)
+    $modes = array( 'xml' );
+    foreach ( $modes as $mode ) {
+        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js' );
+    }
+
+    // CodeMirror addons (only those that are used in the preview section)
+    $addons = array( 'autorefresh' );
+    foreach ( $addons as $addon ) {
+        wp_enqueue_script( $prefix . '-codemirror-addon-' . $addon . '-js' );
+    }
+
+    // CodeMirror theme
+    $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    if ( $theme != "default" ) {
+        wp_enqueue_style( $prefix . '-codemirror-theme-css' );
+    }
 
 }
 add_action( 'admin_enqueue_scripts', 'spacexchimp_p010_load_scripts_admin' );
