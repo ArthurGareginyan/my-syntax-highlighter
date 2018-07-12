@@ -1,6 +1,6 @@
 # My Syntax Highlighter
 
-**Free Premium WordPress Plugin**
+**Free WordPress Plugin**
 
 ![screenshot](https://github.com/ArthurGareginyan/my-syntax-highlighter/blob/master/assets/banner-772x250.png)
 
