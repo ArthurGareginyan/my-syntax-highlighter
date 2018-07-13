@@ -6,23 +6,23 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Base for the _load_scripts hook
+ * Callback to register the CodeMirror library
  */
-function spacexchimp_p010_load_scripts_base( $options ) {
+function spacexchimp_p010_load_scripts_codemirror( $options ) {
 
     // Put value of constants to variables for easier access
-    $slug = SPACEXCHIMP_P010_SLUG;
     $prefix = SPACEXCHIMP_P010_PREFIX;
     $url = SPACEXCHIMP_P010_URL;
     $version = SPACEXCHIMP_P010_VERSION;
 
-    // Load jQuery library
-    wp_enqueue_script( 'jquery' );
-
-    // CodeMirror library
+    // Register main files of the CodeMirror library
     wp_register_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css', array(), $version, 'all' );
     wp_register_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js', array(), $version, false );
+
+    // Register settings file
     wp_register_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
+
+    // Register addons
     $addons = array(
                     'display' => array( 'autorefresh' )
                    );
@@ -31,14 +31,36 @@ function spacexchimp_p010_load_scripts_base( $options ) {
             wp_register_script( $prefix . '-codemirror-addon-' . $addon . '-js', $url . 'inc/lib/codemirror/addon/' . $addons_group_name . '/' . $addon . '.js', array(), $version, false );
         }
     }
+
+    // Register modes
     $modes = spacexchimp_p010_get_codemirror_mode_names();
     foreach ( $modes as $mode ) {
         wp_register_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
     }
+
+    // Register theme
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     if ( $theme != "default" ) {
         wp_register_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $theme . '.css', array(), $version, 'all' );
     }
+
+}
+
+/**
+ * Base for the _load_scripts hook
+ */
+function spacexchimp_p010_load_scripts_base( $options ) {
+
+    // Put value of constants to variables for easier access
+    $prefix = SPACEXCHIMP_P010_PREFIX;
+    $url = SPACEXCHIMP_P010_URL;
+    $version = SPACEXCHIMP_P010_VERSION;
+
+    // Load jQuery library
+    wp_enqueue_script( 'jquery' );
+
+    // Call the function that enqueue the CodeMirror library
+    spacexchimp_p010_load_scripts_codemirror( $options );
 
     // Dynamic JS. Create JS object and injected it into the JS file
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
@@ -148,7 +170,6 @@ add_action( 'admin_enqueue_scripts', 'spacexchimp_p010_load_scripts_admin' );
 function spacexchimp_p010_load_scripts_frontend() {
 
     // Put value of constants to variables for easier access
-    $slug = SPACEXCHIMP_P010_SLUG;
     $prefix = SPACEXCHIMP_P010_PREFIX;
     $url = SPACEXCHIMP_P010_URL;
     $settings = SPACEXCHIMP_P010_SETTINGS;
