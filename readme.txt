@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.31
+Stable tag: 2.32
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -136,6 +136,7 @@ This plugin is ready for translation and has already been translated into severa
 * Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
 * German (translation by Michael)
 * Spanish (translation by Patricio Toledo)
+* Dutch (translation by Peter Leenders)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
 
@@ -253,6 +254,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.32 =
+* Dutch translation added. (Thanks to Peter Leenders)
+* The code block that adds dynamic JavaScript is moved to a separate function '_load_scripts_dynamic_js' within the 'enqueue.php' file.
+* The code block that adds dynamic CSS is moved to a separate function '_load_scripts_dynamic_css' within the 'enqueue.php' file.
+* The function '_load_scripts_codemirror' is improved. Removed an unnecessary call of constants.
+* The function '_load_scripts_admin' is improved.
+* The function '_load_scripts_frontend' is improved.
+* The banner of Space X-Chimp, located on the settings page of the plugin, is updated. The image 'banner.png' is deleted.
+* Some texts are updated.
+* All translation files are updated.
 
 = 2.31 =
 * The code block that enqueue the CodeMirror library files is moved to a separate function '_load_scripts_codemirror' within the 'enqueue.php' file.
