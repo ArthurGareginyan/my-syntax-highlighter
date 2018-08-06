@@ -20,11 +20,11 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         // Preparing an array with unique names of languages but non-unique modes (reversed key-value pair)
                         $languages = spacexchimp_p010_get_codemirror_mode_pairs();
                         $languages = array_flip( $languages );
-                        $languages = array( '' => '- NONE - ' ) + $languages;
+                        $languages_plus = array( '' => '- NONE - ' ) + $languages;
 
                         // Preparing an array with the names of themes
                         $themes = spacexchimp_p010_get_codemirror_theme_pairs();
-                        $themes = array( 'default' => 'Default' ) + $themes;
+                        $themes_plus = array( 'default' => 'Default' ) + $themes;
                     ?>
 
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
@@ -43,19 +43,19 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                      __( 'Enable or disable this plugin.', $text )
                                                                    );
                                     spacexchimp_p010_control_list( 'defaultLanguage',
-                                                                    $languages,
+                                                                    $languages_plus,
                                                                    __( 'Default language', $text ),
                                                                    __( 'Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting.', $text ),
                                                                    ''
                                                                  );
                                     spacexchimp_p010_control_list( 'theme',
-                                                                    $themes,
+                                                                    $themes_plus,
                                                                    __( 'Color theme', $text ),
                                                                    __( 'You can choose the theme which you like to view.', $text ),
                                                                    'default'
                                                                  );
                                     spacexchimp_p010_control_switch( 'line_numbers',
-                                                                     __( 'Line numbers', $text ),
+                                                                     __( 'Line numbering', $text ),
                                                                      __( 'Display the line numbers in the code block.', $text )
                                                                    );
                                     spacexchimp_p010_control_number( 'first_line_number',
@@ -77,8 +77,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                      '300'
                                                                    );
                                      spacexchimp_p010_control_number( 'tab_size',
-                                                                      __( 'Size of Tab', $text ),
-                                                                      __( 'The width (in spaces) of Tab. Default is 4.', $text ),
+                                                                      __( 'Tab character size', $text ),
+                                                                      __( 'The width (in spaces) of the Tab character. Default is 4.', $text ),
                                                                       '4'
                                                                     );
                                 ?>

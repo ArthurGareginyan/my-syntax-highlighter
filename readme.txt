@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.32
+Stable tag: 2.33
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,7 +34,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 **Key features include...**
 
 * Standalone Shortcode-Processor
-* Syntax highlighting (by CodeMirror)
+* Code syntax highlighting
 * Line numbering
 * Dollar sign before line
 * 36 Themes
@@ -254,6 +254,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.33 =
+* In the 'settings.php' file, the variables 'languages' and 'themes' to which the default/empty item was added are renamed to 'languages_plus' and 'themes_plus' respectively.
+* The translation into Russian has been corrected.
+* The translation into Dutch has been corrected.
 
 = 2.32 =
 * Dutch translation added. (Thanks to Peter Leenders)

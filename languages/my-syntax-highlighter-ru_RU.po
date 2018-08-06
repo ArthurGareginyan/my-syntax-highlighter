@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-07-24 00:36+0300\n"
-"PO-Revision-Date: 2018-07-24 00:36+0300\n"
+"POT-Creation-Date: 2018-08-07 01:39+0300\n"
+"PO-Revision-Date: 2018-08-07 01:39+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -280,7 +280,7 @@ msgstr ""
 
 #: inc/php/page.php:224
 msgid "We spend a lot of time and effort trying to make sure that the themes, plugins and other things we build are useful, and the ultimate proof of that for us is that you actually want to use them. But we are an independent developers, without a regular income, so every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
-msgstr "Я трачу много времени и сил, пытаясь убедиться в том, что темы, плагины и другие вещи, которые я создаю, полезны и окончательное доказательство этого для меня состоит в том, что вы на самом деле хотите их использовать. Но Я независимый разработчик, без регулярного дохода, поэтому каждый небольшой вклад помогает мне покрыть расходы и позволяет тратить больше времени на создание программ для людей как вы."
+msgstr "Мы тратим много времени и усилий, пытаясь убедиться в том, что темы, плагины и другие вещи, которые мы создаём, полезны, и окончательное доказательство этого для нас то, что вы на самом деле хотите их использовать. Но мы независимые разработчики, без регулярного дохода, поэтому каждый небольшой вклад помогает покрыть наши расходы и позволяет нам тратить больше времени на создание вещей для таких замечательных людей, как вы."
 
 #: inc/php/page.php:225
 msgid "If you appreciate our work, you can buy us a cup of coffee!"
@@ -327,7 +327,7 @@ msgid "You can choose the theme which you like to view."
 msgstr "Вы можете выбрать тему, которую хотите просмотреть."
 
 #: inc/php/settings.php:58
-msgid "Line numbers"
+msgid "Line numbering"
 msgstr "Номера строк"
 
 #: inc/php/settings.php:59
@@ -367,11 +367,11 @@ msgid "The height (in pixels) of code block. Default is 300px."
 msgstr "Высота (в пикселях) блока кода. Значение по умолчанию — 300px."
 
 #: inc/php/settings.php:80
-msgid "Size of Tab"
+msgid "Tab character size"
 msgstr "Ширина Таба"
 
 #: inc/php/settings.php:81
-msgid "The width (in spaces) of Tab. Default is 4."
+msgid "The width (in spaces) of the Tab character. Default is 4."
 msgstr "Ширина Таба (в пробелах). По умолчанию — 4."
 
 #: inc/php/settings.php:92

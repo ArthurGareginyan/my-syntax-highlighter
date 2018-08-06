@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-07-24 00:36+0300\n"
-"PO-Revision-Date: 2018-07-24 00:36+0300\n"
+"POT-Creation-Date: 2018-08-07 01:38+0300\n"
+"PO-Revision-Date: 2018-08-07 01:38+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -327,7 +327,7 @@ msgid "You can choose the theme which you like to view."
 msgstr ""
 
 #: inc/php/settings.php:58
-msgid "Line numbers"
+msgid "Line numbering"
 msgstr ""
 
 #: inc/php/settings.php:59
@@ -367,11 +367,11 @@ msgid "The height (in pixels) of code block. Default is 300px."
 msgstr ""
 
 #: inc/php/settings.php:80
-msgid "Size of Tab"
+msgid "Tab character size"
 msgstr ""
 
 #: inc/php/settings.php:81
-msgid "The width (in spaces) of Tab. Default is 4."
+msgid "The width (in spaces) of the Tab character. Default is 4."
 msgstr ""
 
 #: inc/php/settings.php:92
