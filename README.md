@@ -4,7 +4,7 @@
 
 ![screenshot](https://github.com/ArthurGareginyan/my-syntax-highlighter/blob/master/assets/banner-772x250.png)
 
-An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 14 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
+An easy to use, with intuitive interface, WordPress plugin that provides a simple way for embedding syntax-highlighted source code within pages or posts on your website, without losing it's formatting or making any manual changes. Supporting 13 languages, 16 shortcodes and 36 themes. The syntax highlighting feature implemented via a [CodeMirror](https://codemirror.net/) library.
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. Syntax highlighting is one strategy to improve the readability and context of the text; especially for code that spans several pages. The reader can easily ignore large sections of comments or code, depending on what they are looking for.
 
@@ -12,8 +12,7 @@ This plugin also uses standalone Shortcode-Processor to prevent WordPress from c
 
 This plugin is just plug and play, no tedious configurations or hacks, just install, enable and start using your new shortcodes.
 
-
-## Features
+**Features**
 
 * Lightweight and fast
 * Secure code with using clear coding standards
@@ -27,11 +26,11 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 **Key features include...**
 
 * Standalone Shortcode-Processor
-* Syntax highlighting (by CodeMirror)
+* Code syntax highlighting
 * Line numbering
 * Dollar sign before line
 * 36 Themes
-* 14 Languages
+* 13 Languages
 * 15 Shortcodes
 * Allow shortcodes in the text widget
 * And much, much more!
@@ -51,11 +50,23 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 Click to view language examples. Highlighted with Default theme.
 
-* PHP → [see example](http://codemirror.net/mode/php/index.html)* JavaScript → [see example](http://codemirror.net/mode/javascript/index.html)* XML → [see example](http://codemirror.net/mode/xml/index.html)* HTML → [see example](http://codemirror.net/mode/htmlmixed/index.html)* CSS → [see example](http://codemirror.net/mode/css/index.html)* SCSS → [see example](http://codemirror.net/mode/css/scss.html)* LESS → [see example](http://codemirror.net/mode/css/less.html)* SASS → [see example](http://codemirror.net/mode/sass/index.html)* MarkDown → [see example](http://codemirror.net/mode/markdown/index.html)* Perl → [see example](http://codemirror.net/mode/perl/index.html)* SQL → [see example](http://codemirror.net/mode/sql/index.html)* MySQL → [see example](http://codemirror.net/mode/sql/index.html)* Shell → [see example](http://codemirror.net/mode/shell/index.html)
+* PHP → [see example](http://codemirror.net/mode/php/index.html)
+* JavaScript → [see example](http://codemirror.net/mode/javascript/index.html)
+* XML → [see example](http://codemirror.net/mode/xml/index.html)
+* HTML → [see example](http://codemirror.net/mode/htmlmixed/index.html)
+* CSS → [see example](http://codemirror.net/mode/css/index.html)
+* SCSS → [see example](http://codemirror.net/mode/css/scss.html)
+* LESS → [see example](http://codemirror.net/mode/css/less.html)
+* SASS → [see example](http://codemirror.net/mode/sass/index.html)
+* MarkDown → [see example](http://codemirror.net/mode/markdown/index.html)
+* Perl → [see example](http://codemirror.net/mode/perl/index.html)
+* SQL → [see example](http://codemirror.net/mode/sql/index.html)
+* MySQL → [see example](http://codemirror.net/mode/sql/index.html)
+* Shell → [see example](http://codemirror.net/mode/shell/index.html)
 
 **A list of supported shortcodes:**
 
-* [code][/code] - сustomizable shortcode
+* [code][/code] - customizable shortcode
 * [php][/php]
 * [javascript][/javascript]
 * [js][/js]
@@ -70,7 +81,6 @@ Click to view language examples. Highlighted with Default theme.
 * [sql][/sql]
 * [mysql][/mysql]
 * [shell][/shell]
-
 
 **A list of supported themes:**
 
@@ -110,7 +120,7 @@ Click to view language examples. Highlighted with Default theme.
 * XQ light
 * Zenburn
 
-## Translation
+**Translation**
 
 This plugin is ready for translation and has already been translated into several languages.
 
@@ -118,8 +128,28 @@ This plugin is ready for translation and has already been translated into severa
 * Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
 * German (translation by Michael)
 * Spanish (translation by Patricio Toledo)
+* Dutch (translation by Peter Leenders)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
+
+**Minimum system requirements:**
+
+* [PHP](https://php.net) version **5.2** or higher.
+* [MySQL](https://www.mysql.com) version **5.0** or higher.
+
+**Recommended system requirements:**
+
+* [PHP](https://php.net) version **7.0** or higher.
+* [MySQL](https://www.mysql.com) version **5.6** or higher.
+
+**Contribution**
+
+Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+
+* [Donate](https://www.spacexchimp.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/my-syntax-highlighter?rate=5#postform) this plugin.
+* [Share with us](https://www.spacexchimp.com/contact.html) or view the [GitHub Repo](https://github.com/ArthurGareginyan/my-syntax-highlighter) if you have any ideas or suggestions to make this plugin better.
+
 
 
 ## Contributing
