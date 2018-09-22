@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-08-07 01:39+0300\n"
+"POT-Creation-Date: 2018-09-22 15:33+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -93,7 +93,7 @@ msgid "To add the syntax highlighting to your code in any post, simply follow th
 msgstr ""
 
 #: inc/php/page.php:67
-msgid "Go to the \"Settings\" tab."
+msgid "Go to the \"Settings\" tab on this page."
 msgstr ""
 
 #: inc/php/page.php:68
@@ -396,20 +396,20 @@ msgstr ""
 msgid "We are «Space X-Chimp»"
 msgstr ""
 
-#: inc/php/sidebar.php:25
+#: inc/php/sidebar.php:33
 msgid "About"
 msgstr ""
 
 #. Description of the plugin/theme
-#: inc/php/sidebar.php:27
+#: inc/php/sidebar.php:35
 msgid "Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes."
 msgstr ""
 
-#: inc/php/sidebar.php:32
+#: inc/php/sidebar.php:40
 msgid "Help"
 msgstr ""
 
-#: inc/php/sidebar.php:34
+#: inc/php/sidebar.php:42
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr ""
 

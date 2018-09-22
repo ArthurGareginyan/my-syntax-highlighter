@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.33
+Stable tag: 2.34
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,9 +45,9 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 **PRO features include...**
 
-* 55 Themes (all provided themes from CodeMirror)
-* 153 Languages (all provided languages from CodeMirror)
-* 121 Shortcodes
+* 56 Themes (all provided themes from CodeMirror)
+* 154 Programming languages (all provided languages from CodeMirror)
+* 125 Shortcodes
 * Programming language selection option
 * Loading CodeMirror files on pages only when needed
 * Well documented
@@ -222,9 +222,9 @@ A. Yes, any contributions are very welcome! Please visit [our donation page](htt
 == Screenshots ==
 
 1. Plugin settings page.
-2. Example of post with added source code and wrapped it in shortcode provided by this plugin. Default theme of highlighter.
-3. Example of post with added source code and wrapped it in shortcode provided by this plugin. The "The Matrix" theme of highlighter.
-4. Example of post with added source codes on multiple language and wrapped it in shortcode provided by this plugin. Default theme of highlighter.
+2. An example of post with added source code and wrapped it in shortcode provided by this plugin. Default theme of highlighter.
+3. An example of post with added source code and wrapped it in shortcode provided by this plugin. The "The Matrix" theme of highlighter.
+4. An example of post with added source codes on multiple language and wrapped it in shortcode provided by this plugin. Default theme of highlighter.
 
 
 == Other Notes ==
@@ -250,10 +250,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 * [Developer website](https://www.spacexchimp.com)
 * [Dedicated plugin page on GitHub](https://github.com/ArthurGareginyan/my-syntax-highlighter)
+* [Dedicated plugin page on WordPress.org](https://wordpress.org/plugins/my-syntax-highlighter/)
 * [Premium Version](https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html)
 
 
 == Changelog ==
+
+= 2.34 =
+* CSS code, which is located in the file "admin.css" and is related to the "FAQ" section, is improved.
+* The sidebar items are rearranged.
+* Some texts are updated.
+* Translation files are updated.
 
 = 2.33 =
 * In the 'settings.php' file, the variables 'languages' and 'themes' to which the default/empty item was added are renamed to 'languages_plus' and 'themes_plus' respectively.
@@ -413,7 +420,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Code commenting improved.
 * Load of the additional remote CSS file removed from the admin.js file.
 * Changed the sorting of enqueueing of scripts.
-* The ''Family' page tab renamed to 'Store'.
+* The 'Family' page tab renamed to 'Store'.
 * Added ad banner of my store website.
 
 = 2.5.1 =

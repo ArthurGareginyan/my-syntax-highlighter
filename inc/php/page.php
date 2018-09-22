@@ -64,7 +64,7 @@ function spacexchimp_p010_render_submenu_page() {
                     <div class="inside">
                         <p><?php _e( 'To add the syntax highlighting to your code in any post, simply follow these steps:', $text ); ?></p>
                         <ol class="custom-counter">
-                            <li><?php _e( 'Go to the "Settings" tab.', $text ); ?></li>
+                            <li><?php _e( 'Go to the "Settings" tab on this page.', $text ); ?></li>
                             <li><?php _e( 'Select the desired settings.', $text ); ?></li>
                             <li><?php _e( 'Click the "Save changes" button.', $text ); ?></li>
                             <li><?php _e( 'On the WordPress Post/Page Editor page switch to the Text/HTML editor and wrap your source code in one of the supported shortcodes (like <code>[code]...[/code]</code> that is universal shortcode). Example:', $text ); ?><br><br>
