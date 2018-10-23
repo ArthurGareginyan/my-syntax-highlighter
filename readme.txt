@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.34
+Stable tag: 2.35
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -31,7 +31,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * RTL compatible (right to left)
 * Translation ready
 
-**Key features include...**
+**Key features include**
 
 * Standalone Shortcode-Processor
 * Code syntax highlighting
@@ -43,7 +43,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Allow shortcodes in the text widget
 * And much, much more!
 
-**PRO features include...**
+**PRO features include**
 
 * 56 Themes (all provided themes from CodeMirror)
 * 154 Programming languages (all provided languages from CodeMirror)
@@ -255,6 +255,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.35 =
+* Improvement: Design of the plugin settings page is improved.
+* Content of the "Usage Instructions" section updated.
+* Translation files are updated.
 
 = 2.34 =
 * CSS code, which is located in the file "admin.css" and is related to the "FAQ" section, is improved.
