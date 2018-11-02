@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 2.35
+Stable tag: 2.36
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,6 +50,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * 125 Shortcodes
 * Programming language selection option
 * Loading CodeMirror files on pages only when needed
+* No ads on the settings page
 * Well documented
 
 [Get the PRO version now!](https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html)
@@ -255,6 +256,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.36 =
+* Improvement: Design of the plugin settings page is improved.
 
 = 2.35 =
 * Improvement: Design of the plugin settings page is improved.
