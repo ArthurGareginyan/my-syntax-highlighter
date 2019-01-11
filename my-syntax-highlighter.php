@@ -5,12 +5,12 @@
  * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 2.36
+ * Version: 2.37
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
  *
- * Copyright 2016-2018 Space X-Chimp ( website : https://www.spacexchimp.com )
+ * Copyright 2016-2019 Space X-Chimp ( website : https://www.spacexchimp.com )
  *
  * This plugin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

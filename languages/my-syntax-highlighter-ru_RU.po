@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2018-10-23 19:15+0300\n"
-"PO-Revision-Date: 2018-10-23 19:15+0300\n"
+"POT-Creation-Date: 2019-01-11 20:41+0200\n"
+"PO-Revision-Date: 2019-01-11 20:41+0200\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -114,7 +114,7 @@ msgstr "На странице WordPress Post/Page Editor перейдите в �
 msgid "In this case, the shortcode will prevent WordPress from inserting paragraph breaks between `This`, `is` and `an \"example\"`, as well as ensure that the double quotes around `example` are not converted to typographic (curly) quotes."
 msgstr "В этом случае, шорткод не даст WordPress вставить теги разрыва абзацев между `This`, `is` и `an \"example\"`, а также не даст преобразовать двойные кавычки вокруг `example ` в типографские (вьющиеся) кавычки."
 
-#: inc/php/page.php:80 inc/php/page.php:83 inc/php/page.php:91
+#: inc/php/page.php:80 inc/php/page.php:83
 msgid "Note!"
 msgstr "Примечание!"
 

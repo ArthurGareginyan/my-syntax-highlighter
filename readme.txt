@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.0
-Stable tag: 2.36
+Stable tag: 2.37
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,7 +38,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Line numbering
 * Dollar sign before line
 * 36 Themes
-* 13 Languages
+* 13 Programming languages
 * 15 Shortcodes
 * Allow shortcodes in the text widget
 * And much, much more!
@@ -50,6 +50,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * 125 Shortcodes
 * Programming language selection option
 * Loading CodeMirror files on pages only when needed
+* Line wrapping
 * No ads on the settings page
 * Well documented
 
@@ -95,8 +96,8 @@ Click to view language examples. Highlighted with Default theme.
 
 * 3024 day
 * 3024 night
-* Ambiance mobile
 * Ambiance
+* Ambiance mobile
 * Base16 dark
 * Base16 light
 * Blackboard
@@ -136,7 +137,7 @@ This plugin is ready for translation and has already been translated into severa
 * English (default)
 * Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
 * German (translation by Michael)
-* Spanish (translation by Patricio Toledo)
+* Spanish (translation by Ramiro Garcés and Patricio Toledo)
 * Dutch (translation by Peter Leenders)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/my-syntax-highlighter).
@@ -256,6 +257,14 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.37 =
+* Content of the "Usage" section updated.
+* Some variables in the "functional.php" file are renamed.
+* Code formatting in the "admin.js" file improved.
+* Code commenting improved.
+* The copyright date updated.
+* Translation files are updated.
 
 = 2.36 =
 * Improvement: Design of the plugin settings page is improved.

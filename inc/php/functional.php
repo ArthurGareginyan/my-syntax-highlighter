@@ -37,18 +37,18 @@ add_filter( 'the_content', 'spacexchimp_p010_shortcode_processor', 7 );
 /**
  * Callback for shortcodes. Uses in Shortcode-Processor
  */
-function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
+function spacexchimp_p010_shortcode( $atts, $content = null, $tag ) {
 
     // Put value of constants to variables for easier access
     $prefix = SPACEXCHIMP_P010_PREFIX;
 
-    // Read options from database and declare variables
+    // Retrieve options from database and declare variables
     $options = get_option( SPACEXCHIMP_P010_SETTINGS . '_settings' );
 
     // Default language for the [code] shortcode
     $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
-    if ( $lang == "code" ) {
-        $lang = $default_language;
+    if ( $tag == "code" ) {
+        $tag = $default_language;
     }
 
     // Enqueue CodeMirror library
@@ -78,7 +78,7 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     $content = rtrim( $content );
 
     if ( !empty( $options['enable'] ) && $options['enable'] == "on" ) {
-        return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $lang . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
+        return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $tag . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
     } else {
         return $content;
     }
