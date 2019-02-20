@@ -2,10 +2,10 @@
 /**
  * Plugin Name: My Syntax Highlighter
  * Plugin URI: https://github.com/ArthurGareginyan/my-syntax-highlighter
- * Description: Simple post syntax-highlighted code without losing it's formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.
+ * Description: Easily and safely embed a syntax-highlighted source code within pages and posts on your WordPress website without losing its formatting.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 2.37
+ * Version: 2.38
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/

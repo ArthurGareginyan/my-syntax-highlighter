@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
             <div class="postbox about">
                 <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'Simple post syntax-highlighted code without losing it\'s formatting or making any manual changes. Supporting multiple languages, shortcodes and themes.', $text ); ?></p>
+                    <p><?php _e( 'This plugin gives you the ability to easily and safely embed a syntax-highlighted source code within pages and posts on your WordPress website without losing its formatting.', $text ); ?></p>
                 </div>
             </div>
 
