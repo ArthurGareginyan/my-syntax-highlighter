@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.1
-Stable tag: 2.40
+Stable tag: 2.41
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -62,19 +62,19 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 Click to view language examples. Highlighted with Default theme.
 
-* PHP → [see example](http://codemirror.net/mode/php/index.html)
-* JavaScript → [see example](http://codemirror.net/mode/javascript/index.html)
-* XML → [see example](http://codemirror.net/mode/xml/index.html)
-* HTML → [see example](http://codemirror.net/mode/htmlmixed/index.html)
-* CSS → [see example](http://codemirror.net/mode/css/index.html)
-* SCSS → [see example](http://codemirror.net/mode/css/scss.html)
-* LESS → [see example](http://codemirror.net/mode/css/less.html)
-* SASS → [see example](http://codemirror.net/mode/sass/index.html)
-* MarkDown → [see example](http://codemirror.net/mode/markdown/index.html)
-* Perl → [see example](http://codemirror.net/mode/perl/index.html)
-* SQL → [see example](http://codemirror.net/mode/sql/index.html)
-* MySQL → [see example](http://codemirror.net/mode/sql/index.html)
-* Shell → [see example](http://codemirror.net/mode/shell/index.html)
+* PHP → [see example](https://codemirror.net/mode/php/index.html)
+* JavaScript → [see example](https://codemirror.net/mode/javascript/index.html)
+* XML → [see example](https://codemirror.net/mode/xml/index.html)
+* HTML → [see example](https://codemirror.net/mode/htmlmixed/index.html)
+* CSS → [see example](https://codemirror.net/mode/css/index.html)
+* SCSS → [see example](https://codemirror.net/mode/css/scss.html)
+* LESS → [see example](https://codemirror.net/mode/css/less.html)
+* SASS → [see example](https://codemirror.net/mode/sass/index.html)
+* MarkDown → [see example](https://codemirror.net/mode/markdown/index.html)
+* Perl → [see example](https://codemirror.net/mode/perl/index.html)
+* SQL → [see example](https://codemirror.net/mode/sql/index.html)
+* MySQL → [see example](https://codemirror.net/mode/sql/index.html)
+* Shell → [see example](https://codemirror.net/mode/shell/index.html)
 
 **A list of supported shortcodes:**
 
@@ -147,12 +147,12 @@ If you want to help translate this plugin, please visit the [translation page](h
 
 **Minimum system requirements:**
 
-* [PHP](https://php.net) version **5.2** or higher.
+* [PHP](https://secure.php.net) version **5.2** or higher.
 * [MySQL](https://www.mysql.com) version **5.0** or higher.
 
 **Recommended system requirements:**
 
-* [PHP](https://php.net) version **7.0** or higher.
+* [PHP](https://secure.php.net) version **7.0** or higher.
 * [MySQL](https://www.mysql.com) version **5.6** or higher.
 
 **Contribution**
@@ -160,7 +160,7 @@ If you want to help translate this plugin, please visit the [translation page](h
 Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 
 * [Donate](https://www.spacexchimp.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
-* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/my-syntax-highlighter?rate=5#postform) this plugin.
+* [Rate and Review](https://wordpress.org/support/plugin/my-syntax-highlighter/reviews/#new-post) this plugin.
 * [Share with us](https://www.spacexchimp.com/contact.html) or view the [GitHub Repo](https://github.com/ArthurGareginyan/my-syntax-highlighter) if you have any ideas or suggestions to make this plugin better.
 
 
@@ -263,6 +263,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
+= 2.41 - 2019-03-18 =
+* Improvement: Notification display system updated
+* Code commenting improved.
+* Style sheet for the back end is optimised.
+
 = 2.40 - 2019-03-01 =
 * Framework updated: The file "page.php" is divided into the following parts: "page.php", "usage.php", "faq.php", "support.php".
 * Framework updated: The files "settings.php", "usage.php", "faq.php", "support.php" are moved to the subfolder "tabs".
@@ -321,7 +326,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 = 2.31 =
 * The code block that enqueue the CodeMirror library files is moved to a separate function '_load_scripts_codemirror' within the 'enqueue.php' file.
 * Enqueue of the CodeMirror addons is moved to the beginning of the queue, before enqueuing the CodeMirror mods.
-* The extra mention of the constant '_SLUG'  is removed from the file 'enqueue.php'.
+* The extra mention of the constant '_SLUG' is removed from the file 'enqueue.php'.
 * All translation files are updated.
 
 = 2.30 =
