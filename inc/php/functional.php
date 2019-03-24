@@ -39,11 +39,11 @@ add_filter( 'the_content', 'spacexchimp_p010_shortcode_processor', 7 );
  */
 function spacexchimp_p010_shortcode( $atts, $content = null, $tag ) {
 
-    // Put value of constants to variables for easier access
-    $prefix = SPACEXCHIMP_P010_PREFIX;
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p010_plugin();
 
     // Retrieve options from database and declare variables
-    $options = get_option( SPACEXCHIMP_P010_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
 
     // Default language for the [code] shortcode
     $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
@@ -52,32 +52,32 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $tag ) {
     }
 
     // Enqueue CodeMirror library
-    wp_enqueue_style( $prefix . '-codemirror-css' );
-    wp_enqueue_script( $prefix . '-codemirror-js' );
-    wp_enqueue_script( $prefix . '-codemirror-settings-js' );
+    wp_enqueue_style( $plugin['prefix'] . '-codemirror-css' );
+    wp_enqueue_script( $plugin['prefix'] . '-codemirror-js' );
+    wp_enqueue_script( $plugin['prefix'] . '-codemirror-settings-js' );
 
     // Enqueue CodeMirror addons
     $addons = array( 'autorefresh' );
     foreach ( $addons as $addon ) {
-        wp_enqueue_script( $prefix . '-codemirror-addon-' . $addon . '-js' );
+        wp_enqueue_script( $plugin['prefix'] . '-codemirror-addon-' . $addon . '-js' );
     }
 
     // Enqueue CodeMirror modes
     $modes = spacexchimp_p010_get_codemirror_mode_names();
     foreach ( $modes as $mode ) {
-        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js' );
+        wp_enqueue_script( $plugin['prefix'] . '-codemirror-mode-' . $mode . '-js' );
     }
 
     // Enqueue CodeMirror theme
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     if ( $theme != "default" ) {
-        wp_enqueue_style( $prefix . '-codemirror-theme-css' );
+        wp_enqueue_style( $plugin['prefix'] . '-codemirror-theme-css' );
     }
 
     // Cleaning
     $content = rtrim( $content );
 
-    if ( !empty( $options['enable'] ) && $options['enable'] == "on" ) {
+    if ( ! empty( $options['enable'] ) && $options['enable'] == "on" ) {
         return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $tag . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
     } else {
         return $content;
@@ -95,7 +95,11 @@ add_filter( 'widget_text', 'do_shortcode' );
  * @return array of mode names located in the CodeMirror library
  */
 function spacexchimp_p010_get_codemirror_mode_names() {
-    $cm_dir = SPACEXCHIMP_P010_PATH . 'inc/lib/codemirror/mode/';
+
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p010_plugin();
+
+    $cm_dir = $plugin['path'] . 'inc/lib/codemirror/mode/';
     $modes = array_filter( glob( $cm_dir . '*' ), 'is_dir' );
     return array_map( 'basename', $modes );
 }
@@ -197,6 +201,9 @@ function spacexchimp_p010_get_codemirror_theme_pairs() {
  */
 function spacexchimp_p010_get_shortcode_table() {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p010_plugin();
+
     // Get array of shortcode names and wrap it for show via HTML
     $array_1 = spacexchimp_p010_get_codemirror_mode_pairs();
     ksort( $array_1 );
@@ -211,8 +218,8 @@ function spacexchimp_p010_get_shortcode_table() {
                     );
 
     // Table titles
-    $title_1 = __( 'Language &rarr; Shortcode', SPACEXCHIMP_P010_TEXT );
-    $title_2 = __( 'Shortcode aliases', SPACEXCHIMP_P010_TEXT );
+    $title_1 = __( 'Language &rarr; Shortcode', $plugin['text'] );
+    $title_2 = __( 'Shortcode aliases', $plugin['text'] );
 
     // Generate list of items for tables
     $list_1 = '';

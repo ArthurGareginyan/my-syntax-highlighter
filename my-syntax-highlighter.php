@@ -5,7 +5,7 @@
  * Description: Easily and safely embed a syntax-highlighted source code within pages and posts on your WordPress website without losing its formatting.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 2.41
+ * Version: 2.42
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
@@ -52,7 +52,7 @@ $plugin_data = get_file_data( __FILE__,
                             );
 function spacexchimp_p010_define_constants( $constant_name, $value ) {
     $constant_name = 'SPACEXCHIMP_P010_' . $constant_name;
-    if ( !defined( $constant_name ) )
+    if ( ! defined( $constant_name ) )
         define( $constant_name, $value );
 }
 spacexchimp_p010_define_constants( 'FILE', __FILE__ );
@@ -68,13 +68,38 @@ spacexchimp_p010_define_constants( 'PREFIX', 'spacexchimp_p010' );
 spacexchimp_p010_define_constants( 'SETTINGS', 'spacexchimp_p010' );
 
 /**
+ * A useful function that returns an array with the contents of plugin constants
+ */
+function spacexchimp_p010_plugin() {
+    $array = array(
+        'file'     => SPACEXCHIMP_P010_FILE,
+        'dir'      => SPACEXCHIMP_P010_DIR,
+        'base'     => SPACEXCHIMP_P010_BASE,
+        'url'      => SPACEXCHIMP_P010_URL,
+        'path'     => SPACEXCHIMP_P010_PATH,
+        'slug'     => SPACEXCHIMP_P010_SLUG,
+        'name'     => SPACEXCHIMP_P010_NAME,
+        'version'  => SPACEXCHIMP_P010_VERSION,
+        'text'     => SPACEXCHIMP_P010_TEXT,
+        'prefix'   => SPACEXCHIMP_P010_PREFIX,
+        'settings' => SPACEXCHIMP_P010_SETTINGS
+    );
+    return $array;
+}
+
+/**
+ * Put value of plugin constants into an array for easier access
+ */
+$plugin = spacexchimp_p010_plugin();
+
+/**
  * Load the plugin modules
  */
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/core.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/upgrade.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/versioning.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/enqueue.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/functional.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/controls.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/page.php' );
-require_once( SPACEXCHIMP_P010_PATH . 'inc/php/messages.php' );
+require_once( $plugin['path'] . 'inc/php/core.php' );
+require_once( $plugin['path'] . 'inc/php/upgrade.php' );
+require_once( $plugin['path'] . 'inc/php/versioning.php' );
+require_once( $plugin['path'] . 'inc/php/enqueue.php' );
+require_once( $plugin['path'] . 'inc/php/functional.php' );
+require_once( $plugin['path'] . 'inc/php/controls.php' );
+require_once( $plugin['path'] . 'inc/php/page.php' );
+require_once( $plugin['path'] . 'inc/php/messages.php' );
