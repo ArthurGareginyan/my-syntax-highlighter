@@ -37,7 +37,7 @@ add_filter( 'the_content', 'spacexchimp_p010_shortcode_processor', 7 );
 /**
  * Callback for shortcodes. Uses in Shortcode-Processor
  */
-function spacexchimp_p010_shortcode( $atts, $content = null, $tag ) {
+function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
 
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
@@ -47,8 +47,8 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $tag ) {
 
     // Default language for the [code] shortcode
     $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
-    if ( $tag == "code" ) {
-        $tag = $default_language;
+    if ( $lang == "code" ) {
+        $lang = $default_language;
     }
 
     // Enqueue CodeMirror library
@@ -77,11 +77,8 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $tag ) {
     // Cleaning
     $content = rtrim( $content );
 
-    if ( ! empty( $options['enable'] ) && $options['enable'] == "on" ) {
-        return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $tag . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
-    } else {
-        return $content;
-    }
+    return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $lang . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
+
 }
 
 /**
@@ -204,11 +201,11 @@ function spacexchimp_p010_get_shortcode_table() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Get array of shortcode names and wrap it for show via HTML
+    // Get array of shortcode names and sort it
     $array_1 = spacexchimp_p010_get_codemirror_mode_pairs();
     ksort( $array_1 );
 
-    // Set array of additional shortcode names and wrap it for show via HTML
+    // Set array of additional shortcode names
     $array_2 = array(
                      'code'  => 'default language',
                      'js'    => 'javascript',

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2019-03-23 04:30+0300\n"
-"PO-Revision-Date: 2019-03-23 04:30+0300\n"
+"POT-Creation-Date: 2019-03-31 16:14+0300\n"
+"PO-Revision-Date: 2019-03-31 16:14+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -35,11 +35,11 @@ msgstr "Faire un don"
 msgid "Syntax Highlighter"
 msgstr ""
 
-#: inc/php/functional.php:221
+#: inc/php/functional.php:218
 msgid "Language &rarr; Shortcode"
 msgstr ""
 
-#: inc/php/functional.php:222
+#: inc/php/functional.php:219
 msgid "Shortcode aliases"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgstr "Utilisation"
 msgid "F.A.Q."
 msgstr "FAQ."
 
-#: inc/php/page.php:46 inc/php/sidebar.php:47 inc/php/tabs/settings.php:124
+#: inc/php/page.php:46 inc/php/sidebar.php:56 inc/php/tabs/settings.php:127
 msgid "Support"
 msgstr "Support"
 
@@ -93,36 +93,36 @@ msgstr "Support"
 msgid "Store"
 msgstr "Le magasin"
 
-#: inc/php/sidebar.php:16
+#: inc/php/sidebar.php:17
 msgid "We are «Space X-Chimp»"
 msgstr ""
 
-#: inc/php/sidebar.php:33
+#: inc/php/sidebar.php:38
 msgid "About"
 msgstr "A propos"
 
-#: inc/php/sidebar.php:35
+#: inc/php/sidebar.php:40
 msgid "This plugin gives you the ability to easily and safely embed a syntax-highlighted source code within pages and posts on your WordPress website without losing its formatting."
 msgstr ""
 
-#: inc/php/sidebar.php:40
+#: inc/php/sidebar.php:47
 msgid "Help"
 msgstr "Aide"
 
-#: inc/php/sidebar.php:42
+#: inc/php/sidebar.php:49
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr "Si vous avez une question, veuillez lire les informations dans la section FAQ."
 
-#: inc/php/sidebar.php:49 inc/php/tabs/settings.php:126
+#: inc/php/sidebar.php:58 inc/php/tabs/settings.php:129
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Toute contribution même minime nous aident à couvrir nos frais et nous laisse plus de temps pour ajouter des fonctionnalités que les utilisateurs comme vous apprécient."
 
-#: inc/php/sidebar.php:54 inc/php/tabs/settings.php:131
+#: inc/php/sidebar.php:63 inc/php/tabs/settings.php:134
 #: inc/php/tabs/support.php:21
 msgid "Donate with PayPal"
 msgstr "Faire un don avec PayPal"
 
-#: inc/php/sidebar.php:56 inc/php/tabs/settings.php:133
+#: inc/php/sidebar.php:65 inc/php/tabs/settings.php:136
 msgid "Thanks for your support!"
 msgstr "Merci pour votre soutien!"
 
@@ -473,99 +473,91 @@ msgstr "Vous pouvez poser votre question sur %s cette page %s."
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr ""
 
-#: inc/php/tabs/settings.php:32 inc/php/tabs/settings.php:89
+#: inc/php/tabs/settings.php:33 inc/php/tabs/settings.php:88
 msgid "Save changes"
 msgstr "Enregistrer les modifications"
 
-#: inc/php/tabs/settings.php:36
+#: inc/php/tabs/settings.php:38
 msgid "Main Settings"
 msgstr "Paramètres principaux"
 
-#: inc/php/tabs/settings.php:38
+#: inc/php/tabs/settings.php:40
 msgid "Here you can configure this plugin."
 msgstr "Ici vous pouvez configurer ce plugin."
 
-#: inc/php/tabs/settings.php:42
-msgid "Enable plugin"
-msgstr "Activer plugin"
-
-#: inc/php/tabs/settings.php:43
-msgid "Enable or disable this plugin."
-msgstr ""
-
-#: inc/php/tabs/settings.php:47
+#: inc/php/tabs/settings.php:45
 msgid "Default language"
 msgstr ""
 
-#: inc/php/tabs/settings.php:48
+#: inc/php/tabs/settings.php:46
 msgid "Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting."
 msgstr ""
 
-#: inc/php/tabs/settings.php:53
+#: inc/php/tabs/settings.php:51
 msgid "Color theme"
 msgstr "Couleur du thème"
 
-#: inc/php/tabs/settings.php:54
+#: inc/php/tabs/settings.php:52
 msgid "You can choose the theme which you like to view."
 msgstr "Vous pouvez choisir le thème que vous souhaitez voir."
 
-#: inc/php/tabs/settings.php:58
+#: inc/php/tabs/settings.php:56
 msgid "Line numbering"
 msgstr "Numérotation des lignes"
 
-#: inc/php/tabs/settings.php:59
+#: inc/php/tabs/settings.php:57
 msgid "Display the line numbers in the code block."
 msgstr "Affichez les numéros de ligne dans le bloc de code."
 
-#: inc/php/tabs/settings.php:62
+#: inc/php/tabs/settings.php:60
 msgid "First line number"
 msgstr "Numéro de la première ligne"
 
-#: inc/php/tabs/settings.php:63
+#: inc/php/tabs/settings.php:61
 msgid "You can set the number of the first line."
 msgstr "Vous pouvez définir le numéro de la première ligne."
 
-#: inc/php/tabs/settings.php:67
+#: inc/php/tabs/settings.php:65
 msgid "Dollar sign ($)"
 msgstr ""
 
-#: inc/php/tabs/settings.php:68
+#: inc/php/tabs/settings.php:66
 msgid "Display the dollar sign ($) before every code line."
 msgstr ""
 
-#: inc/php/tabs/settings.php:71
+#: inc/php/tabs/settings.php:69
 msgid "Automatic height of code block"
 msgstr ""
 
-#: inc/php/tabs/settings.php:72
+#: inc/php/tabs/settings.php:70
 msgid "YES - Automatic height. NO - Fixed height, with scrollbar."
 msgstr "Oui - hauteur automatique. NO - hauteur fixe, avec barre de défilement."
 
-#: inc/php/tabs/settings.php:75
+#: inc/php/tabs/settings.php:73
 msgid "Height of code block"
 msgstr ""
 
-#: inc/php/tabs/settings.php:76
+#: inc/php/tabs/settings.php:74
 msgid "The height (in pixels) of code block. Default is 300px."
 msgstr ""
 
-#: inc/php/tabs/settings.php:80
+#: inc/php/tabs/settings.php:78
 msgid "Tab character size"
 msgstr "Taille des caractères de tabulation"
 
-#: inc/php/tabs/settings.php:81
+#: inc/php/tabs/settings.php:79
 msgid "The width (in spaces) of the Tab character. Default is 4."
 msgstr "Largeur (dans les espaces) du caractère Tab. La valeur par défaut est 4."
 
-#: inc/php/tabs/settings.php:92
+#: inc/php/tabs/settings.php:93
 msgid "Preview"
 msgstr "Aperçu"
 
-#: inc/php/tabs/settings.php:94
+#: inc/php/tabs/settings.php:95
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr "Cliquez sur le bouton \"Enregistrer les modifications\" pour mettre à jour cet aperçu."
 
-#: inc/php/tabs/settings.php:119
+#: inc/php/tabs/settings.php:120
 msgid "This is an example of HTML language."
 msgstr ""
 
@@ -659,3 +651,6 @@ msgstr ""
 #, php-format
 msgid "If you want more options, then %s let us know %s and we will be happy to add them."
 msgstr "Si vous voulez plus d'options, alors %s nous le faire savoir %s et nous serons heureux de les ajouter."
+
+#~ msgid "Enable plugin"
+#~ msgstr "Activer plugin"

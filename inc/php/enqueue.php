@@ -58,13 +58,13 @@ function spacexchimp_p010_load_scripts_dynamic_js() {
     // Retrieve options from database and declare variables
     $options = get_option( $plugin['settings'] . '_settings' );
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    $line_numbers = ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) ? 'true' : 'false';
     $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
-    $tab_size = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
     $dollar_sign = ( !empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) ? 'true' : 'false';
-    if ( ! empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) || ! empty( $options['dollar_sign'] ) && ( $options['dollar_sign'] == "on" ) ) {
+    $tab_size = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
+
+    if ( $dollar_sign == "true" ) {
         $line_numbers = "true";
-    } else {
-        $line_numbers = "false";
     }
 
     // Create an array (JS object) with all the settings
@@ -72,8 +72,8 @@ function spacexchimp_p010_load_scripts_dynamic_js() {
                            'theme' => $theme,
                            'line_numbers' => $line_numbers,
                            'first_line_number' => $first_line_number,
-                           'tab_size' => $tab_size,
-                           'dollar_sign' => $dollar_sign
+                           'dollar_sign' => $dollar_sign,
+                           'tab_size' => $tab_size
                            );
 
     // Inject the array into the JavaScript file
@@ -90,18 +90,17 @@ function spacexchimp_p010_load_scripts_dynamic_css() {
 
     // Retrieve options from database and declare variables
     $options = get_option( $plugin['settings'] . '_settings' );
-    if ( ! empty( $options['automatic_height'] ) && ( $options['automatic_height'] == "on" ) ) {
-        $block_height = "100%";
-    } elseif ( ! empty( $options['block_height'] ) ) {
-        $block_height = $options['block_height'] . "px";
-    } else {
-        $block_height = "300px";
+    $editor_height_auto = ( !empty( $options['automatic_height'] ) && ( $options['automatic_height'] == "on" ) ) ? 'true' : 'false';
+    $editor_height = !empty( $options['block_height'] ) ? $options['block_height'] : '300px';
+
+    if ( $editor_height_auto == "true" ) {
+        $editor_height = "100%";
     }
 
     // Create an array with all the settings (CSS code)
     $custom_css = "
                     .CodeMirror {
-                        height: " . $block_height . " !important;
+                        height: " . $editor_height . " !important;
                     }
                   ";
 
@@ -155,16 +154,16 @@ function spacexchimp_p010_load_scripts_admin( $hook ) {
     wp_enqueue_script( $plugin['prefix'] . '-codemirror-settings-js' );
     wp_enqueue_style( $plugin['prefix'] . '-codemirror-css' );
 
-    // CodeMirror modes (only those that are used in the preview section)
-    $modes = array( 'xml' );
-    foreach ( $modes as $mode ) {
-        wp_enqueue_script( $plugin['prefix'] . '-codemirror-mode-' . $mode . '-js' );
-    }
-
     // CodeMirror addons (only those that are used in the preview section)
     $addons = array( 'autorefresh' );
     foreach ( $addons as $addon ) {
         wp_enqueue_script( $plugin['prefix'] . '-codemirror-addon-' . $addon . '-js' );
+    }
+
+    // CodeMirror modes (only those that are used in the preview section)
+    $modes = array( 'xml' );
+    foreach ( $modes as $mode ) {
+        wp_enqueue_script( $plugin['prefix'] . '-codemirror-mode-' . $mode . '-js' );
     }
 
     // CodeMirror theme
@@ -193,25 +192,20 @@ function spacexchimp_p010_load_scripts_frontend() {
     // Retrieve options from database
     $options = get_option( $plugin['settings'] . '_settings' );
 
-    // If the "Enable Plugin" option is on
-    if ( ! empty( $options['enable'] ) && $options['enable'] == "on" ) {
+    // Load jQuery library
+    wp_enqueue_script( 'jquery' );
 
-        // Load jQuery library
-        wp_enqueue_script( 'jquery' );
+    // Style sheet
+    wp_enqueue_style( $plugin['prefix'] . '-frontend-css', $plugin['url'] . 'inc/css/frontend.css', array(), $plugin['version'], 'all' );
 
-        // Style sheet
-        wp_enqueue_style( $plugin['prefix'] . '-frontend-css', $plugin['url'] . 'inc/css/frontend.css', array(), $plugin['version'], 'all' );
+    // Call the function that enqueue the CodeMirror library
+    spacexchimp_p010_load_scripts_codemirror();
 
-        // Call the function that enqueue the CodeMirror library
-        spacexchimp_p010_load_scripts_codemirror();
+    // Call the function that contains the dynamic JavaScript
+    spacexchimp_p010_load_scripts_dynamic_js();
 
-        // Call the function that contains the dynamic JavaScript
-        spacexchimp_p010_load_scripts_dynamic_js();
-
-        // Call the function that contains the dynamic CSS
-        spacexchimp_p010_load_scripts_dynamic_css();
-
-    }
+    // Call the function that contains the dynamic CSS
+    spacexchimp_p010_load_scripts_dynamic_css();
 
 }
 add_action( 'wp_enqueue_scripts', $plugin['prefix'] . '_load_scripts_frontend' );
