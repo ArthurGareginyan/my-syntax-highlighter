@@ -34,10 +34,10 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     </button>
                     <!-- END SUBMIT -->
 
-                    <div class="postbox" id="settings">
-                        <h3 class="title"><?php _e( 'Main Settings', $plugin['text'] ); ?></h3>
+                    <div class="postbox" id="options-group-languages">
+                        <h3 class="title"><?php _e( 'Languages', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Here you can configure this plugin.', $plugin['text'] ); ?></p>
+                            <p class="note"><?php _e( 'Here you can select the programming languages.', $plugin['text'] ); ?></p>
                             <table class="form-table">
                                 <?php
                                     spacexchimp_p010_control_list( 'defaultLanguage',
@@ -46,12 +46,26 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    __( 'Default language mode for the shortcode [code]. You can select -NONE- to leave without highlighting.', $plugin['text'] ),
                                                                    ''
                                                                  );
+                                ?>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="postbox" id="options-group-editor">
+                        <h3 class="title"><?php _e( 'Code editor settings', $plugin['text'] ); ?></h3>
+                        <div class="inside">
+                            <p class="note"><?php _e( 'Here you can customize the code editor.', $plugin['text'] ); ?></p>
+                            <table class="form-table">
+                                <?php
                                     spacexchimp_p010_control_list( 'theme',
                                                                     $themes_plus,
                                                                    __( 'Color theme', $plugin['text'] ),
                                                                    __( 'You can choose the theme which you like to view.', $plugin['text'] ),
                                                                    'default'
                                                                  );
+                                    spacexchimp_p010_control_separator(
+                                                                        __( 'Options', $plugin['text'] )
+                                                                      );
                                     spacexchimp_p010_control_switch( 'line_numbers',
                                                                      __( 'Line numbering', $plugin['text'] ),
                                                                      __( 'Display the line numbers in the code block.', $plugin['text'] )
@@ -65,20 +79,23 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                      __( 'Dollar sign ($)', $plugin['text'] ),
                                                                      __( 'Display the dollar sign ($) before every code line.', $plugin['text'] )
                                                                    );
+                                    spacexchimp_p010_control_number( 'tab_size',
+                                                                     __( 'Tab character size', $plugin['text'] ),
+                                                                     __( 'The width (in spaces) of the Tab character. Default is 4.', $plugin['text'] ),
+                                                                     '4'
+                                                                   );
+                                    spacexchimp_p010_control_separator(
+                                                                        __( 'Field size', $plugin['text'] )
+                                                                      );
                                     spacexchimp_p010_control_switch( 'automatic_height',
-                                                                     __( 'Automatic height of code block', $plugin['text'] ),
-                                                                     __( 'YES - Automatic height. NO - Fixed height, with scrollbar.', $plugin['text'] )
+                                                                     __( 'Automatic height', $plugin['text'] ),
+                                                                     __( 'Automatic height of code editor field. YES - Automatic height. NO - Fixed height, with scrollbar.', $plugin['text'] )
                                                                    );
                                     spacexchimp_p010_control_number( 'block_height',
-                                                                     __( 'Height of code block', $plugin['text'] ),
-                                                                     __( 'The height (in pixels) of code block. Default is 300px.', $plugin['text'] ),
+                                                                     __( 'Fixed height', $plugin['text'] ),
+                                                                     __( 'The height (in pixels) of code editor field. Default is 300px.', $plugin['text'] ),
                                                                      '300'
                                                                    );
-                                     spacexchimp_p010_control_number( 'tab_size',
-                                                                      __( 'Tab character size', $plugin['text'] ),
-                                                                      __( 'The width (in spaces) of the Tab character. Default is 4.', $plugin['text'] ),
-                                                                      '4'
-                                                                    );
                                 ?>
                             </table>
                         </div>
