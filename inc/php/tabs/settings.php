@@ -101,6 +101,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         </div>
                     </div>
 
+                    <div class="postbox" id="options-group-editor">
+                        <h3 class="title"><?php _e( 'Additional', $plugin['text'] ); ?></h3>
+                        <div class="inside">
+                            <p class="note"><?php _e( 'Here you can configure additional options.', $plugin['text'] ); ?></p>
+                            <table class="form-table">
+                                <?php
+                                    spacexchimp_p010_control_switch( 'convert_special_characters',
+                                                                     __( 'Convert special characters', $plugin['text'] ),
+                                                                     __( 'Convert special characters ( &amp; &quot; &apos; &lt; &gt; ) used in a post to HTML entities before starting shortcode processing. When the shortcode processing ends, convert special HTML entities back to characters. This helps prevent some possible errors.', $plugin['text'] )
+                                                                   );
+                                ?>
+                            </table>
+                        </div>
+                    </div>
+
                     <!-- SUBMIT -->
                     <input type="submit" name="submit" id="submit" class="btn btn-default btn-lg button-save-main" value="<?php _e( 'Save changes', $plugin['text'] ); ?>">
                     <!-- END SUBMIT -->

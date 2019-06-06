@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2019-04-09 11:53+0300\n"
+"POT-Creation-Date: 2019-06-06 16:16+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,11 +34,11 @@ msgstr ""
 msgid "Syntax Highlighter"
 msgstr ""
 
-#: inc/php/functional.php:218
+#: inc/php/functional.php:235
 msgid "Language &rarr; Shortcode"
 msgstr ""
 
-#: inc/php/functional.php:219
+#: inc/php/functional.php:236
 msgid "Shortcode aliases"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "F.A.Q."
 msgstr ""
 
-#: inc/php/page.php:46 inc/php/sidebar.php:56 inc/php/tabs/settings.php:144
+#: inc/php/page.php:46 inc/php/sidebar.php:56 inc/php/tabs/settings.php:159
 msgid "Support"
 msgstr ""
 
@@ -112,16 +112,16 @@ msgstr ""
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr ""
 
-#: inc/php/sidebar.php:58 inc/php/tabs/settings.php:146
+#: inc/php/sidebar.php:58 inc/php/tabs/settings.php:161
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr ""
 
-#: inc/php/sidebar.php:63 inc/php/tabs/settings.php:151
+#: inc/php/sidebar.php:63 inc/php/tabs/settings.php:166
 #: inc/php/tabs/support.php:21
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/sidebar.php:65 inc/php/tabs/settings.php:153
+#: inc/php/sidebar.php:65 inc/php/tabs/settings.php:168
 msgid "Thanks for your support!"
 msgstr ""
 
@@ -472,7 +472,7 @@ msgstr ""
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr ""
 
-#: inc/php/tabs/settings.php:33 inc/php/tabs/settings.php:105
+#: inc/php/tabs/settings.php:33 inc/php/tabs/settings.php:120
 msgid "Save changes"
 msgstr ""
 
@@ -564,15 +564,31 @@ msgstr ""
 msgid "The height (in pixels) of code editor field. Default is 300px."
 msgstr ""
 
-#: inc/php/tabs/settings.php:110
-msgid "Preview"
+#: inc/php/tabs/settings.php:105
+msgid "Additional"
+msgstr ""
+
+#: inc/php/tabs/settings.php:107
+msgid "Here you can configure additional options."
+msgstr ""
+
+#: inc/php/tabs/settings.php:111
+msgid "Convert special characters"
 msgstr ""
 
 #: inc/php/tabs/settings.php:112
+msgid "Convert special characters ( &amp; &quot; &apos; &lt; &gt; ) used in a post to HTML entities before starting shortcode processing. When the shortcode processing ends, convert special HTML entities back to characters. This helps prevent some possible errors."
+msgstr ""
+
+#: inc/php/tabs/settings.php:125
+msgid "Preview"
+msgstr ""
+
+#: inc/php/tabs/settings.php:127
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/tabs/settings.php:137
+#: inc/php/tabs/settings.php:152
 msgid "This is an example of HTML language."
 msgstr ""
 

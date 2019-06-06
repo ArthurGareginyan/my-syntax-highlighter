@@ -10,6 +10,18 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
  */
 function spacexchimp_p010_shortcode_processor( $content ) {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p010_plugin();
+
+    // Retrieve options from database and declare variables
+    $options = get_option( $plugin['settings'] . '_settings' );
+    $convert_special_characters = ( !empty( $options['convert_special_characters'] ) && ( $options['convert_special_characters'] == "on" ) ) ? 'true' : 'false';
+
+    // Convert special characters to HTML entities
+    if ( $convert_special_characters == "true" ) {
+        $content = htmlspecialchars( $content );
+    }
+
     global $shortcode_tags;
 
     // Backup and clear out the shortcodes list
@@ -29,6 +41,11 @@ function spacexchimp_p010_shortcode_processor( $content ) {
 
     // Put the shortcodes back to normal
     $shortcode_tags = $orig_shortcode_tags;
+
+    // Convert special HTML entities back to characters
+    if ( $convert_special_characters == "true" ) {
+        $content = htmlspecialchars_decode( $content );
+    }
 
     return $content;
 }
