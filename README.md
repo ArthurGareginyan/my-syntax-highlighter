@@ -23,7 +23,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Translation ready
 * Published on [WordPess.org](http://wordpess.org/)
 
-**Key features include...**
+**Key features include**
 
 * Standalone Shortcode-Processor
 * Code syntax highlighting
@@ -35,7 +35,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Allow shortcodes in the text widget
 * And much, much more!
 
-**PRO features include...**
+**PRO features include**
 
 * 55 Themes (all provided themes from CodeMirror)
 * 153 Languages (all provided languages from CodeMirror)
