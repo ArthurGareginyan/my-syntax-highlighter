@@ -134,12 +134,12 @@ If you want to help translate this plugin then please visit the [translation pag
 
 **Minimum system requirements:**
 
-* [PHP](https://php.net) version **5.2** or higher.
+* [PHP](https://secure.php.net) version **5.2** or higher.
 * [MySQL](https://www.mysql.com) version **5.0** or higher.
 
 **Recommended system requirements:**
 
-* [PHP](https://php.net) version **7.0** or higher.
+* [PHP](https://secure.php.net) version **7.0** or higher.
 * [MySQL](https://www.mysql.com) version **5.6** or higher.
 
 **Contribution**
@@ -147,7 +147,7 @@ If you want to help translate this plugin then please visit the [translation pag
 Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 
 * [Donate](https://www.spacexchimp.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
-* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/my-syntax-highlighter?rate=5#postform) this plugin.
+* [Rate and Review](https://wordpress.org/support/plugin/my-syntax-highlighter/reviews/#new-post) this plugin.
 * [Share with us](https://www.spacexchimp.com/contact.html) or view the [GitHub Repo](https://github.com/ArthurGareginyan/my-syntax-highlighter) if you have any ideas or suggestions to make this plugin better.
 
 
