@@ -4,7 +4,7 @@ Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.2
-Stable tag: 2.45
+Stable tag: 2.45.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -262,6 +262,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 2.45.1 - Jul 16, 2019 =
+* Fixed: Prints a warning since PHP/7.1: "Notice: A non well formed numeric value encountered in /inc/php/versioning.php on line 43".
 
 = 2.45 - Jun 6, 2019 =
 * New feature: Added an option to convert special characters ( & " ' < > ) used in a post to HTML entities and back.
