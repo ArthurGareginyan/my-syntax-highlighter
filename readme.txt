@@ -3,7 +3,7 @@ Contributors: Arthur Gareginyan
 Tags: code, php, html ,css, javascript, snippet, codemirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 4.9
-Tested up to: 5.3
+Tested up to: 5.4
 Stable tag: 2.48
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
