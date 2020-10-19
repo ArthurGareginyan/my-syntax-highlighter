@@ -48,7 +48,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 **PRO features include**
 
-* 56 Themes (all provided themes from CodeMirror)
+* 64 Themes (all provided themes from CodeMirror)
 * 154 Programming languages (all provided languages from CodeMirror)
 * 125 Shortcodes
 * Programming language selection option
@@ -99,30 +99,56 @@ Click to view language examples. Highlighted with Default theme.
 
 * 3024 day
 * 3024 night
+* ABCDEF
 * Ambiance
 * Ambiance mobile
+* Ayu dark
+* Ayu mirage
 * Base16 dark
 * Base16 light
+* Bespin
 * Blackboard
 * Cobalt
 * Colorforth
+* Darcula
+* Dracula
+* Duotone dark
+* Duotone light
 * Eclipse
 * Elegant
 * Erlang dark
+* Gruvbox dark
+* Hopscotch
+* Icecoder
+* Idea
+* Isotope
 * Lesser dark
 * Liquibyte
+* Lucario
+* Material
+* Material darker
+* Material ocean
+* Material palenight
 * MBO
 * MDN-like
 * Midnight
 * Monokai
+* Moxer
 * Neat
 * Neo
 * Night
+* Nord
+* Oceanic next
+* Panda syntax
 * Paraiso dark
 * Paraiso light
 * Pastel on dark
+* Railscasts
 * Rubyblue
+* Seti
+* Shadowfox
 * Solarized
+* SSMS
 * The matrix
 * Tomorrow night bright
 * Tomorrow night eighties
@@ -131,6 +157,8 @@ Click to view language examples. Highlighted with Default theme.
 * Vibrant ink
 * XQ dark
 * XQ light
+* Yeti
+* Yonce
 * Zenburn
 
 **Translation**
