@@ -620,12 +620,10 @@ td.help-text {
 #preview p {
     margin-top: 10px;
 }
-
-/* CodeMirror Editor */
-.CodeMirror {
+#preview .CodeMirror {
     border: 1px solid #e0e0e0;
     border-radius: 3px;
 }
-.CodeMirror-linenumber {
+#preview .CodeMirror-linenumber {
     text-align: center !important;
 }
