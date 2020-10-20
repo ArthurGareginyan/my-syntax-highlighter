@@ -93,16 +93,22 @@ function spacexchimp_p010_load_scripts_dynamic_css() {
     $editor_height_auto = ( !empty( $options['automatic_height'] ) && ( $options['automatic_height'] == "on" ) ) ? 'true' : 'false';
     $editor_height = !empty( $options['block_height'] ) ? $options['block_height'] : '300px';
 
-    if ( $editor_height_auto == "true" ) {
-        $editor_height = "100%";
-    }
-
     // Create an array with all the settings (CSS code)
-    $custom_css = "
-                    .CodeMirror {
-                        height: " . $editor_height . " !important;
-                    }
-                  ";
+    if ( $editor_height_auto == "true" ) {
+        $custom_css = "
+                        .CodeMirror,
+                        .CodeMirror-scroll,
+                        .CodeMirror-gutters {
+                            height: auto !important;
+                        }
+                      ";
+    } else {
+        $custom_css = "
+                        .CodeMirror {
+                            height: " . $editor_height . " !important;
+                        }
+                      ";
+    }
 
     // Inject the array into the stylesheet
     wp_add_inline_style( $plugin['prefix'] . '-frontend-css', $custom_css );
