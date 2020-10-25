@@ -220,7 +220,6 @@ function spacexchimp_p010_get_shortcode_table() {
 
     // Get array of shortcode names and sort it
     $array_1 = spacexchimp_p010_get_codemirror_mode_pairs();
-    ksort( $array_1 );
 
     // Set array of additional shortcode names
     $array_2 = array(
