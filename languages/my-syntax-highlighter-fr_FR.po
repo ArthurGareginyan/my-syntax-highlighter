@@ -676,7 +676,7 @@ msgstr ""
 
 #: inc/php/tabs/usage.php:47
 #, php-format
-msgid "The PRO version supports 154 programming languages and 125 shortcodes. %s Learn more %s"
+msgid "The PRO version supports 156 programming languages and 125 shortcodes. %s Learn more %s"
 msgstr ""
 
 #: inc/php/tabs/usage.php:59

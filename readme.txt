@@ -49,7 +49,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 **PRO features include**
 
 * 64 Themes (all provided themes from CodeMirror)
-* 154 Programming languages (all provided languages from CodeMirror)
+* 156 Programming languages (all provided languages from CodeMirror)
 * 125 Shortcodes
 * Programming language selection option
 * Loading CodeMirror files on pages only when needed
