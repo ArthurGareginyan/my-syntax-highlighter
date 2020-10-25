@@ -59,7 +59,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 [Get the PRO version now!](https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html)
 
-**A list of supported languages:**
+**List of supported languages:**
 
 Click to view language examples. Highlighted with Default theme.
 
@@ -77,7 +77,7 @@ Click to view language examples. Highlighted with Default theme.
 * MySQL → [see example](https://codemirror.net/mode/sql/index.html)
 * Shell → [see example](https://codemirror.net/mode/shell/index.html)
 
-**A list of supported shortcodes:**
+**List of supported shortcodes:**
 
 * [code][/code] - customizable shortcode
 * [php][/php]
@@ -95,7 +95,7 @@ Click to view language examples. Highlighted with Default theme.
 * [mysql][/mysql]
 * [shell][/shell]
 
-**A list of supported themes:**
+**List of supported themes:**
 
 * 3024 day
 * 3024 night
