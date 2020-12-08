@@ -45,7 +45,7 @@ an "example"!
                                     <?php
                                         printf(
                                             __( 'The PRO version supports 156 programming languages and 125 shortcodes. %s Learn more %s', $plugin['text'] ),
-                                            '<a href="https://www.spacexchimp.com/plugins/my-syntax-highlighter-pro.html" target="_blank">',
+                                            '<a href="https://www.spacexchimp.com/plugins/' . $plugin['slug'] . '-pro.html" target="_blank">',
                                             '&rarr; </a>'
                                         );
                                     ?>
