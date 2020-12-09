@@ -5,7 +5,7 @@
  * Description: Easily and safely embed a syntax-highlighted source code within pages and posts on your WordPress website without losing its formatting.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 2.53
+ * Version: 2.54
  * License: GPL3
  * Text Domain: my-syntax-highlighter
  * Domain Path: /languages/
