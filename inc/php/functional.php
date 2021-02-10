@@ -7,6 +7,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Shortcode-Processor. Functionality to set up shortcode correctly
+ * @return string
  */
 function spacexchimp_p010_shortcode_processor( $content ) {
 
@@ -47,12 +48,14 @@ function spacexchimp_p010_shortcode_processor( $content ) {
         $content = htmlspecialchars_decode( $content );
     }
 
+    // Return the processed data
     return $content;
 }
 add_filter( 'the_content', 'spacexchimp_p010_shortcode_processor', 7 );
 
 /**
  * Callback for shortcodes. Uses in Shortcode-Processor
+ * @return string
  */
 function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
 
@@ -94,8 +97,8 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     // Cleaning
     $content = rtrim( $content );
 
+    // Return the processed data
     return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $lang . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
-
 }
 
 /**
@@ -115,6 +118,8 @@ function spacexchimp_p010_get_codemirror_mode_names() {
 
     $cm_dir = $plugin['path'] . 'inc/lib/codemirror/mode/';
     $modes = array_filter( glob( $cm_dir . '*' ), 'is_dir' );
+
+    // Return the processed data
     return array_map( 'basename', $modes );
 }
 
@@ -211,7 +216,7 @@ function spacexchimp_p010_get_codemirror_theme_pairs() {
 
 /**
  * Callback for getting an HTML table of shortcodes
- * @return html code of 2 tables showing available shortcodes
+ * @return string by using "echo" HTML code of 2 tables showing available shortcodes
  */
 function spacexchimp_p010_get_shortcode_table() {
 
@@ -273,5 +278,6 @@ function spacexchimp_p010_get_shortcode_table() {
                 }
             </style>';
 
+    // Return the processed data
     echo $out;
 }
