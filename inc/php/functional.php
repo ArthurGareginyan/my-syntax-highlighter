@@ -14,8 +14,9 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
+
     $convert_special_characters = ( !empty( $options['convert_special_characters'] ) && ( $options['convert_special_characters'] == "on" ) ) ? 'true' : 'false';
 
     // Convert special characters to HTML entities
@@ -62,8 +63,8 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
 
     // Default language for the [code] shortcode
     $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
