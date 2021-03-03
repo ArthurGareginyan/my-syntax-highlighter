@@ -13,8 +13,8 @@ function spacexchimp_p010_load_scripts_codemirror() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
 
     // Register main files of the CodeMirror library
     wp_register_style( $plugin['prefix'] . '-codemirror-css', $plugin['url'] . 'inc/lib/codemirror/lib/codemirror.css', array(), $plugin['version'], 'all' );
@@ -55,8 +55,9 @@ function spacexchimp_p010_load_scripts_dynamic_js() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
+
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     $line_numbers = ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) ? 'true' : 'false';
     $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
@@ -88,8 +89,9 @@ function spacexchimp_p010_load_scripts_dynamic_css() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
+
     $editor_height_auto = ( !empty( $options['automatic_height'] ) && ( $options['automatic_height'] == "on" ) ) ? 'true' : 'false';
     $editor_height = !empty( $options['block_height'] ) ? $options['block_height'] : '300px';
 
@@ -129,8 +131,8 @@ function spacexchimp_p010_load_scripts_admin( $hook ) {
         return;
     }
 
-    // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
 
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
@@ -195,8 +197,8 @@ function spacexchimp_p010_load_scripts_frontend() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p010_options();
 
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
