@@ -17,6 +17,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p010_options();
 
+    // Declare variables
     $convert_special_characters = ( !empty( $options['convert_special_characters'] ) && ( $options['convert_special_characters'] == "on" ) ) ? 'true' : 'false';
 
     // Convert special characters to HTML entities

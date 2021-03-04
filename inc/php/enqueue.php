@@ -58,6 +58,7 @@ function spacexchimp_p010_load_scripts_dynamic_js() {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p010_options();
 
+    // Declare variables
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     $line_numbers = ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) ? 'true' : 'false';
     $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
@@ -92,6 +93,7 @@ function spacexchimp_p010_load_scripts_dynamic_css() {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p010_options();
 
+    // Declare variables
     $editor_height_auto = ( !empty( $options['automatic_height'] ) && ( $options['automatic_height'] == "on" ) ) ? 'true' : 'false';
     $editor_height = !empty( $options['block_height'] ) ? $options['block_height'] : '300px';
 
