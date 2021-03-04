@@ -18,7 +18,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $options = spacexchimp_p010_options();
 
     // Declare variables
-    $convert_special_characters = ( !empty( $options['convert_special_characters'] ) && ( $options['convert_special_characters'] == "on" ) ) ? 'true' : 'false';
+    $convert_special_characters = $options['convert_special_characters'];
 
     // Convert special characters to HTML entities
     if ( $convert_special_characters == "true" ) {
@@ -68,7 +68,7 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     $options = spacexchimp_p010_options();
 
     // Default language for the [code] shortcode
-    $default_language = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
+    $default_language = $options['defaultLanguage'];
     if ( $lang == "code" ) {
         $lang = $default_language;
     }
@@ -91,7 +91,7 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     }
 
     // Enqueue CodeMirror theme
-    $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    $theme = $options['theme'];
     if ( $theme != "default" ) {
         wp_enqueue_style( $plugin['prefix'] . '-codemirror-theme-css' );
     }
