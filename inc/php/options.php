@@ -21,16 +21,21 @@ function spacexchimp_p010_options() {
     $array = $options;
 
     // Set default value if option is empty
-    $array['hidden_scrollto'] = !empty( $options['hidden_scrollto'] ) ? $options['hidden_scrollto'] : '0';
-    $array['theme'] = !empty( $options['theme'] ) ? $options['theme'] : 'default';
-    $array['line_numbers'] = !empty( $options['line_numbers'] ) ? $options['line_numbers'] : '';
-    $array['first_line_number'] = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
-    $array['dollar_sign'] = !empty( $options['dollar_sign'] ) ? $options['dollar_sign'] : '';
-    $array['tab_size'] = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
-    $array['automatic_height'] = !empty( $options['automatic_height'] ) ? $options['automatic_height'] : '';
-    $array['block_height'] = !empty( $options['block_height'] ) ? $options['block_height'] : '300px';
-    $array['convert_special_characters'] = !empty( $options['convert_special_characters'] ) ? $options['convert_special_characters'] : '';
-    $array['defaultLanguage'] = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
+    $list = array(
+        'hidden_scrollto' => '0',
+        'theme' => 'default',
+        'line_numbers' => '',
+        'first_line_number' => '0',
+        'dollar_sign' => '',
+        'tab_size' => '4',
+        'automatic_height' => '',
+        'block_height' => '300px',
+        'convert_special_characters' => '',
+        'defaultLanguage' => '',
+    );
+    foreach ( $list as $name => $default ) {
+        $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
+    }
 
     // Sanitize data
 
