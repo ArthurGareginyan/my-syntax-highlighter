@@ -32,6 +32,9 @@ function spacexchimp_p010_options() {
     $array['convert_special_characters'] = ( !empty( $options['convert_special_characters'] ) && ( $options['convert_special_characters'] == "on" ) ) ? 'true' : 'false';
     $array['defaultLanguage'] = !empty( $options['defaultLanguage'] ) ? $options['defaultLanguage'] : '';
 
+    // Sanitize data
+
+
     // Return the processed data
     return $array;
 }
