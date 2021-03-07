@@ -17,11 +17,8 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p010_options();
 
-    // Declare variables
-    $convert_special_characters = $options['convert_special_characters'];
-
     // Convert special characters to HTML entities
-    if ( $convert_special_characters == "true" ) {
+    if ( $options['convert_special_characters'] == "true" ) {
         $content = htmlspecialchars( $content );
     }
 
@@ -46,7 +43,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $shortcode_tags = $orig_shortcode_tags;
 
     // Convert special HTML entities back to characters
-    if ( $convert_special_characters == "true" ) {
+    if ( $options['convert_special_characters'] == "true" ) {
         $content = htmlspecialchars_decode( $content );
     }
 
@@ -68,9 +65,8 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     $options = spacexchimp_p010_options();
 
     // Default language for the [code] shortcode
-    $default_language = $options['defaultLanguage'];
     if ( $lang == "code" ) {
-        $lang = $default_language;
+        $lang = $options['defaultLanguage'];
     }
 
     // Enqueue CodeMirror library
@@ -91,8 +87,7 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     }
 
     // Enqueue CodeMirror theme
-    $theme = $options['theme'];
-    if ( $theme != "default" ) {
+    if ( $options['theme'] != "default" ) {
         wp_enqueue_style( $plugin['prefix'] . '-codemirror-theme-css' );
     }
 
