@@ -44,7 +44,7 @@ function spacexchimp_p010_options() {
     $array['line_numbers'] = ( $array['line_numbers'] == "on" ) ? 'true' : 'false';
     $array['dollar_sign'] = ( $array['dollar_sign'] == "on" ) ? 'true' : 'false';
     $array['automatic_height'] = ( $array['automatic_height'] == "on" ) ? 'true' : 'false';
-    $array['convert_special_characters'] = ( $array['convert_special_characters'] == "on" ) ? 'true' : 'false';
+    $array['convert_special_characters'] = ( $array['convert_special_characters'] == "on" ) ? true : false;
 
     // Return the processed data
     return $array;

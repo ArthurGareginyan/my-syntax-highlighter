@@ -18,7 +18,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $options = spacexchimp_p010_options();
 
     // Convert special characters to HTML entities
-    if ( $options['convert_special_characters'] == "true" ) {
+    if ( $options['convert_special_characters'] === true ) {
         $content = htmlspecialchars( $content );
     }
 
@@ -43,7 +43,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $shortcode_tags = $orig_shortcode_tags;
 
     // Convert special HTML entities back to characters
-    if ( $options['convert_special_characters'] == "true" ) {
+    if ( $options['convert_special_characters'] === true ) {
         $content = htmlspecialchars_decode( $content );
     }
 
