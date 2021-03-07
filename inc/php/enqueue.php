@@ -86,7 +86,7 @@ function spacexchimp_p010_load_scripts_dynamic_css() {
     $options = spacexchimp_p010_options();
 
     // Create an array with all the settings (CSS code)
-    if ( $options['editor_height_auto'] == "true" ) {
+    if ( $options['automatic_height'] == "true" ) {
         $custom_css = "
                         .CodeMirror,
                         .CodeMirror-scroll,
