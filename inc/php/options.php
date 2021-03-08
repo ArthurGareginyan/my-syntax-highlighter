@@ -22,16 +22,16 @@ function spacexchimp_p010_options() {
 
     // Set default value if option is empty
     $list = array(
-        'hidden_scrollto' => '0',
-        'theme' => 'default',
-        'line_numbers' => '',
-        'first_line_number' => '0',
-        'dollar_sign' => '',
-        'tab_size' => '4',
         'automatic_height' => '',
         'block_height' => '300px',
         'convert_special_characters' => '',
         'defaultLanguage' => '',
+        'dollar_sign' => '',
+        'first_line_number' => '0',
+        'hidden_scrollto' => '0',
+        'line_numbers' => '',
+        'tab_size' => '4',
+        'theme' => 'default',
     );
     foreach ( $list as $name => $default ) {
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
@@ -41,10 +41,10 @@ function spacexchimp_p010_options() {
 
 
     // Modify data
-    $array['line_numbers'] = ( $array['line_numbers'] == "on" ) ? 'true' : 'false';
-    $array['dollar_sign'] = ( $array['dollar_sign'] == "on" ) ? 'true' : 'false';
     $array['automatic_height'] = ( $array['automatic_height'] == "on" ) ? 'true' : 'false';
     $array['convert_special_characters'] = ( $array['convert_special_characters'] == "on" ) ? true : false;
+    $array['dollar_sign'] = ( $array['dollar_sign'] == "on" ) ? 'true' : 'false';
+    $array['line_numbers'] = ( $array['line_numbers'] == "on" ) ? 'true' : 'false';
 
     // Return the processed data
     return $array;
