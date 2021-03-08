@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2021-01-02 21:09+0300\n"
-"PO-Revision-Date: 2021-01-02 21:09+0300\n"
+"POT-Creation-Date: 2021-03-09 01:22+0300\n"
+"PO-Revision-Date: 2021-03-09 01:22+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -36,11 +36,11 @@ msgstr "Spende"
 msgid "Syntax Highlighter"
 msgstr "Syntax Highlighter"
 
-#: inc/php/functional.php:234
+#: inc/php/functional.php:236
 msgid "Language &rarr; Shortcode"
 msgstr ""
 
-#: inc/php/functional.php:235
+#: inc/php/functional.php:237
 msgid "Shortcode aliases"
 msgstr ""
 

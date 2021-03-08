@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My Syntax Highlighter\n"
-"POT-Creation-Date: 2021-01-02 21:09+0300\n"
+"POT-Creation-Date: 2021-03-09 01:21+0300\n"
 "PO-Revision-Date: 2015-11-23 18:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,11 +34,11 @@ msgstr ""
 msgid "Syntax Highlighter"
 msgstr ""
 
-#: inc/php/functional.php:234
+#: inc/php/functional.php:236
 msgid "Language &rarr; Shortcode"
 msgstr ""
 
-#: inc/php/functional.php:235
+#: inc/php/functional.php:237
 msgid "Shortcode aliases"
 msgstr ""
 
