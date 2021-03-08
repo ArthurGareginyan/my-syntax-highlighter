@@ -67,7 +67,7 @@ function spacexchimp_p010_load_scripts_dynamic_js() {
                            'line_numbers' => $options['line_numbers'],
                            'first_line_number' => $options['first_line_number'],
                            'dollar_sign' => $options['dollar_sign'],
-                           'tab_size' =>  $options['tab_size']
+                           'tab_size' => $options['tab_size']
                            );
 
     // Inject the array into the JavaScript file
