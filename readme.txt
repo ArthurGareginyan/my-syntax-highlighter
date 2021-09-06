@@ -296,6 +296,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
+=  - Sep 6, 2021 =
+* Fixed: Strange behavior of the toggle switches (ON/OFF buttons) on the plugin settings page. (Thanks to Werner Krauß)
+
 = 2.57 - Jul 19, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.8.
 * Framework update: The CodeMirror library has been updated to the latest version v5.62.0.
