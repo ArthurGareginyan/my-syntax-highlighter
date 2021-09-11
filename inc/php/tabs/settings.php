@@ -72,8 +72,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    );
                                     spacexchimp_p010_control_number( 'first_line_number',
                                                                      __( 'First line number', $plugin['text'] ),
-                                                                     __( 'You can set the number of the first line.', $plugin['text'] ),
-                                                                     '0'
+                                                                     __( 'You can set the number of the first line.', $plugin['text'] )
                                                                    );
                                     spacexchimp_p010_control_switch( 'dollar_sign',
                                                                      __( 'Dollar sign ($)', $plugin['text'] ),
@@ -81,8 +80,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    );
                                     spacexchimp_p010_control_number( 'tab_size',
                                                                      __( 'Tab character size', $plugin['text'] ),
-                                                                     __( 'The width (in spaces) of the Tab character. Default is 4.', $plugin['text'] ),
-                                                                     '4'
+                                                                     __( 'The width (in spaces) of the Tab character. Default is 4.', $plugin['text'] )
                                                                    );
                                     spacexchimp_p010_control_separator(
                                                                         __( 'Field size', $plugin['text'] )
@@ -93,8 +91,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    );
                                     spacexchimp_p010_control_number( 'block_height',
                                                                      __( 'Fixed height', $plugin['text'] ),
-                                                                     __( 'The height (in pixels) of code editor field. Default is 300px.', $plugin['text'] ),
-                                                                     '300'
+                                                                     __( 'The height (in pixels) of code editor field. Default is 300px.', $plugin['text'] )
                                                                    );
                                 ?>
                             </table>
