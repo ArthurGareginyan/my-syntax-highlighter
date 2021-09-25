@@ -27,16 +27,16 @@ function spacexchimp_p010_options() {
 
     // Set default value if option is empty
     $list = array(
-        'automatic_height' => '',
-        'block_height' => '300px',
-        'convert_special_characters' => '',
-        'defaultLanguage' => '',
-        'dollar_sign' => '',
-        'first_line_number' => '0',
-        'hidden_scrollto' => '0',
-        'line_numbers' => '',
-        'tab_size' => '4',
-        'theme' => 'default',
+        'automatic_height' => '', // _control_switch
+        'block_height' => '300px', // _control_number
+        'convert_special_characters' => '', // _control_switch
+        'defaultLanguage' => '', // _control_list
+        'dollar_sign' => '', // _control_switch
+        'first_line_number' => '0', // _control_number
+        'hidden_scrollto' => '0', // _control_hidden
+        'line_numbers' => '', // _control_switch
+        'tab_size' => '4', // _control_number
+        'theme' => 'default', // _control_list
     );
     foreach ( $list as $name => $default ) {
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
