@@ -24,8 +24,6 @@ function spacexchimp_p010_options() {
 
     // Create an array with options
     $array = $options;
-
-    // Set default value if option is empty
     $list = array(
         'automatic_height' => (boolean) '', // _control_switch
         'block_height' => (integer) '300px', // _control_number
@@ -39,6 +37,8 @@ function spacexchimp_p010_options() {
         'theme' => (string) 'default', // _control_list
     );
     foreach ( $list as $name => $default ) {
+
+        // Set default value if option is empty
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
     }
 
