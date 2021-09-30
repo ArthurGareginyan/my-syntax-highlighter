@@ -40,6 +40,11 @@ function spacexchimp_p010_options() {
 
         // Set default value if option is empty
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
+
+        // Sanitize and modify by type of option
+        if ( is_bool( $default ) === true ) {
+            $array[$name] = ( $array[$name] == 'on' || $array[$name] == '1' || $array[$name] == 'true' ) ? true : false;
+        }
     }
 
     // Sanitize data
@@ -55,10 +60,9 @@ function spacexchimp_p010_options() {
     //$array['theme'] = esc_textarea( $array['theme'] );
 
     // Modify data
-    $array['automatic_height'] = ( $array['automatic_height'] == 'on' || $array['automatic_height'] == '1' || $array['automatic_height'] == 'true' ) ? 'true' : 'false';
-    $array['convert_special_characters'] = ( $array['convert_special_characters'] == 'on' || $array['convert_special_characters'] == '1' || $array['convert_special_characters'] == 'true' ) ? true : false;
-    $array['dollar_sign'] = ( $array['dollar_sign'] == 'on' || $array['dollar_sign'] == '1' || $array['dollar_sign'] == 'true' ) ? 'true' : 'false';
-    $array['line_numbers'] = ( $array['line_numbers'] == 'on' || $array['line_numbers'] == '1' || $array['line_numbers'] == 'true' ) ? 'true' : 'false';
+    $array['automatic_height'] = ( $array['automatic_height'] === true ) ? 'true' : 'false';
+    $array['dollar_sign'] = ( $array['dollar_sign'] === true ) ? 'true' : 'false';
+    $array['line_numbers'] = ( $array['line_numbers'] === true ) ? 'true' : 'false';
 
     // Return the processed data
     return $array;
