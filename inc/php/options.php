@@ -26,7 +26,7 @@ function spacexchimp_p010_options() {
     $array = $options;
     $list = array(
         'automatic_height' => (boolean) '', // _control_switch
-        'block_height' => (integer) '300px', // _control_number
+        'block_height' => (integer) '300', // _control_number
         'convert_special_characters' => (boolean) '', // _control_switch
         'defaultLanguage' => (string) '', // _control_list
         'dollar_sign' => (boolean) '', // _control_switch

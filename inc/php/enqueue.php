@@ -93,7 +93,7 @@ function spacexchimp_p010_load_scripts_dynamic_css() {
     } else {
         $custom_css = "
                         .CodeMirror {
-                            height: " . $options['block_height'] . " !important;
+                            height: " . $options['block_height'] . "px !important;
                         }
                       ";
     }
