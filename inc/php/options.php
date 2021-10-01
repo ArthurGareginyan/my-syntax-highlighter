@@ -60,7 +60,7 @@ function spacexchimp_p010_options() {
     //$array['theme'] = esc_textarea( $array['theme'] );
 
     // Modify data
-    $array['automatic_height'] = ( $array['automatic_height'] === true ) ? 'true' : 'false';
+
 
     // Return the processed data
     return $array;
