@@ -16,11 +16,11 @@ jQuery(document).ready(function($) {
     var theme = spacexchimp_p010_scriptParams["theme"];
     var line_numbers = ( spacexchimp_p010_scriptParams["line_numbers"] == 'true' );
     var first_line_number = parseInt( spacexchimp_p010_scriptParams["first_line_number"] );
-    var dollar_sign = spacexchimp_p010_scriptParams["dollar_sign"];
+    var dollar_sign = Boolean( spacexchimp_p010_scriptParams["dollar_sign"] );
     var tab_size = parseInt( spacexchimp_p010_scriptParams["tab_size"] );
 
-    if ( dollar_sign == 'true' ) {
-        line_numbers = 'true';
+    if ( dollar_sign === true ) {
+        line_numbers = true;
     }
 
     // Find textareas on page and replace them with the CodeMirror editor
@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
     });
 
     // Replace line numbers with dollar sign
-    if ( dollar_sign == 'true' ) {
+    if ( dollar_sign === true ) {
         $(".CodeMirror-linenumber").each(function(){
             var number = $(this).text();
             var dollar = number.replace(/[0-9]+/, "$");
