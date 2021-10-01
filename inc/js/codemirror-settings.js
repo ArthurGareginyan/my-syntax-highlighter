@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 
     // Get values for variables
     var theme = spacexchimp_p010_scriptParams["theme"];
-    var line_numbers = ( spacexchimp_p010_scriptParams["line_numbers"] == 'true' );
+    var line_numbers = Boolean( spacexchimp_p010_scriptParams["line_numbers"] );
     var first_line_number = parseInt( spacexchimp_p010_scriptParams["first_line_number"] );
     var dollar_sign = Boolean( spacexchimp_p010_scriptParams["dollar_sign"] );
     var tab_size = parseInt( spacexchimp_p010_scriptParams["tab_size"] );

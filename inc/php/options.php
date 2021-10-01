@@ -61,7 +61,6 @@ function spacexchimp_p010_options() {
 
     // Modify data
     $array['automatic_height'] = ( $array['automatic_height'] === true ) ? 'true' : 'false';
-    $array['line_numbers'] = ( $array['line_numbers'] === true ) ? 'true' : 'false';
 
     // Return the processed data
     return $array;
