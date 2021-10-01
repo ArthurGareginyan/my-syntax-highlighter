@@ -19,6 +19,10 @@ jQuery(document).ready(function($) {
     var dollar_sign = spacexchimp_p010_scriptParams["dollar_sign"];
     var tab_size = parseInt( spacexchimp_p010_scriptParams["tab_size"] );
 
+    if ( dollar_sign == 'true' ) {
+        line_numbers = 'true';
+    }
+
     // Find textareas on page and replace them with the CodeMirror editor
     $('textarea.mshighlighter').each(function(index, element){
 

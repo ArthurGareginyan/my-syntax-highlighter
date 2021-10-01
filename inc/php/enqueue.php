@@ -57,10 +57,6 @@ function spacexchimp_p010_load_scripts_dynamic_js() {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p010_options();
 
-    if ( $options['dollar_sign'] == "true" ) {
-        $options['line_numbers'] = "true";
-    }
-
     // Create an array (JS object) with all the settings
     $script_params = array(
                            'theme' => $options['theme'],
