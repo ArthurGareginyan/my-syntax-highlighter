@@ -52,15 +52,7 @@ function spacexchimp_p010_options() {
     }
 
     // Sanitize data
-    //$array['automatic_height'] = esc_textarea( $array['automatic_height'] );
-    //$array['block_height'] = esc_textarea( $array['block_height'] );
-    //$array['convert_special_characters'] = esc_textarea( $array['convert_special_characters'] );
     //$array['defaultLanguage'] = esc_textarea( $array['defaultLanguage'] );
-    //$array['dollar_sign'] = esc_textarea( $array['dollar_sign'] );
-    //$array['first_line_number'] = esc_textarea( $array['first_line_number'] );
-    //$array['hidden_scrollto'] = esc_textarea( $array['hidden_scrollto'] );
-    //$array['line_numbers'] = esc_textarea( $array['line_numbers'] );
-    //$array['tab_size'] = esc_textarea( $array['tab_size'] );
     //$array['theme'] = esc_textarea( $array['theme'] );
 
     // Modify data
