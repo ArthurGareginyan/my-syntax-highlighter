@@ -15,15 +15,14 @@ function spacexchimp_p010_options() {
     $plugin = spacexchimp_p010_plugin();
 
     // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    $array = get_option( $plugin['settings'] . '_settings' );
 
     // Make the "$options" array if the plugin options data in the database is not exist
-    if ( ! is_array( $options ) ) {
-        $options = array();
+    if ( ! is_array( $array ) ) {
+        $array = array();
     }
 
     // Create an array with options
-    $array = $options;
     $list = array(
         'automatic_height' => (boolean) '', // _control_switch
         'block_height' => (integer) '300', // _control_number
@@ -39,7 +38,7 @@ function spacexchimp_p010_options() {
     foreach ( $list as $name => $default ) {
 
         // Set default value if option is empty
-        $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
+        $array[$name] = !empty( $array[$name] ) ? $array[$name] : $default;
 
         // Cast and validate by type of option
         if ( is_string( $default ) === true ) {
