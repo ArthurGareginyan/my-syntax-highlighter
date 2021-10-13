@@ -104,23 +104,6 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
 add_filter( 'widget_text', 'do_shortcode' );
 
 /**
- * Callback for getting a list of CodeMirror modes
- * by scanning the CodeMirror library included in the plugin
- * @return array of mode names located in the CodeMirror library
- */
-function spacexchimp_p010_get_codemirror_mode_names() {
-
-    // Put value of plugin constants into an array for easier access
-    $plugin = spacexchimp_p010_plugin();
-
-    $cm_dir = $plugin['path'] . 'inc/lib/codemirror/mode/';
-    $modes = array_filter( glob( $cm_dir . '*' ), 'is_dir' );
-
-    // Return the processed data
-    return array_map( 'basename', $modes );
-}
-
-/**
  * Callback for getting a list of all shortcode names
  * @return array of shortcode names
  */
