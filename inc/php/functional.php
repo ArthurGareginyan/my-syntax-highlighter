@@ -128,29 +128,6 @@ function spacexchimp_p010_get_shortcode_names() {
 }
 
 /**
- * Callback for getting a list of CodeMirror modes
- * @return array of pairs "Language Name" => "mode" of the CodeMirror modes
- * @TODO These pairs can be extracted from lib/codemirror/mode/meta.js
- */
-function spacexchimp_p010_get_codemirror_mode_pairs() {
-    return array(
-                  'CSS'        => 'css',
-                  'HTML'       => 'html',
-                  'JavaScript' => 'javascript',
-                  'LESS'       => 'less',
-                  'Markdown'   => 'markdown',
-                  'MySQL'      => 'mysql',
-                  'Perl'       => 'perl',
-                  'PHP'        => 'php',
-                  'SASS'       => 'sass',
-                  'SCSS'       => 'scss',
-                  'Shell'      => 'shell',
-                  'SQL'        => 'sql',
-                  'XML'        => 'xml'
-    );
-}
-
-/**
  * Callback for getting an HTML table of shortcodes
  * @return string by using "echo" HTML code of 2 tables showing available shortcodes
  */
