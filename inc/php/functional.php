@@ -29,7 +29,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     $shortcode_tags = array();
 
     // Get the shortcode names
-    $shortcodes_names = spacexchimp_p010_get_shortcode_names();
+    $shortcodes_names = spacexchimp_p010_get_shortcode_names_enabled();
 
     // Create different shortcodes
     foreach ( $shortcodes_names as $shortcode_name ) {
@@ -104,10 +104,10 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
 add_filter( 'widget_text', 'do_shortcode' );
 
 /**
- * Callback for getting a list of all shortcode names
+ * Callback for getting a list of enabled shortcode names
  * @return array of shortcode names
  */
-function spacexchimp_p010_get_shortcode_names() {
+function spacexchimp_p010_get_shortcode_names_enabled() {
     return array(
                   'code',
                   'php',
