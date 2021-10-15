@@ -65,8 +65,9 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     $options = spacexchimp_p010_options();
 
     // Default language for the [code] shortcode
-    if ( $lang == "code" ) {
-        $lang = $options['defaultLanguage'];
+    $language_default = $options['defaultLanguage'];
+    if ( $lang == 'code' ) {
+        $lang = $language_default;
     }
 
     // Enqueue CodeMirror library
@@ -94,8 +95,17 @@ function spacexchimp_p010_shortcode( $atts, $content = null, $lang ) {
     // Cleaning
     $content = rtrim( $content );
 
+    // Creat and fill an output array
+    $output =  '<div class="my-syntax-highlighter">';
+    $output .=      '<pre>';
+    $output .=          '<textarea id="mshighlighter" class="mshighlighter" language="' . $lang . '" name="mshighlighter" >';
+    $output .=              $content;
+    $output .=          '</textarea>';
+    $output .=      '</pre>';
+    $output .= '</div>';
+
     // Return the processed data
-    return '<div class="my-syntax-highlighter"><pre><textarea id="mshighlighter" class="mshighlighter" language="' . $lang . '" name="mshighlighter" >' . $content . '</textarea></pre></div>';
+    return $output;
 }
 
 /**
