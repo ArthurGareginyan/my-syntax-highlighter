@@ -302,6 +302,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Maintenance: Processing of options has been improved. The "_options" function has been rewritten.
 * Maintenance: Processing of options has been improved. Explicit type definition technique is now used in variable declarations.
 * Enhancement: Processing of options has been improved. All data is now sanitized and validated before use.
+* Maintenance: The "inc/php/docs.php" file has been added.
 * Maintenance: The "inc/php/items.php" file has been added.
 * Maintenance: The "_get_codemirror_mode_names" function has been moved to the "inc/php/items.php" file.
 * Maintenance: The "_get_codemirror_mode_pairs" function has been moved to the "inc/php/items.php" file.

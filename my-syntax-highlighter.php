@@ -103,5 +103,6 @@ require_once( $plugin['path'] . 'inc/php/versioning.php' );
 require_once( $plugin['path'] . 'inc/php/enqueue.php' );
 require_once( $plugin['path'] . 'inc/php/functional.php' );
 require_once( $plugin['path'] . 'inc/php/controls.php' );
+require_once( $plugin['path'] . 'inc/php/docs.php' );
 require_once( $plugin['path'] . 'inc/php/page.php' );
 require_once( $plugin['path'] . 'inc/php/messages.php' );
