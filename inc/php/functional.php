@@ -108,21 +108,26 @@ add_filter( 'widget_text', 'do_shortcode' );
  * @return array of shortcode names
  */
 function spacexchimp_p010_get_shortcode_names_enabled() {
-    return array(
-                  'code',
-                  'php',
-                  'javascript',
-                  'js',
-                  'xml',
-                  'html',
-                  'css',
-                  'scss',
-                  'less',
-                  'sass',
-                  'markdown',
-                  'perl',
-                  'sql',
-                  'mysql',
-                  'shell'
+
+    // Creat and fill an output array
+    $output = array(
+        'code',
+        'php',
+        'javascript',
+        'js',
+        'xml',
+        'html',
+        'css',
+        'scss',
+        'less',
+        'sass',
+        'markdown',
+        'perl',
+        'sql',
+        'mysql',
+        'shell'
     );
+
+    // Return the processed data
+    return $output;
 }

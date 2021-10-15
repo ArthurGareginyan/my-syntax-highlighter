@@ -310,7 +310,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Maintenance: The "_get_codemirror_theme_pairs" function has been moved to the "inc/php/items.php" file.
 * Maintenance: The contents of PHP files have been optimised; Code formatting and commenting improved.
 * Maintenance: The "_test" function has been added to the "inc/php/options.php" file for development/testing purposes. It writes the options to a text file for the visualisation of options processing.
-* Maintenance: The "_get_shortcode_names" function has been renamed to "_get_shortcode_names_enabled".
+* Maintenance: The "_get_shortcode_names" function has been rewritten and renamed to "_get_shortcode_names_enabled".
 * Maintenance: Code formatting and commenting improved.
 
 = 2.58 - Sep 6, 2021 =
