@@ -51,7 +51,7 @@ function spacexchimp_p010_options() {
     }
 
     // Sanitize data
-    //$array['defaultLanguage'] = esc_textarea( $array['defaultLanguage'] );
+    $array['defaultLanguage'] = sanitize_text_field( $array['defaultLanguage'] );
     $array['theme'] = sanitize_text_field( $array['theme'] );
 
     // Modify data
