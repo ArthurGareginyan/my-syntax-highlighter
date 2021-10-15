@@ -40,7 +40,7 @@ function spacexchimp_p010_load_scripts_codemirror() {
     }
 
     // Register theme
-    if ( $options['theme'] != "default" ) {
+    if ( $options['theme'] != 'default' ) {
         wp_register_style( $plugin['prefix'] . '-codemirror-theme-css', $plugin['url'] . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css', array(), $plugin['version'], 'all' );
     }
 
@@ -161,7 +161,7 @@ function spacexchimp_p010_load_scripts_admin( $hook ) {
     }
 
     // CodeMirror theme
-    if ( $options['theme'] != "default" ) {
+    if ( $options['theme'] != 'default' ) {
         wp_enqueue_style( $plugin['prefix'] . '-codemirror-theme-css' );
     }
 
