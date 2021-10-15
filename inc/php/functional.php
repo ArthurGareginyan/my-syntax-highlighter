@@ -42,7 +42,7 @@ function spacexchimp_p010_shortcode_processor( $content ) {
     // Put the shortcodes back to normal
     $shortcode_tags = $orig_shortcode_tags;
 
-    // Convert special HTML entities back to characters
+    // Convert HTML entities back to special characters
     if ( $options['convert_special_characters'] === true ) {
         $content = htmlspecialchars_decode( $content );
     }
