@@ -306,6 +306,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Maintenance: The "_get_shortcode_table" function has been moved to the "inc/php/docs.php" file.
 * Maintenance: The "inc/php/items.php" file has been added.
 * Maintenance: The "_get_codemirror_mode_names" function has been moved to the "inc/php/items.php" file.
+* Maintenance: The "_get_codemirror_mode_names" function has been rewritten.
 * Maintenance: The "_get_codemirror_mode_pairs" function has been moved to the "inc/php/items.php" file.
 * Maintenance: The "_get_codemirror_theme_pairs" function has been moved to the "inc/php/items.php" file.
 * Maintenance: The contents of PHP files have been optimised; Code formatting and commenting improved.

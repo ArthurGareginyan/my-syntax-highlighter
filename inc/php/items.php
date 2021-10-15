@@ -15,11 +15,16 @@ function spacexchimp_p010_get_codemirror_mode_names() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p010_plugin();
 
-    $cm_dir = $plugin['path'] . 'inc/lib/codemirror/mode/';
-    $modes = array_filter( glob( $cm_dir . '*' ), 'is_dir' );
+    // Get list of modes by scanning the "inc/lib/codemirror/mode/" directorie
+    $parent_dir = $plugin['path'] . 'inc/lib/codemirror/mode/';
+    $dirs = array_filter( glob( $parent_dir . '*' ), 'is_dir' );
+    $names = array_map( 'basename', $dirs );
+
+    // Creat and fill an output array
+    $output = $names;
 
     // Return the processed data
-    return array_map( 'basename', $modes );
+    return $output;
 }
 
 /**
